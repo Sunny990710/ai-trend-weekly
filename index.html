@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI/IT 트렌드 위클리</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f7f8fa;
+    --text: #16181d;
+    --muted: #5f636b;
+    --faint: #9aa0a8;
+    --line: rgba(0,0,0,0.09);
+    --accent: #2563eb;            /* 차분한 블루 액센트 */
+    --sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  /* 은은한 상단 그라데이션 분위기 */
+  body::before {
+    content: ""; position: fixed; inset: 0 0 auto 0; height: 320px;
+    background: radial-gradient(120% 100% at 50% 0%, rgba(37,99,235,0.05), transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* 마스트헤드 */
+  header.masthead { padding: 64px 0 28px; border-bottom: 1px solid var(--line); }
+  .kicker { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  header.masthead h1 { font-size: 40px; line-height: 1.1; margin: 0; font-weight: 800; letter-spacing: -0.02em; }
+  header.masthead p { color: var(--muted); margin: 12px 0 0; font-size: 15px; max-width: 48ch; }
+
+  /* 목록 */
+  .feed { padding: 8px 0 80px; }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    padding: 30px 0; border-bottom: 1px solid var(--line);
+    opacity: 0; transform: translateY(10px);
+    animation: rise 0.5s ease forwards;
+  }
+  .card-tag { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); }
+  .card-meta { font-size: 13px; color: var(--muted); margin-left: 10px; }
+  .card-meta .dot { margin: 0 7px; color: var(--faint); }
+  .card h2 {
+    font-size: 22px; line-height: 1.32; font-weight: 700; letter-spacing: -0.01em;
+    margin: 12px 0 8px; transition: color 0.18s ease;
+  }
+  .card .desc { color: var(--muted); font-size: 15px; margin: 0; }
+  .card .more { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 13px; color: var(--faint); transition: color 0.18s ease, gap 0.18s ease; }
+  .card .more svg { width: 14px; height: 14px; }
+  /* 호버: 제목 골드, 화살표 전진 */
+  .card:hover h2 { color: var(--accent); }
+  .card:hover .more { color: var(--accent); gap: 11px; }
+
+  .eye { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; opacity: 0.7; }
+
+  .empty { color: var(--muted); padding: 60px 0; text-align: center; }
+
+  footer { color: var(--faint); font-size: 12px; padding: 28px 0 56px; border-top: 1px solid var(--line); }
+
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 520px) {
+    header.masthead h1 { font-size: 30px; }
+    .card h2 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">E-LAND INNOple · Weekly</p>
+    <h1>AI/IT 트렌드 위클리</h1>
+    <p>매주 한 주의 AI·IT 흐름을 6개 카테고리로 선별해 정리합니다. 카드를 누르면 그 주 리포트 전문이 열립니다.</p>
+  </header>
+
+  <main class="feed" id="feed">
+    <div class="empty" id="empty" hidden>아직 발행된 리포트가 없습니다.</div>
+  </main>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+  // 보기용 시드 — data/reports.json 을 못 읽을 때(파일 직접 열기 등) 대비한 폴백.
+  // 실제 운영에서는 data/reports.json 이 최신 목록이 됩니다.
+  const SEED = [
+    {
+      id: "2026-05-22",
+      date: "2026-05-22",
+      title: "NVIDIA 베라 CPU, 구글 I/O 2026, AI 사전심사",
+      summary: "엔비디아가 에이전트 전용 첫 CPU '베라'를 최상위 AI 랩에 공급하고, 구글은 I/O에서 제미나이 전방위 통합을 발표했다. 백악관의 90일 사전심사 추진까지 이번 주 핵심 동향을 정리했다.",
+      views: 0,
+      file: "reports/2026-05-22.html"
+    }
+  ];
+
+  const EYE = '<svg class="eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    return `${d.getFullYear()}년 ${String(d.getMonth()+1).padStart(2,'0')}월 ${String(d.getDate()).padStart(2,'0')}일`;
+  }
+
+  // 날짜 → "2026년 5월 4주차" (매월 1~7일=1주차, 8~14일=2주차 …)
+  function weekLabel(iso) {
+    const d = new Date(iso);
+    if (isNaN(d)) return '';
+    const week = Math.ceil(d.getDate() / 7);
+    return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${week}주차`;
+  }
+
+  function render(reports) {
+    const feed = document.getElementById('feed');
+    const empty = document.getElementById('empty');
+    // 최신순 정렬
+    reports.sort((a, b) => (a.date < b.date ? 1 : -1));
+    if (!reports.length) { empty.hidden = false; return; }
+
+    reports.forEach((r, i) => {
+      const a = document.createElement('a');
+      a.className = 'card';
+      a.href = r.file;
+      a.style.animationDelay = (i * 70) + 'ms';
+      const wl = weekLabel(r.date);
+      const heading = wl ? `${wl} AI/IT 뉴스 — ${r.title}` : r.title;
+      a.innerHTML = `
+        <span class="card-tag">Tech Insight</span>
+        <span class="card-meta">${fmtDate(r.date)}${(r.views ?? 0) > 0 ? `<span class="dot">·</span>${EYE}${r.views}` : ''}</span>
+        <h2>${heading}</h2>
+        <p class="desc">${r.summary || ''}</p>
+        <span class="more">리포트 열기 ${ARROW}</span>`;
+      feed.appendChild(a);
+    });
+    document.getElementById('footer').textContent =
+      `총 ${reports.length}개 리포트 · 최종 업데이트 ${fmtDate(reports[0].date)}`;
+  }
+
+  (async () => {
+    let reports = SEED;
+    try {
+      const res = await fetch('./data/reports.json', { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data.length) reports = data;
+      }
+    } catch (e) {
+      // 폴백(SEED) 사용
+    }
+    render(reports);
+  })();
+</script>
+</body>
+</html>
