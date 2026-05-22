@@ -3,11 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light only" />
+<meta name="theme-color" content="#ffffff" />
 <title>AI/IT 트렌드 위클리</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <style>
   :root {
+    color-scheme: only light;
     --bg: #ffffff;
     --surface: #f7f8fa;
     --text: #16181d;
@@ -19,8 +22,12 @@
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
+  html {
+    background-color: var(--bg);
+    color: var(--text);
+  }
   body {
-    background: var(--bg);
+    background-color: var(--bg);
     color: var(--text);
     font-family: var(--sans);
     -webkit-font-smoothing: antialiased;
