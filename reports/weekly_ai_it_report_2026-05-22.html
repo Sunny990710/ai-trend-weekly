@@ -10,43 +10,67 @@
   h1 { font-size: 28px; margin-bottom: 4px; }
   .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
   h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
-  .category {
-    margin: 32px 0 28px;
-    padding: 18px 22px 6px;
-    border: 1px solid #d1d5db;
-    border-radius: 12px;
-    background: #f8fafc;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  h2.cat-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
   }
-  .category > h2 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e5e7eb;
-    font-size: 18px;
-    color: #1e3a5f;
-  }
-  .category .topics { margin-top: 0; }
-  .category .category-note { margin: 4px 0 14px; font-size: 13px; color: #6b7280; }
-  h3 { margin-bottom: 4px; font-size: 16px; }
-  .topics { margin: 8px 0 16px 0; }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
   .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
   .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
-  .item { padding: 12px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
   .item:last-child { border-bottom: none; }
   .item:not(:has(+ .item)) { border-bottom: none; }
   .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
   .highlights li { margin: 5px 0; padding-left: 2px; }
-  .highlights li::marker { color: #2563eb; }
+  .highlights li::marker { color: #1f2328; }
   .source { font-size: 13px; color: #4b5563; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-left: 6px; }
-  .high { background: #fee2e2; color: #991b1b; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
   a { color: #2563eb; }
 </style>
 </head>
 <body>
 
-<h1>이번 주 주목할 AI/IT 뉴스 — High Impact 핵심</h1>
+<h1>이번 주 주목할 AI/IT 뉴스 — 중요도 핵심</h1>
 <div class="meta">발행일 2026-05-22 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
 
 <h2>핵심 3줄 요약</h2>
@@ -54,14 +78,13 @@
 <div class="headline">② <strong>구글, I/O 2026에서 '제미나이' 중심 전방위 통합 발표</strong> — 코딩 에이전트·검색·결제·XR까지 제미나이 옴니를 전 제품군에 박아넣으며 '데이터 플라이휠'을 핵심 전략으로 내세웠다.</div>
 <div class="headline">③ <strong>백악관, 첨단 AI 모델 '90일 사전심사' 추진</strong> — 국가안보·사이버보안 위험을 이유로 사전심사 체계 도입을 본격화하며 글로벌 AI 규제 흐름이 한층 빨라지고 있다.</div>
 
-<section class="category">
-<h2>AI Infrastructure</h2>
+<h2 class="cat-title">AI Infrastructure</h2>
 <div class="topics">
   <span class="topic">AI 칩</span><span class="topic">인프라 자립</span><span class="topic">추론 비용</span><span class="topic">데이터센터</span>
 </div>
 
 <div class="item">
-  <h3>Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs</h3>
+  <h3>Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>엔비디아가 에이전트 워크로드 전용 첫 CPU '베라'를 공개하고 실제 납품을 시작했다.</li>
     <li>앤트로픽·오픈AI·스페이스X AI 등 최상위 AI 랩과 오라클 클라우드가 초기 도입처다.</li>
@@ -71,7 +94,7 @@
 </div>
 
 <div class="item">
-  <h3>엔비디아 쓰던 빅테크들, 왜 직접 'AI 칩' 설계에 뛰어드나?</h3>
+  <h3>엔비디아 쓰던 빅테크들, 왜 직접 'AI 칩' 설계에 뛰어드나? <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>아마존·구글·MS가 자체 AI 칩 설계로 추론·학습 비용 구조를 바꾸려 한다.</li>
     <li>엔비디아 GPU 의존도를 낮추는 공급망·가격 협상력 확보가 핵심 동기다.</li>
@@ -81,7 +104,7 @@
 </div>
 
 <div class="item">
-  <h3>엔비디아, 또다시 호실적…회의론 속 "사업 다각화 진전" 강조</h3>
+  <h3>엔비디아, 또다시 호실적…회의론 속 "사업 다각화 진전" 강조 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>1분기 매출·이익이 사상 최대치를 기록하며 시장 전망을 상회했다.</li>
     <li>AI 거품·수요 둔화 우려 속에서도 데이터센터 수요는 여전히 견조하다는 메시지다.</li>
@@ -89,16 +112,13 @@
   </ul>
   <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=663178">원문 보기</a></p>
 </div>
-</section>
-
-<section class="category">
-<h2>Enterprise AI</h2>
+<h2 class="cat-title">Enterprise AI</h2>
 <div class="topics">
   <span class="topic">AI 네이티브</span><span class="topic">AX 전환</span><span class="topic">기업 내 AI 도입</span><span class="topic">CAIO</span>
 </div>
 
 <div class="item">
-  <h3>[칼럼] AI 네이티브 기업의 시대: 기술의 도입을 넘어 존재의 변화로</h3>
+  <h3>[칼럼] AI 네이티브 기업의 시대: 기술의 도입을 넘어 존재의 변화로 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>AI 도입을 넘어 기업의 존재 방식·가치 창출 구조가 바뀌는 'AI 네이티브' 전환이 핵심 화두다.</li>
     <li>조직·제품·문화를 한꺼번에 재설계하지 않으면 기술 투자만으로는 성과가 제한된다.</li>
@@ -108,7 +128,7 @@
 </div>
 
 <div class="item">
-  <h3>AI's impact on software engineers in 2026: key trends, Part 2</h3>
+  <h3>AI's impact on software engineers in 2026: key trends, Part 2 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>엔지니어 설문을 바탕으로 AI 도구 사용률·생산성 체감 변화를 정량화했다.</li>
     <li>개인 생산성 향상과 팀·조직 차원 도입 장벽 사이의 괴리가 뚜렷하다.</li>
@@ -118,7 +138,7 @@
 </div>
 
 <div class="item">
-  <h3>AI 도입, 섹시한 기술에 숨겨진 '섹시하지 않은' 성공 법칙</h3>
+  <h3>AI 도입, 섹시한 기술에 숨겨진 '섹시하지 않은' 성공 법칙 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>많은 기업 AI 프로젝트가 파일럿에 머물며 ROI가 불분명한 상태다.</li>
     <li>화려한 모델보다 데이터·프로세스·거버넌스 정비가 성공의 전제 조건이다.</li>
@@ -126,16 +146,13 @@
   </ul>
   <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3762">원문 보기</a></p>
 </div>
-</section>
-
-<section class="category">
-<h2>AI Risk &amp; Regulation</h2>
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
 <div class="topics">
   <span class="topic">AI 규제</span><span class="topic">보안</span><span class="topic">프라이버시</span><span class="topic">신뢰성</span><span class="topic">위임</span>
 </div>
 
 <div class="item">
-  <h3>백악관, 첨단 모델 '90일 사전심사' 추진...업계는 14일 단축 요청</h3>
+  <h3>백악관, 첨단 모델 '90일 사전심사' 추진...업계는 14일 단축 요청 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>미국이 첨단 AI 모델 출시 전 최대 90일 사전심사를 도입하려 한다.</li>
     <li>국가안보·사이버보안 리스크를 근거로 글로벌 AI 규제 표준이 강화되는 흐름이다.</li>
@@ -145,7 +162,7 @@
 </div>
 
 <div class="item">
-  <h3>AI Paradox (2) | 보안 공격도 AI가 하는 시대, 기업 자산을 지키는 4가지 전략</h3>
+  <h3>AI Paradox (2) | 보안 공격도 AI가 하는 시대, 기업 자산을 지키는 4가지 전략 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>AI 기반 자동화 공격으로 위협 표면이 확대되고 있다.</li>
     <li>기존 보안 통제만으로는 AI 워크플로우·에이전트 리스크를 막기 어렵다.</li>
@@ -155,7 +172,7 @@
 </div>
 
 <div class="item">
-  <h3>Vega: Zero-knowledge proofs for digital identity in the age of AI</h3>
+  <h3>Vega: Zero-knowledge proofs for digital identity in the age of AI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>MS 리서치가 AI 시대 디지털 신원용 ZKP 솔루션 'Vega'를 공개했다.</li>
     <li>최소 정보만 검증해 프라이버시를 지키면서 실서비스 수준 성능을 목표로 한다.</li>
@@ -164,16 +181,13 @@
   <p class="source">출처: Microsoft Research Blog · <a href="https://www.microsoft.com/en-us/research/blog/vega-zero-knowledge-proofs-for-digital-identity-in-the-age-of-ai">원문 보기</a></p>
 </div>
 
-</section>
-
-<section class="category">
-<h2>Physical AI / Robotics</h2>
+<h2 class="cat-title">Physical AI / Robotics</h2>
 <div class="topics">
   <span class="topic">휴머노이드</span><span class="topic">우주 로봇</span><span class="topic">피지컬 AI</span>
 </div>
 
 <div class="item">
-  <h3>우주에서 일한다…팔 4개 달린 작업형 휴머노이드 등장</h3>
+  <h3>우주에서 일한다…팔 4개 달린 작업형 휴머노이드 등장 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>스위스 연구팀이 4팔 작업형 휴머노이드 '헬리오스'를 공개했다.</li>
     <li>무중력 환경의 위성 수리·우주기지 건설 등 극한 작업을 목표로 한다.</li>
@@ -183,7 +197,7 @@
 </div>
 
 <div class="item">
-  <h3>950억 투자 위로보틱스, 차별점은 '인간 데이터'로 휴머노이드 고도화</h3>
+  <h3>950억 투자 위로보틱스, 차별점은 '인간 데이터'로 휴머노이드 고도화 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
   <ul class="highlights">
     <li>위로보틱스가 950억원 규모 시리즈 B 투자를 유치했다.</li>
     <li>동적 환경에서 사람과 안전하게 협업하는 로봇 제어 기술이 차별점이다.</li>
@@ -193,7 +207,7 @@
 </div>
 
 <div class="item">
-  <h3>포티투닷, 차량용 음성 AI 에이전트 '글레오 AI' 공개</h3>
+  <h3>포티투닷, 차량용 음성 AI 에이전트 '글레오 AI' 공개 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
   <ul class="highlights">
     <li>LLM 기반 차량용 음성 AI 에이전트 '글레오 AI' 개발을 완료했다.</li>
     <li>현대차 '더 뉴 그랜저'에 최초 적용되며 자연어 차량 제어가 가능해졌다.</li>
@@ -201,16 +215,13 @@
   </ul>
   <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=210813">원문 보기</a></p>
 </div>
-</section>
-
-<section class="category">
-<h2>빅테크 리서치 블로그</h2>
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
 <div class="topics">
   <span class="topic">Google I/O</span><span class="topic">OpenAI</span><span class="topic">제미나이</span><span class="topic">NVIDIA</span><span class="topic">Anthropic</span>
 </div>
 
 <div class="item">
-  <h3>Gemini가 구글을 먹어치우는 중입니다: 구글 I/O 2026 총정리</h3>
+  <h3>Gemini가 구글을 먹어치우는 중입니다: 구글 I/O 2026 총정리 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>I/O 2026에서 제미나이 3.5·옴니·코딩·자율 에이전트 등 전 제품군 통합을 발표했다.</li>
     <li>검색·결제·XR까지 '제미나이 everywhere' 전략이 구체화됐다.</li>
@@ -220,7 +231,7 @@
 </div>
 
 <div class="item">
-  <h3>오픈AI, 추론 모델로 80년 된 기하학 난제 해결...&quot;수학계 검증 거쳐&quot;</h3>
+  <h3>오픈AI, 추론 모델로 80년 된 기하학 난제 해결...&quot;수학계 검증 거쳐&quot; <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>오픈AI 추론 모델이 80년 미해결 기하학 난제의 반례를 제시했다.</li>
     <li>수학계 검증을 거치며 AI의 과학 연구 기여 가능성이 입증되는 단계다.</li>
@@ -230,7 +241,7 @@
 </div>
 
 <div class="item">
-  <h3>안드레 카파시는, 왜 지금 엔트로픽에 갔나</h3>
+  <h3>안드레 카파시는, 왜 지금 엔트로픽에 갔나 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>안드레 카파시가 앤트로픽에 합류해 '클로드로 클로드 훈련' 팀을 이끈다.</li>
     <li>모델 자기개선·자율 학습 루프에 대한 업계 기대가 다시 높아졌다.</li>
@@ -238,16 +249,13 @@
   </ul>
   <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3769">원문 보기</a></p>
 </div>
-</section>
-
-<section class="category">
-<h2>국내 연구기관·정책</h2>
+<h2 class="cat-title">국내 연구기관·정책</h2>
 <div class="topics">
   <span class="topic">AI 허브</span><span class="topic">국가 정책</span><span class="topic">글로벌 협력</span>
 </div>
 
 <div class="item">
-  <h3>정부, 글로벌 AI 허브 구축…"AI로 지구 문제 해결 추진"</h3>
+  <h3>정부, 글로벌 AI 허브 구축…"AI로 지구 문제 해결 추진" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>정부·국제기구가 '글로벌 AI 허브' 비전을 공식 선포했다.</li>
     <li>기후·보건 등 글로벌 난제 해결을 AI 협력의 우선 과제로 설정했다.</li>
@@ -257,7 +265,7 @@
 </div>
 
 <div class="item">
-  <h3>[CAIO 포럼] 지용구 더존비즈온 공동대표 "AI 시대, CEO는 'CXO'가 되어야"</h3>
+  <h3>[CAIO 포럼] 지용구 더존비즈온 공동대표 "AI 시대, CEO는 'CXO'가 되어야" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
   <ul class="highlights">
     <li>국내 대표 기업 CEO가 AI 시대 리더십 모델을 공개 포럼에서 제시했다.</li>
     <li>CEO가 CXO·CAIO 역할을 통합해 AI 거버넌스를 직접 책임져야 한다는 주장이다.</li>
@@ -265,7 +273,5 @@
   </ul>
   <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260521000414">원문 보기</a></p>
 </div>
-</section>
-
 </body>
 </html>
