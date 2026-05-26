@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 ({{DATE_YYYY_MM_DD}})</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스 — 중요도 핵심</h1>
+<div class="meta">발행일 {{DATE_YYYY_MM_DD}} · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>{{HEADLINE_1_TITLE}}</strong> — {{HEADLINE_1_SUMMARY}}</div>
+<div class="headline">② <strong>{{HEADLINE_2_TITLE}}</strong> — {{HEADLINE_2_SUMMARY}}</div>
+<div class="headline">③ <strong>{{HEADLINE_3_TITLE}}</strong> — {{HEADLINE_3_SUMMARY}}</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄 + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">{{AI_INFRA_TOPICS}}</div>
+{{AI_INFRA_ITEMS}}
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">{{ENTERPRISE_TOPICS}}</div>
+{{ENTERPRISE_ITEMS}}
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">{{AGENT_TOPICS}}</div>
+{{AGENT_ITEMS}}
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">{{RISK_TOPICS}}</div>
+{{RISK_ITEMS}}
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">{{PHYSICAL_TOPICS}}</div>
+{{PHYSICAL_ITEMS}}
+<p class="category-note">{{PHYSICAL_NOTE_OPTIONAL}}</p>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+{{BIGTECH_SECTION_OPTIONAL}}
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">{{SOFTWARE_TOPICS}}</div>
+{{SOFTWARE_ITEMS}}
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics">{{KOREA_TOPICS}}</div>
+{{KOREA_ITEMS}}
+<p class="category-note">{{KOREA_NOTE_OPTIONAL}}</p>
+
+</body>
+</html>
+
