@@ -17,7 +17,7 @@
     --muted: #5f636b;
     --faint: #9aa0a8;
     --line: rgba(0,0,0,0.09);
-    --accent: #2563eb;            /* 차분한 블루 액센트 */
+    --accent: #2563eb;
     --sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   }
   * { box-sizing: border-box; }
@@ -33,16 +33,29 @@
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
   }
-  /* 은은한 상단 그라데이션 분위기 */
   body::before {
     content: ""; position: fixed; inset: 0 0 auto 0; height: 320px;
     background: radial-gradient(120% 100% at 50% 0%, rgba(37,99,235,0.05), transparent 70%);
     pointer-events: none; z-index: 0;
   }
-  .wrap { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .wrap { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
-  /* 마스트헤드 */
-  header.masthead { padding: 64px 0 28px; }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    grid-template-areas:
+      "head side"
+      "main side"
+      "foot side";
+    gap: 0 48px;
+    align-items: start;
+  }
+  header.masthead { grid-area: head; }
+  .sidebar { grid-area: side; }
+  .main-body { grid-area: main; min-width: 0; }
+  .page-foot { grid-area: foot; }
+
+  header.masthead { padding: 64px 0 28px; min-width: 0; }
   .kicker { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
   header.masthead h1 { font-size: 40px; line-height: 1.1; margin: 0; font-weight: 800; letter-spacing: -0.02em; }
   header.masthead p {
@@ -53,7 +66,83 @@
     white-space: nowrap;
   }
 
-  /* 목록 */
+  /* 우측 필터 */
+  .sidebar {
+    position: sticky;
+    top: 32px;
+    padding-top: 64px;
+  }
+  .toolbar {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .toolbar-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 16px;
+  }
+  .field { margin-bottom: 16px; }
+  .field:last-of-type { margin-bottom: 0; }
+  .field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .field input,
+  .field select {
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .field input::placeholder { color: var(--faint); }
+  .field input:focus,
+  .field select:focus {
+    border-color: rgba(37, 99, 235, 0.45);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+  }
+  .field select:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .filter-reset {
+    width: 100%;
+    margin-top: 14px;
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .filter-reset:hover {
+    color: var(--text);
+    border-color: rgba(0, 0, 0, 0.18);
+  }
+  .filter-count {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--faint);
+    text-align: center;
+  }
+
   .feed { padding: 8px 0 0; }
   .card {
     display: block; text-decoration: none; color: inherit;
@@ -71,7 +160,6 @@
   .card .desc { color: var(--muted); font-size: 15px; margin: 0; }
   .card .more { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 13px; color: var(--faint); transition: color 0.18s ease, gap 0.18s ease; }
   .card .more svg { width: 14px; height: 14px; }
-  /* 호버: 제목 골드, 화살표 전진 */
   .card:hover h2 { color: var(--accent); }
   .card:hover .more { color: var(--accent); gap: 11px; }
   .feed .card:last-child { border-bottom: none; }
@@ -79,6 +167,7 @@
   .eye { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; opacity: 0.7; }
 
   .empty { color: var(--muted); padding: 60px 0; text-align: center; }
+  .empty-filter { color: var(--muted); padding: 40px 0 20px; font-size: 15px; }
 
   .feedback {
     text-align: center;
@@ -104,37 +193,101 @@
   footer { color: var(--faint); font-size: 12px; padding: 0 0 56px; text-align: center; }
 
   @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 900px) {
+    .layout {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "head"
+        "side"
+        "main"
+        "foot";
+      gap: 0;
+    }
+    .sidebar {
+      position: static;
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
+    header.masthead { padding-top: 48px; }
+    .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+    .toolbar-title { grid-column: 1 / -1; margin-bottom: 4px; }
+    .field { margin-bottom: 0; }
+    .filter-reset { grid-column: 1 / -1; margin-top: 4px; }
+    .filter-count { grid-column: 1 / -1; margin-top: 0; }
+  }
+
   @media (max-width: 520px) {
     header.masthead h1 { font-size: 30px; }
     header.masthead p { white-space: normal; font-size: 13px; }
     .card h2 { font-size: 19px; }
+    .toolbar { grid-template-columns: 1fr; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="layout">
 
-  <header class="masthead">
-    <p class="kicker">E-LAND INNOple · Weekly</p>
-    <h1>AI/IT 트렌드 위클리</h1>
-    <p>매주 한 주의 AI·IT 흐름을 6개 카테고리로 선별해 정리합니다. 카드를 누르면 그 주 리포트 전문이 열립니다.</p>
-  </header>
+    <header class="masthead">
+      <p class="kicker">E-LAND INNOple · Weekly</p>
+      <h1>AI/IT 트렌드 위클리</h1>
+      <p>매주 한 주의 AI·IT 흐름을 6개 카테고리로 선별해 정리합니다. 카드를 누르면 그 주 리포트 전문이 열립니다.</p>
+    </header>
 
-  <main class="feed" id="feed">
-    <div class="empty" id="empty" hidden>아직 발행된 리포트가 없습니다.</div>
-  </main>
+    <aside class="sidebar" aria-label="리포트 검색·필터">
+      <div class="toolbar">
+        <p class="toolbar-title">리포트 찾기</p>
+        <div class="field">
+          <label for="searchInput">검색</label>
+          <input type="search" id="searchInput" placeholder="제목·요약 키워드" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="periodSelect">기간</label>
+          <select id="periodSelect">
+            <option value="all">전체</option>
+            <option value="1m">최근 1개월</option>
+            <option value="3m">최근 3개월</option>
+            <option value="6m">최근 6개월</option>
+            <option value="12m">최근 1년</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="yearSelect">연도</label>
+          <select id="yearSelect">
+            <option value="">전체 연도</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="monthSelect">월</label>
+          <select id="monthSelect" disabled>
+            <option value="">전체 월</option>
+          </select>
+        </div>
+        <button type="button" class="filter-reset" id="filterReset">필터 초기화</button>
+        <p class="filter-count" id="filterCount" hidden></p>
+      </div>
+    </aside>
 
-  <section class="feedback" aria-label="피드백">
-    <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
-    <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
-  </section>
+    <div class="main-body">
+      <main class="feed" id="feed">
+        <div class="empty" id="empty" hidden>아직 발행된 리포트가 없습니다.</div>
+        <p class="empty-filter" id="emptyFilter" hidden>조건에 맞는 리포트가 없습니다.</p>
+      </main>
+    </div>
 
-  <footer id="footer"></footer>
+    <div class="page-foot">
+      <section class="feedback" aria-label="피드백">
+        <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+        <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+      </section>
+      <footer id="footer"></footer>
+    </div>
+
+  </div>
 </div>
 
 <script>
-  // 보기용 시드 — data/reports.json 을 못 읽을 때(파일 직접 열기 등) 대비한 폴백.
-  // 실제 운영에서는 data/reports.json 이 최신 목록이 됩니다.
   const SEED = [
     {
       id: "2026-05-22",
@@ -149,28 +302,134 @@
   const EYE = '<svg class="eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>';
   const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 
+  let allReports = [];
+
+  const searchInput = document.getElementById('searchInput');
+  const periodSelect = document.getElementById('periodSelect');
+  const yearSelect = document.getElementById('yearSelect');
+  const monthSelect = document.getElementById('monthSelect');
+  const filterReset = document.getElementById('filterReset');
+  const filterCount = document.getElementById('filterCount');
+
   function fmtDate(iso) {
-    const d = new Date(iso);
+    const d = new Date(iso + 'T12:00:00');
     if (isNaN(d)) return iso;
     return `${d.getFullYear()}년 ${String(d.getMonth()+1).padStart(2,'0')}월 ${String(d.getDate()).padStart(2,'0')}일`;
   }
 
-  // 날짜 → "2026년 5월 4주차" (매월 1~7일=1주차, 8~14일=2주차 …)
   function weekLabel(iso) {
-    const d = new Date(iso);
+    const d = new Date(iso + 'T12:00:00');
     if (isNaN(d)) return '';
     const week = Math.ceil(d.getDate() / 7);
     return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${week}주차`;
   }
 
+  function parseReportDate(iso) {
+    const d = new Date(iso + 'T12:00:00');
+    return isNaN(d) ? null : d;
+  }
+
+  function addMonths(date, months) {
+    const d = new Date(date);
+    d.setMonth(d.getMonth() - months);
+    return d;
+  }
+
+  function isFilterActive() {
+    return (
+      searchInput.value.trim() !== '' ||
+      periodSelect.value !== 'all' ||
+      yearSelect.value !== '' ||
+      monthSelect.value !== ''
+    );
+  }
+
+  function populateYearMonthOptions(reports) {
+    const years = [...new Set(reports.map(r => r.date.slice(0, 4)))].sort((a, b) => b.localeCompare(a));
+    yearSelect.innerHTML = '<option value="">전체 연도</option>' +
+      years.map(y => `<option value="${y}">${y}년</option>`).join('');
+    updateMonthOptions(reports);
+  }
+
+  function updateMonthOptions(reports) {
+    const year = yearSelect.value;
+    monthSelect.innerHTML = '<option value="">전체 월</option>';
+    if (!year) {
+      monthSelect.disabled = true;
+      monthSelect.value = '';
+      return;
+    }
+    const months = [...new Set(
+      reports.filter(r => r.date.startsWith(year)).map(r => r.date.slice(5, 7))
+    )].sort((a, b) => b.localeCompare(a));
+    months.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m;
+      opt.textContent = `${Number(m)}월`;
+      monthSelect.appendChild(opt);
+    });
+    monthSelect.disabled = months.length === 0;
+  }
+
+  function filterReports(reports) {
+    const q = searchInput.value.trim().toLowerCase();
+    const period = periodSelect.value;
+    const year = yearSelect.value;
+    const month = monthSelect.value;
+    const now = new Date();
+
+    return reports.filter(r => {
+      const d = parseReportDate(r.date);
+      if (!d) return false;
+
+      if (q) {
+        const wl = weekLabel(r.date);
+        const haystack = `${wl} ${r.title} ${r.summary || ''}`.toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
+
+      if (period !== 'all') {
+        const monthsMap = { '1m': 1, '3m': 3, '6m': 6, '12m': 12 };
+        const cutoff = addMonths(now, monthsMap[period]);
+        if (d < cutoff) return false;
+      }
+
+      if (year && !r.date.startsWith(year)) return false;
+      if (month && r.date.slice(5, 7) !== month) return false;
+
+      return true;
+    });
+  }
+
   function render(reports) {
     const feed = document.getElementById('feed');
     const empty = document.getElementById('empty');
-    // 최신순 정렬
-    reports.sort((a, b) => (a.date < b.date ? 1 : -1));
-    if (!reports.length) { empty.hidden = false; return; }
+    const emptyFilter = document.getElementById('emptyFilter');
 
-    reports.forEach((r, i) => {
+    feed.querySelectorAll('.card').forEach(el => el.remove());
+
+    const sorted = [...reports].sort((a, b) => (a.date < b.date ? 1 : -1));
+    const hasCatalog = allReports.length > 0;
+    const active = isFilterActive();
+
+    empty.hidden = hasCatalog;
+    emptyFilter.hidden = true;
+
+    if (!hasCatalog) return;
+
+    if (!sorted.length) {
+      emptyFilter.hidden = !active;
+      filterCount.hidden = !active;
+      if (active) {
+        filterCount.textContent = '검색 결과 0개';
+        filterCount.hidden = false;
+      }
+      document.getElementById('footer').textContent =
+        `총 ${allReports.length}개 리포트 · 최종 업데이트 ${fmtDate(allReports[0].date)}`;
+      return;
+    }
+
+    sorted.forEach((r, i) => {
       const a = document.createElement('a');
       a.className = 'card';
       a.href = r.file;
@@ -185,9 +444,44 @@
         <span class="more">리포트 열기 ${ARROW}</span>`;
       feed.appendChild(a);
     });
-    document.getElementById('footer').textContent =
-      `총 ${reports.length}개 리포트 · 최종 업데이트 ${fmtDate(reports[0].date)}`;
+
+    const latest = [...allReports].sort((a, b) => (a.date < b.date ? 1 : -1))[0];
+    let footerText = `총 ${allReports.length}개 리포트 · 최종 업데이트 ${fmtDate(latest.date)}`;
+    if (active && sorted.length !== allReports.length) {
+      footerText = `검색 결과 ${sorted.length}개 · ${footerText}`;
+    }
+    document.getElementById('footer').textContent = footerText;
+
+    if (active) {
+      filterCount.textContent = `검색 결과 ${sorted.length}개`;
+      filterCount.hidden = false;
+    } else {
+      filterCount.hidden = true;
+    }
   }
+
+  function applyFilters() {
+    render(filterReports(allReports));
+  }
+
+  function resetFilters() {
+    searchInput.value = '';
+    periodSelect.value = 'all';
+    yearSelect.value = '';
+    updateMonthOptions(allReports);
+    monthSelect.value = '';
+    applyFilters();
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+  periodSelect.addEventListener('change', applyFilters);
+  yearSelect.addEventListener('change', () => {
+    updateMonthOptions(allReports);
+    monthSelect.value = '';
+    applyFilters();
+  });
+  monthSelect.addEventListener('change', applyFilters);
+  filterReset.addEventListener('click', resetFilters);
 
   (async () => {
     let reports = SEED;
@@ -197,10 +491,11 @@
         const data = await res.json();
         if (Array.isArray(data) && data.length) reports = data;
       }
-    } catch (e) {
-      // 폴백(SEED) 사용
-    }
-    render(reports);
+    } catch (e) { /* SEED */ }
+
+    allReports = [...reports].sort((a, b) => (a.date < b.date ? 1 : -1));
+    populateYearMonthOptions(allReports);
+    applyFilters();
   })();
 </script>
 </body>
