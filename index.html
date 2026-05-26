@@ -79,7 +79,29 @@
 
   .empty { color: var(--muted); padding: 60px 0; text-align: center; }
 
-  footer { color: var(--faint); font-size: 12px; padding: 28px 0 56px; }
+  .feedback {
+    text-align: center;
+    padding: 40px 0 32px;
+    margin-top: 8px;
+    border-top: 1px solid var(--line);
+  }
+  .feedback p { color: var(--muted); font-size: 15px; margin: 0 0 16px; }
+  .feedback-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.18s ease;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+
+  footer { color: var(--faint); font-size: 12px; padding: 0 0 56px; text-align: center; }
 
   @keyframes rise { to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 520px) {
@@ -101,6 +123,11 @@
   <main class="feed" id="feed">
     <div class="empty" id="empty" hidden>아직 발행된 리포트가 없습니다.</div>
   </main>
+
+  <section class="feedback" aria-label="피드백">
+    <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+    <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+  </section>
 
   <footer id="footer"></footer>
 </div>

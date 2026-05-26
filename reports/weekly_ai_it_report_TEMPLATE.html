@@ -66,6 +66,24 @@
     color: #374151;
   }
   a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
 </style>
 </head>
 <body>
@@ -118,6 +136,11 @@
 <div class="topics">{{KOREA_TOPICS}}</div>
 {{KOREA_ITEMS}}
 <p class="category-note">{{KOREA_NOTE_OPTIONAL}}</p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
 
 </body>
 </html>
