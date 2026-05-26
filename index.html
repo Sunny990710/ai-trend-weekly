@@ -45,7 +45,13 @@
   header.masthead { padding: 64px 0 28px; border-bottom: 1px solid var(--line); }
   .kicker { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
   header.masthead h1 { font-size: 40px; line-height: 1.1; margin: 0; font-weight: 800; letter-spacing: -0.02em; }
-  header.masthead p { color: var(--muted); margin: 12px 0 0; font-size: 15px; max-width: 48ch; }
+  header.masthead p {
+    color: var(--muted);
+    margin: 12px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
 
   /* 목록 */
   .feed { padding: 8px 0 80px; }
@@ -73,11 +79,12 @@
 
   .empty { color: var(--muted); padding: 60px 0; text-align: center; }
 
-  footer { color: var(--faint); font-size: 12px; padding: 28px 0 56px; border-top: 1px solid var(--line); }
+  footer { color: var(--faint); font-size: 12px; padding: 28px 0 56px; }
 
   @keyframes rise { to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 520px) {
     header.masthead h1 { font-size: 30px; }
+    header.masthead p { white-space: normal; font-size: 13px; }
     .card h2 { font-size: 19px; }
   }
 </style>
