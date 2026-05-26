@@ -68,44 +68,46 @@
   .toolbar {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 12px;
+    gap: 6px 8px;
     justify-content: flex-end;
     align-items: center;
-    padding: 4px 0 24px;
+    padding: 0 0 18px;
   }
   .toolbar-search {
-    flex: 1 1 220px;
-    max-width: 300px;
+    flex: 0 1 168px;
+    max-width: 200px;
     min-width: 0;
     position: relative;
   }
   .toolbar-search svg {
     position: absolute;
-    left: 12px;
+    left: 9px;
     top: 50%;
     transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
     color: var(--faint);
     pointer-events: none;
   }
   .toolbar input[type="search"],
   .toolbar input[type="date"] {
     font-family: inherit;
-    font-size: 13px;
-    padding: 9px 12px;
+    font-size: 12px;
+    padding: 5px 8px;
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 6px;
     background: var(--surface);
     color: var(--text);
     width: 100%;
+    height: 30px;
   }
   .toolbar input[type="search"] {
-    padding-left: 36px;
+    padding-left: 28px;
   }
   .toolbar input[type="date"] {
     width: auto;
-    min-width: 132px;
+    min-width: 108px;
+    padding: 4px 6px;
   }
   .toolbar input:focus {
     outline: 2px solid rgba(37, 99, 235, 0.2);
@@ -115,16 +117,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
   }
-  .toolbar-dates .sep { color: var(--faint); font-size: 13px; }
+  .toolbar-dates .sep { color: var(--faint); font-size: 11px; }
   .toolbar-reset {
     font-family: inherit;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
-    padding: 9px 14px;
+    padding: 5px 10px;
+    height: 30px;
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 6px;
     background: var(--bg);
     color: var(--muted);
     cursor: pointer;
