@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-05-29)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-05-29 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>NVIDIA 'AI 팩토리'·베라 CPU</strong> — AI 팩토리와 차세대 Vera CPU로 와트당 성능·토큰당 비용 중심의 인프라 경제학을 재정의하며 인프라 패권을 강화함</div>
+<div class="headline">② <strong>엔터프라이즈 AI 에이전트 현장 확산</strong> — SKT '에이닷 비즈 코워크', GitHub 가트너 3년 연속 리더, ITBench-AA 등 에이전트가 생산성 영역으로 빠르게 확산되는 한편 50% 미만 벤치마크·토큰 비용 회의론도 부상함</div>
+<div class="headline">③ <strong>AI 보안·규제 의제 본격화</strong> — 2027년 독자 AI 보안체계, 중국 '예측 치안', LLM 비결정론·할루시네이션 논의가 맞물리며 리스크·규제가 정책 단계로 진입함</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">현장 AX</span><span class="topic">코워크</span><span class="topic">토큰 비용</span><span class="topic">AI 협업</span>
+</div>
+
+<div class="item">
+  <h3>SKT, 현장 중심형 AX 본격화 — '에이닷 비즈 코워크' 베타 출시 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT가 구성원이 직접 업무 방식을 학습시키는 AI 에이전트 '에이닷 비즈 코워크' 베타를 출시함</li>
+    <li>코딩 없이 반복 업무를 자동화하고 사내 협업 도구와 연동되어 현장 중심 AX 혁신을 가속함</li>
+    <li>'현장에서 만든 에이전트'를 전사 표준 워크플로로 끌어올리는 운영 모델을 본격화함</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/225370">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>[5월28일] 토큰 맥싱이 '남의 집 불구경'이 아닌 이유 — AI 챗봇·에이전트의 비용 차이 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트의 토큰 사용량 폭증으로 비용 효율성에 대한 회의론이 빠르게 부상함</li>
+    <li>우버 COO 등은 무분별한 토큰 맥싱이 직접적인 생산성 향상으로 이어지지 않는다고 지적함</li>
+    <li>비용 모니터링·토큰 거버넌스가 에이전트 확산기의 핵심 운영 과제로 떠오름</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211017">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Anthropic 엔지니어가 정리한 AI와 일하는 5가지 원칙 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Anthropic 엔지니어가 AI와 협업해 성과를 축적하기 위한 5가지 원칙을 정리해 공개함</li>
+    <li>로컬 LLM 도구, Microsoft의 AI 에이전트 강좌 등 실무 활용 자원도 함께 소개됨</li>
+    <li>'AI 사용 습관'을 팀 규범 수준으로 끌어올리는 실천적 가이드라인으로 활용 가능함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3767">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">AI 팩토리</span><span class="topic">Vera CPU</span><span class="topic">추론 인프라</span><span class="topic">토큰 경제</span>
+</div>
+
+<div class="item">
+  <h3>AI Factories: The New Infrastructure of Intelligence <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA는 AI 팩토리를 '전력을 지능으로 변환하는 토큰 팩토리'로 정의하며 인프라 패러다임 전환을 강조함</li>
+    <li>에이전트 AI 확장에 따라 와트당 성능과 토큰당 비용이 새로운 경제학의 핵심 축이 됨을 제시함</li>
+    <li>대규모 추론·학습 워크로드를 통합 운용하기 위한 인프라 설계·운영 전략을 구체화함</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/ai-factories-the-new-infrastructure-of-intelligence">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Vera CPU Is 'Packing a Heavy-Hitting Punch' Against Competition <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA가 에이전트 AI 시대의 AI 팩토리를 겨냥한 신규 CPU '베라(Vera)'를 공개함</li>
+    <li>고성능 코어와 대규모 메모리 대역폭을 결합해 추론·에이전트 워크로드 처리를 최적화함</li>
+    <li>초기 벤치마크에서 경쟁 제품 대비 우수한 성능을 입증하며 CPU 시장 판도 변화를 예고함</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/vera-cpu-phoronix">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">코딩 에이전트</span><span class="topic">벤치마크</span><span class="topic">데이터 분석</span><span class="topic">엔터프라이즈</span>
+</div>
+
+<div class="item">
+  <h3>GitHub, 가트너 Magic Quadrant 엔터프라이즈 AI 코딩 에이전트 3년 연속 리더 선정 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub가 가트너 Magic Quadrant 엔터프라이즈 AI 코딩 에이전트 부문에서 3년 연속 리더로 선정됨</li>
+    <li>AI 기반 소프트웨어 개발 플랫폼으로서 시장 지배력과 기업 도입 신뢰도를 다시 한 번 확인함</li>
+    <li>Copilot 기반 코딩 에이전트 확산이 엔터프라이즈 표준 옵션으로 자리잡고 있음을 시사함</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>ITBench-AA: Frontier 모델, 첫 기업 IT 에이전틱 벤치마크에서 50% 미만 기록 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>IBM과 Artificial Analysis가 기업 IT 업무용 AI 에이전트 첫 벤치마크 'ITBench-AA'를 공개함</li>
+    <li>최신 프론티어 모델들이 모두 50% 미만 점수를 기록하며 기업 환경에서의 한계를 드러냄</li>
+    <li>도메인 전문성·툴 사용 신뢰성이 모델 성능을 가르는 핵심 변수임을 데이터로 확인함</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/ibm-research/itbench-aa">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Data Formulator 0.7: 엔터프라이즈 데이터용 AI 분석 도구 공개 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Microsoft Research가 엔터프라이즈 데이터 워크플로우용 AI 분석 도구 'Data Formulator 0.7'을 공개함</li>
+    <li>AI 에이전트가 원시 데이터를 실행 가능한 인사이트로 자동 전환하도록 설계됨</li>
+    <li>분석·시각화·리포트 단계를 통합해 비기술 사용자도 데이터 활용을 가속할 수 있음</li>
+  </ul>
+  <p class="source">출처: Microsoft Research Blog · <a href="https://www.microsoft.com/en-us/research/blog/data-formulator-0-7-ai-powered-data-analytics-for-enterprise-data">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">AI 코딩</span><span class="topic">바이브 코딩</span><span class="topic">오픈소스</span>
+</div>
+
+<div class="item">
+  <h3>정말로 지금은 Codex가 Claude Code보다 나을까? <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Claude Code와 Codex 두 AI 코딩 도구의 성능을 공식 자료·외부 측정·개인 분석을 종합 비교함</li>
+    <li>벤치마크 vs. 실사용 경험 간의 격차가 도구 선택의 핵심 변수임을 보여줌</li>
+    <li>개발 워크플로에 맞춘 다중 에이전트(혼합 사용) 전략의 필요성을 시사함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3771">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>바이브 코딩으로 7일간 900커밋 — 디자이너의 앱 출시기 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>한 디자이너가 Claude 등 AI 코딩 도구를 활용해 7일 만에 900커밋을 달성하고 앱스토어 출시까지 마침</li>
+    <li>기획·개발·문제 해결 전 과정에서 AI를 어떻게 활용했는지 단계별 사례를 공유함</li>
+    <li>'비개발자의 풀스택 빌드' 시대가 실제 출시 사례로 검증되고 있음을 보여줌</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3774">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Building OpenCode with Dax Raad <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>OpenCode 공동창립자 Dax Raad가 AI 코딩 도구의 급성장과 현실적 한계를 짚음</li>
+    <li>자동화가 깊어질수록 엔지니어링 판단력·아키텍처 의사결정의 가치가 더 커짐을 강조함</li>
+    <li>오픈소스 AI 코딩 생태계의 성숙도가 상용 도구를 빠르게 추격하고 있음을 보여줌</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/opencode">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">Sim-to-Real</span><span class="topic">온디바이스</span><span class="topic">피지컬 AI</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Research, 시뮬레이션-실세계 전이 로보틱스 연구 성과 발표 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA Research가 국제 로봇 자동화 컨퍼런스(ICRA)에서 신규 로보틱스 연구 성과를 공개함</li>
+    <li>시뮬레이션-실세계 전이(Sim-to-Real) 기술로 로봇의 일반화 능력과 자율성을 강화하는 방향임</li>
+    <li>피지컬 AI 영역에서 NVIDIA의 풀스택 전략(칩·툴·플랫폼)이 점점 더 구체화되고 있음</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Reachy Mini, 전 기능 로컬 처리로 진화 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>오픈소스 로봇 'Reachy Mini'가 모든 기능을 클라우드 의존 없이 로컬에서 처리하도록 업데이트됨</li>
+    <li>네트워크 단절·프라이버시 환경에서도 안정적인 인터랙션이 가능해짐</li>
+    <li>온디바이스 LLM·로보틱스의 결합 흐름이 가정·교육·연구용 로봇 영역으로 확산되고 있음</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/local-reachy-mini-conversation">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">AI 보안</span><span class="topic">LLM 오류</span><span class="topic">예측 치안</span><span class="topic">규제</span>
+</div>
+
+<div class="item">
+  <h3>'미토스 충격' 대응 — 정부, 2027년 독자 AI 보안체계 구축 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>정부가 Anthropic 'Claude 미토스'급 고도화 AI의 사이버 위협에 대응해 보안 전략을 재설계함</li>
+    <li>2027년까지 독자적인 AI 기반 사이버 보안 체계 구축을 공식 목표로 제시함</li>
+    <li>국가 차원의 AI 위협 모델링과 대응 체계가 정책 의제로 본격 진입함</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260529000173">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>AI는 왜 자꾸 틀리는가 — LLM 비결정론과 PM 역할의 변화 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LLM이 '가장 그럴듯한 답변'을 생성하는 본질적 특성이 오류와 법적 분쟁의 근본 원인임을 진단함</li>
+    <li>비결정론적 특성으로 AI 프로덕트의 테스트·실패·비용 구조가 기존 SW와 근본적으로 달라짐</li>
+    <li>PM 역할이 '기능 정의자'에서 '리스크·실패 설계자'로 재편될 필요성이 강조됨</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3775">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>중국, 차세대 AI로 세계 최대 감시망 개편 — '예측 치안' 본격화 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>중국이 차세대 AI를 활용해 세계 최대 규모 감시망을 '예측 치안' 체계로 전면 개편 중임</li>
+    <li>사람의 행동을 분석해 잠재적 사회 불안을 실시간 예측하는 고도화된 사회 통제 능력이 구축됨</li>
+    <li>AI를 활용한 국가 감시·치안 모델이 글로벌 인권·규제 논쟁의 새로운 축으로 부상함</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211030">원문 보기</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
