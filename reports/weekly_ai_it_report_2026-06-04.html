@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-06-04)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-06-04 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>차세대 에이전트 모델 동시 출시</strong> — Anthropic Claude Opus 4.8, Mistral Vibe, 알리바바 큐원3.7-플러스 등이 같은 주에 공개되며 코딩·장기 에이전트 워크플로 경쟁이 본격화됨</div>
+<div class="headline">② <strong>AI 인프라 비용·자급 경제학 부상</strong> — 모건스탠리 'AI 칩플레이션' 경고, 우버의 월 1500달러 클로드 코드 한도, MS-엔비디아 컴퓨텍스 슈퍼칩 통합이 토큰·비용 거버넌스를 핵심 의제로 끌어올림</div>
+<div class="headline">③ <strong>AI 보안·정책 의제 동시 격화</strong> — SKT가 앤트로픽 글래스윙에 합류해 미토스 접근 권한을 확보하고, OpenAI가 공공 정책 의제를 발표하며 AI 보안·거버넌스가 글로벌 정책 단계로 진입함</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">상시 실행형 비서</span><span class="topic">모델 출시 경쟁</span><span class="topic">하이브리드 에이전트</span><span class="topic">장기 작업</span>
+</div>
+
+<div class="item">
+  <h3>MS, 상시 실행형 AI 비서 '스카우트' 발표…'오픈클로' 보안 한계 넘었다 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>마이크로소프트가 이메일·일정·문서 관리를 자율적으로 수행하는 상시 실행형 AI 비서 '스카우트'를 공개함</li>
+    <li>기업 환경에 최적화된 보안 모델로 기존 '오픈클로' 한계를 넘는 엔터프라이즈 에이전트 표준을 제시함</li>
+    <li>코파일럿 후속 라인업으로 일상 업무 전반에 AI 비서가 상주하는 단계로 진입함</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211274">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>알리바바, 하이브리드 에이전트 '큐원3.7-플러스' 공개 — 스스로 오류 수정하며 11시간 앱 개발 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>알리바바가 멀티모달 기능을 갖춘 신규 LLM '큐원3.7-플러스'를 공개하며 AI 에이전트 시장에 본격 진출함</li>
+    <li>스스로 오류를 수정하며 11시간 만에 앱 개발을 완료하는 자율 코딩 에이전트 능력을 시연함</li>
+    <li>중화권 빅테크가 프론티어 모델과 에이전트를 동시 출시하며 글로벌 경쟁 구도를 재편함</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211279">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing Claude Opus 4.8 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Anthropic이 코딩·에이전트 작업·전문 업무 성능을 강화한 'Claude Opus 4.8' 모델을 출시함</li>
+    <li>장기 작업을 일관되게 처리하도록 설계되어 멀티턴 워크플로 안정성을 끌어올림</li>
+    <li>'정직성'을 차별화 축으로 내세워 GPT-5.5·Codex 대비 주도권 회복에 나섬</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/claude-opus-4-8">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">칩플레이션</span><span class="topic">오픈 인프라</span><span class="topic">AI 노트북</span><span class="topic">비용 경제학</span>
+</div>
+
+<div class="item">
+  <h3>"AI 칩플레이션, 데이터센터 넘어 실물경제로 확산" 모건스탠리 경고 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>모건스탠리가 AI 수요 급증으로 인한 메모리 반도체 가격 급등을 '칩플레이션'으로 진단함</li>
+    <li>데이터센터 산업을 넘어 실물경제 전반의 인플레이션 위험으로 확산될 가능성을 경고함</li>
+    <li>토큰 비용·인프라 단가가 거시경제 변수로 부상하며 기업 AI 도입 ROI 재평가가 요구됨</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=664370">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Open by design: Ai2 brings fully open AI infrastructure online with NSF OMAI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Ai2가 미국 NSF OMAI 컴퓨팅을 기반으로 완전 개방형 AI 인프라를 온라인화함</li>
+    <li>모델 가중치·데이터·코드를 모두 공개해 폐쇄형 빅테크 인프라에 대한 공공 대안을 제시함</li>
+    <li>학계·정부·스타트업이 동등 조건에서 프론티어 모델을 학습할 수 있는 체계가 마련됨</li>
+  </ul>
+  <p class="source">출처: Ai2 News (Allen Institute) · <a href="https://allenai.org/blog/omai-compute-now-live">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>[컴퓨텍스 2026] MS "엔비디아 슈퍼칩 탑재 AI노트북 올 가을 출시" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>마이크로소프트가 엔비디아 'RTX 스파크' 슈퍼칩 탑재 AI 노트북을 올 가을 출시한다고 발표함</li>
+    <li>온디바이스 에이전트 실행을 겨냥한 하드웨어-소프트웨어 통합 전략을 본격화함</li>
+    <li>클라우드 추론 비용 부담을 분산하는 엣지 추론 인프라 흐름이 컨슈머 디바이스로 확장됨</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260603000201">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">토큰 비용 관리</span><span class="topic">자율 AI 엔지니어</span><span class="topic">엔터프라이즈 표준</span>
+</div>
+
+<div class="item">
+  <h3>우버, '클로드 코드' 과다 지출에 제동…"월 한도 230만원" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>우버가 AI 코딩 도구 과다 사용에 따른 예산 초과를 막기 위해 직원 1인당 월 1500달러 한도를 설정함</li>
+    <li>클로드 코드 등 에이전트형 도구의 토큰 비용 관리가 전사 거버넌스 의제로 떠오름</li>
+    <li>'AI 사용 한도제'가 엔터프라이즈에서 실질적인 비용 통제 모델로 자리 잡고 있음</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211290">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 산업 소프트웨어 리더들과 협력해 'NemoClaw' 기반 자율 AI 엔지니어를 구축함</li>
+    <li>산업 엔지니어링 워크플로 전반을 자동화하면서 보안·감사 가능한 에이전트 아키텍처를 제공함</li>
+    <li>제조·플랜트 도메인에서 도메인 특화 에이전트 운영 모델이 본격 등장함</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>AI Now Summit 2026 — 글로벌 엔터프라이즈 AI 전략 의제 정렬 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>전 세계 기업이 가장 어려운 비즈니스 문제를 AI로 해결하는 사례를 공유하는 컨퍼런스가 개최됨</li>
+    <li>엔터프라이즈 AI의 미래 방향과 전략 우선순위를 정렬하는 산업 의제 플랫폼으로 자리매김함</li>
+    <li>모델 자체보다 도메인 워크플로·운영 모델이 차별화 변수가 되는 흐름을 확인함</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/ai-now-summit-2026">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">풀스택 빌드</span><span class="topic">검색 인프라</span><span class="topic">데이터 기반 의사결정</span>
+</div>
+
+<div class="item">
+  <h3>비개발자가 한 달 동안 풀스택으로 개발하면서 배운 것 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>비개발자가 AI를 활용해 한 달 만에 프로덕션 서비스의 풀스택 백엔드·프론트엔드를 완성한 사례를 공유함</li>
+    <li>AI와 효과적으로 소통하는 능동적 자세가 도구 자체보다 결과를 좌우함을 강조함</li>
+    <li>'비개발자 풀스택 빌드' 모델이 실제 출시 단계까지 검증되는 흐름이 이어짐</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/0107009">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing Search Toolkit — Mistral, 프로덕션 검색 파이프라인용 오픈 툴킷 공개 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Mistral이 프로덕션 검색 파이프라인을 위한 'Search Toolkit'을 출시함</li>
+    <li>개발자가 어디서든 효율적인 검색·RAG 시스템을 구축·배포할 수 있도록 표준 컴포넌트를 제공함</li>
+    <li>RAG·에이전트 검색 인프라가 모델 출시 못지않은 경쟁 축으로 부상함</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/search-toolkit">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>데이터가 없으면 디자인을 어떻게 개선하나요? <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>UX/UI 디자이너가 데이터 부족 상황에서 개선 근거를 만드는 현실적 어려움을 짚음</li>
+    <li>정량 데이터 없이도 사용자 행동 가설·정성 신호로 의사결정을 이어가는 접근을 제안함</li>
+    <li>AI 도구가 데이터 수집·해석 단계를 일부 자동화하며 디자이너 워크플로를 보완함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3779">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">Cosmos 3</span><span class="topic">물리 AI 모델</span><span class="topic">조선 자동화</span><span class="topic">엔지니어링 가속</span>
+</div>
+
+<div class="item">
+  <h3>Welcome NVIDIA Cosmos 3 — The First Open Omni-model for Physical AI Reasoning and Action <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 물리 AI 추론·행동을 위한 최초의 오픈 옴니 모델 'Cosmos 3'를 공개함</li>
+    <li>자율주행·로봇·비전 AI를 아우르는 풀스택 물리 AI 파운데이션 모델로 자리매김함</li>
+    <li>Hugging Face와 함께 가중치를 공개해 오픈 생태계 기반 물리 AI 연구를 가속화함</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NC AI, 한화오션 최첨단 용접 로봇 AI 두뇌 개발한다 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NC AI가 한화오션과 협력해 조선업계 용접 자동화·자율화를 위한 로봇 AI 두뇌를 개발함</li>
+    <li>AI 비전 인식과 정밀 로봇 제어를 융합해 숙련공 의존도를 낮추는 것을 목표로 함</li>
+    <li>국내 중공업 영역에서 피지컬 AI가 실제 산업 라인 자동화로 본격 이행함</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260604000028">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing physics AI at Mistral — 엔지니어링 가속을 위한 물리 AI 파운데이션 공개 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Mistral이 물리 시스템의 동작을 예측하는 신규 AI 모델 '물리 AI'를 공개함</li>
+    <li>엔지니어링 시뮬레이션 가속과 향후 자체 하드웨어 제품의 기반 기술로 위치시킴</li>
+    <li>유럽 AI 기업이 LLM을 넘어 물리·산업 도메인 모델로 전선을 확장하는 흐름을 보여줌</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/introducing-physics-ai-at-mistral">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">미토스 쇼크</span><span class="topic">프로젝트 글래스윙</span><span class="topic">공공 정책</span><span class="topic">AI 사이버 위협</span>
+</div>
+
+<div class="item">
+  <h3>SKT, 앤트로픽 '프로젝트 글래스윙' 합류…미토스 접근 권한 획득 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK텔레콤이 앤트로픽의 AI 보안 협력 체계 '프로젝트 글래스윙'에 합류함</li>
+    <li>고성능 모델 '클로드 미토스'의 조기 접근 권한을 확보해 취약점 탐지·방어 협력을 본격화함</li>
+    <li>국내 통신·플랫폼 기업이 글로벌 AI 보안 거버넌스 협의체의 일원으로 자리잡음</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260604000054">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>미토스 쇼크는 현재진행형! 에이전틱 AI는 세상을 어떻게 바꿀까? <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>'미토스 쇼크' 이후 에이전트 AI가 스스로 취약점을 찾아 공격 경로를 설계하는 단계로 진입함</li>
+    <li>각국 정부·빅테크가 AI 기반 사이버 보안·안보 전략을 긴급 재편하고 있음</li>
+    <li>에이전틱 AI 리스크가 모델 정합성을 넘어 국가 안보 의제로 확장됨</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/mythos-shock-agentic-ai-impact">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI public policy agenda — 안전·청소년 보호·인력 전환·글로벌 표준 발표 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 AI 안전, 청소년 보호, 인력 전환, 글로벌 표준 등 공공 정책 의제를 공식 발표함</li>
+    <li>AI 빅테크가 정책 영역에서 의제 설정자로 활동하는 흐름이 가시화됨</li>
+    <li>모델 회사 주도 정책 프레임이 글로벌 규제 논의의 출발점으로 자리잡고 있음</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/public-policy-agenda">원문 보기</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
