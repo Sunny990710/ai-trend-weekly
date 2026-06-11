@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-06-11)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-06-11 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>빅테크 AI 팩토리 동맹 가속화</strong> — NVIDIA가 LG·두산·영국 정부와 손잡고 AI 팩토리와 Sovereign AI 인프라를 구축하며 글로벌 피지컬 AI 생태계 확장을 가속화함</div>
+<div class="headline">② <strong>엔터프라이즈 AI 표준 운영 전환</strong> — AWS·OpenAI·코히어가 AI-DLC, Oracle 클라우드 연동, 오픈소스 코딩 에이전트를 잇달아 발표하며 실험 단계를 넘어섬</div>
+<div class="headline">③ <strong>AI 보안 위협 본격화</strong> — 중국 연계 영향력 공작과 AI 사이버 위협 보고서가 동시에 공개되며 기업·정부의 리스크 관리 체계 재정비가 시급해짐</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">오픈소스 코딩</span><span class="topic">웹·코딩 에이전트</span><span class="topic">실무 큐레이션</span>
+</div>
+
+<div class="item">
+  <h3>코히어, 단일 GPU에서 작동하는 코딩 에이전트 '노스 미니 코드' 오픈소스 공개 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>코히어가 단일 GPU에서도 효율적으로 작동하는 오픈소스 코딩 에이전트 모델을 공개함</li>
+    <li>기업이 자체 인프라에서 코딩 에이전트를 운영할 수 있는 비용 효율적 대안을 제시함</li>
+    <li>온프레미스·프라이빗 환경 수요를 흡수하며 오픈소스 에이전트 생태계 확장을 가속화함</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211572">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>지금 진짜 쓸 만한 AI 에이전트 10가지 총정리(1) : 웹·코딩 에이전트 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>웹 에이전트(Manus, Genspark)와 코딩 에이전트(Claude Code, Codex 등) 10종을 실용성 기준으로 분류·정리함</li>
+    <li>기능·컨텍스트·도구·권한·트리거 다섯 축으로 분석해 도입 의사결정에 바로 활용 가능함</li>
+    <li>국내 실무자 관점의 실사용 후기 중심 비교로 PoC 후보 선정에 유용한 큐레이션임</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3786">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">Sovereign AI</span><span class="topic">로컬 추론</span><span class="topic">글로벌 인프라</span>
+</div>
+
+<div class="item">
+  <h3>How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>영국이 NVIDIA 기술을 기반으로 국가 차원의 Sovereign AI 인프라 구축을 가속화하며 자국 AI 주권 확보에 본격적으로 나섬</li>
+    <li>국내 AI 스타트업 육성, 슈퍼컴퓨팅 자원 확충, 데이터센터 신설 등 구체적 성과가 가시화되고 있음</li>
+    <li>한국 등 다른 국가의 Sovereign AI 전략 수립에도 시사점을 주는 정책-인프라-생태계 통합 사례로 평가됨</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Accelerates Google DeepMind's DiffusionGemma for Local AI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA가 Google DeepMind의 초고속 텍스트 생성 모델 'DiffusionGemma'를 자사 GPU에 최적화함</li>
+    <li>로컬 PC부터 클라우드까지 동일한 가속 스택으로 실행 가능해 온디바이스 LLM 활용 범위가 확장됨</li>
+    <li>경쟁이 치열한 디퓨전 기반 LLM 분야에서 NVIDIA가 추론 효율 표준을 선점하려는 움직임으로 해석됨</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">콘텐츠 안전</span><span class="topic">멀티클라우드</span><span class="topic">거버넌스</span>
+</div>
+
+<div class="item">
+  <h3>Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA가 기업용 멀티모달 콘텐츠 안전 모델 'Nemotron 3.5 Content Safety'를 공개함</li>
+    <li>지역·산업·정책별로 맞춤화 가능해 글로벌 엔터프라이즈의 AI 거버넌스 요구를 직접 겨냥함</li>
+    <li>안전성 모델이 단순 가드레일을 넘어 기업 표준 인프라 컴포넌트로 자리잡는 흐름을 보여줌</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Access OpenAI models and Codex through your Oracle cloud commitment <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI 모델과 Codex를 Oracle Cloud의 기존 약정으로 직접 사용 가능해짐</li>
+    <li>엔터프라이즈 보안·거버넌스 요구가 큰 금융·공공 부문 도입 장벽이 크게 낮아짐</li>
+    <li>하이퍼스케일러 간 LLM 채널 경쟁이 본격화되며 엔터프라이즈 멀티 클라우드 AI 전략의 핵심 변수가 되고 있음</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/openai-on-oracle-cloud">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">에이전트 네이티브</span><span class="topic">Codex 활용</span><span class="topic">코딩 모델</span>
+</div>
+
+<div class="item">
+  <h3>개발 하는데 '프롬프트'도 필요없어… AI가 스스로 코드를 짜는 시대 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>프롬프트 없이 AI가 스스로 작업 단위를 정의하고 코드를 생성하는 새로운 개발 패러다임이 부상하고 있음</li>
+    <li>기존 IDE·CI/CD 도구체인이 '에이전트 네이티브' 구조로 재편될 가능성이 제기됨</li>
+    <li>개발자 역할이 코드 작성에서 에이전트 설계·검증·운영으로 이동하는 변곡점을 시사함</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211577">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>What Codex unlocks for Notion <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Notion이 Codex를 사양 작성·웹 AI 음성 입력 개발·소규모 팀 생산성 향상에 활용한 사례를 공유함</li>
+    <li>소수 엔지니어로 다수 제품을 굴리는 'AI 레버리지 조직'의 구체적 운영 모델을 보여줌</li>
+    <li>Codex가 단순 보조 코딩 도구를 넘어 제품팀의 핵심 워크플로우에 통합되는 흐름이 확인됨</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/notion">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing North Mini Code: Cohere's First Model For Developers <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>코히어가 개발자 전용 첫 코드 모델 'North Mini Code'를 공개함</li>
+    <li>경량·온프레미스 친화적 설계로 기업 내부 코딩 에이전트 구축에 직접 활용 가능함</li>
+    <li>오픈소스 코딩 모델 경쟁이 Anthropic·OpenAI·Mistral·코히어로 다극화되는 흐름을 보여줌</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/CohereLabs/introducing-north-mini-code">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">AI 팩토리</span><span class="topic">중공업 자동화</span><span class="topic">유럽 로보틱스</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA와 LG그룹이 피지컬 AI·자율주행·AI 인프라 확장을 위한 'AI 팩토리'를 공동 구축함</li>
+    <li>LG의 가전·자동차 부품·디스플레이 사업과 NVIDIA 풀스택을 결합한 산업 데이터 플라이휠을 노림</li>
+    <li>한국 대기업의 피지컬 AI 본격 투자 신호탄으로 후속 협력 발표 가능성이 높음</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>NVIDIA와 두산그룹이 피지컬 AI·로봇공학·AI 팩토리 인프라 협력 확대를 공식 발표함</li>
+    <li>두산 계열사의 중공업·산업 자동화 자산이 NVIDIA Cosmos·Omniverse 기반으로 디지털 트윈화될 전망임</li>
+    <li>LG에 이은 두산까지 한국 중공업·제조 대기업의 피지컬 AI 전환 흐름이 빨라지고 있음</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Powering the future of robotics in Europe <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Google DeepMind가 유럽 로봇공학 생태계 지원 방향성을 공식적으로 제시함</li>
+    <li>로봇 파운데이션 모델·시뮬레이션·데이터셋 등 기반 기술 측면의 기여 계획을 밝힘</li>
+    <li>미·중 중심으로 진행되던 피지컬 AI 경쟁에 유럽이 본격 참여하는 신호로 해석됨</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/powering-the-future-of-robotics-in-europe">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">영향력 공작</span><span class="topic">사이버 위협</span><span class="topic">보상 해킹</span>
+</div>
+
+<div class="item">
+  <h3>PRC-linked influence operations are targeting AI debates in the US <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 중국 연계 조직이 AI를 활용한 미국 내 영향력 행사 정황을 보고서로 공개함</li>
+    <li>미국 기술 논쟁·데이터센터·관세·ChatGPT 관련 허위 서사가 조직적으로 유포된 것으로 파악됨</li>
+    <li>AI 인프라가 정치·경제 담론 전장의 도구가 되며 플랫폼·정부 차원의 대응 필요성이 커지고 있음</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/prc-linked-influence-operations-ai-debates">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>What we learned mapping a year's worth of AI-enabled cyber threats <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Anthropic이 1년간 관찰한 AI 기반 사이버 위협 사례를 종합 분석해 발표함</li>
+    <li>AI가 공격의 속도·범위·자동화 수준을 어떻게 변화시키는지 MITRE ATT&amp;CK 프레임 기준으로 매핑함</li>
+    <li>기존 보안 체계의 한계를 드러내며 AI 시대 보안 전략 재설계의 출발점을 제시함</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Jack Clark의 Import AI 뉴스레터가 보상 해킹, Anthropic RSI 데이터, RL 쿼드콥터 등 위험·연구 이슈를 정리함</li>
+    <li>'시장이 특이점을 언제부터 가격에 반영할 것인가'라는 핵심 질문을 던지며 전략적 시사점을 제시함</li>
+    <li>업계 리더가 보는 AI Risk 거시 흐름을 짧은 분량으로 따라잡을 수 있는 큐레이션임</li>
+  </ul>
+  <p class="source">출처: Import AI (Jack Clark) · <a href="https://importai.substack.com/p/import-ai-460-reward-hacking-society">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics">
+  <span class="topic">공공 에이전트</span><span class="topic">한국형 AI 팩토리</span><span class="topic">엔터프라이즈 도입</span>
+</div>
+
+<div class="item">
+  <h3>AI국민비서: 공공 특화 에이전트 구축하기 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>네이버가 HyperClovaX 기반 공공 특화 에이전트 'AI 국민비서' 구축 노하우를 공유함</li>
+    <li>모델 선택, 속도 최적화, 안전성 대응, 평가 체계까지 실전 에이전트 개발 전 과정을 다룸</li>
+    <li>국내 공공·금융 등 규제 산업의 에이전트 도입 시 참고할 수 있는 드문 사례 보고서임</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/6647064">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>젠슨 황 NVIDIA CEO가 직접 방한해 국내 AI 인프라·로봇·게임 파트너사와 협력 로드맵을 점검함</li>
+    <li>한국의 제조 AX 강점과 NVIDIA의 풀스택을 결합한 '한국형 AI 팩토리' 모델이 가시화되는 단계임</li>
+    <li>삼성·SK·LG·현대차·두산 등 대기업과의 동시다발 협력으로 한국이 글로벌 AI 인프라 거점으로 부상하고 있음</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/korea-ecosystem-2026">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>AI는 더 이상 실험이 아니다! AWS가 말하는 엔터프라이즈 AI 전략 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AWS는 'AI가 코드를 생성하고 사람이 검증하는' AI-DLC 시대 도래를 공식화함</li>
+    <li>기업 경쟁력 확보를 위한 핵심으로 '하네스 엔지니어링' 기반 운영 환경 구축의 중요성을 강조함</li>
+    <li>AI 도입이 PoC를 넘어 전사 운영 표준으로 자리잡는 변곡점에 진입했음을 보여주는 국내 정리 자료임</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/aws-summit-seoul-2026-keynotes">원문 보기</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
