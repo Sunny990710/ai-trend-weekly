@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-06-22)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-06-22 · 2026년 6월 4주차 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>앤트로픽 서울 오피스 개소</strong> — 네이버·LG·삼성 등 국내 빅테크와 협력을 확대하며 한국 AI 생태계 공략을 본격화함</div>
+<div class="headline">② <strong>SKT AX 혁신 2.0·글로벌 에이전트 도입</strong> — AI 에이전트에 사번을 부여하는 사람·AI 원팀 체제로 전환하고 BBVA 등 글로벌·국내 기업의 에이전트 도입이 가속화됨</div>
+<div class="headline">③ <strong>AI 안전·규제 거버넌스 강화</strong> — 구글 DeepMind의 멀티에이전트 안전 1천만 달러 투자와 OpenAI의 EU 투명성 강령 지지 등 빅테크 주도 흐름이 뚜렷해짐</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">자율 성장 프레임워크</span><span class="topic">온디바이스 에이전트</span><span class="topic">XR·AR</span>
+</div>
+
+<div class="item">
+  <h3>도구에서 동료로 — AI 에이전트 자율 성장 프레임워크 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>네이버가 자체 개발한 AI 에이전트 프레임워크 'GNOSIS'의 설계 원칙과 구현 사례를 공개함</li>
+    <li>경험을 축적해 스스로 성장하는 자율 에이전트 아키텍처가 핵심 차별점으로 제시됨</li>
+    <li>국내 빅테크가 만든 에이전트 프레임워크 사례로 사내 도입 시 참고할 만한 청사진을 제공함</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/4399330">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>퀄컴 "새로운 AI 기기 40종 개발 중...에이전트가 앱 대체할 것" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>퀄컴이 40종 이상의 차세대 AI 웨어러블·온디바이스 기기를 동시 개발 중이라고 공식 발표함</li>
+    <li>AI 에이전트가 기존 모바일 앱 역할을 상당 부분 대체할 것으로 전망함</li>
+    <li>'앱 이후의 UX'를 둘러싼 OS·디바이스 진영의 주도권 경쟁이 본격화되고 있음</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211833">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 AR 글래스·XR 기기용 멀티모달 에이전트 프레임워크 'NVIDIA XR AI' 공개 베타를 시작함</li>
+    <li>음성·시선·제스처를 결합한 핸즈프리 인터랙션을 표준화하려는 시도임</li>
+    <li>스마트폰 이후 차세대 디바이스에서의 에이전트 UX 경쟁이 가시화되고 있음</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-xr-ai">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">반도체 패키징</span><span class="topic">AgentPerf</span><span class="topic">에이전트 인프라</span>
+</div>
+
+<div class="item">
+  <h3>"AI 반도체 패키징 화두는 대면적화·발열관리" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 반도체 시대에 맞춰 반도체 기판·패키징 업계가 대면적화와 발열관리를 최우선 과제로 제시함</li>
+    <li>HBM·CoWoS 공급 병목과 맞물려 후공정 패러다임 전환이 본격화될 전망임</li>
+    <li>국내 소부장 업계도 차세대 패키징 투자 로드맵을 새로 짜야 한다는 시사점을 던짐</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260617000326">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아 블랙웰 울트라 NVL72 플랫폼이 최초의 에이전트 AI 벤치마크 'AgentPerf'에서 선두를 차지함</li>
+    <li>에이전트 워크로드에 특화된 인프라 성능 우위를 공식 입증하며 표준 벤치마크 주도권을 확보함</li>
+    <li>에이전트 시대를 겨냥한 GPU·시스템 설계 경쟁이 한층 가속화될 것으로 보임</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">글로벌 금융</span><span class="topic">한국 진출</span><span class="topic">전사 도입</span>
+</div>
+
+<div class="item">
+  <h3>'서울 오피스' 공식 오픈 앤트로픽…한국 AI 생태계 공략 본격화 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 서울 오피스를 공식 개소하고 네이버·LG·삼성과의 협력 확대를 선언함</li>
+    <li>국내 기업·연구·공익 전 영역을 아우르는 한국 진출 전략을 구체화함</li>
+    <li>국내 LLM 도입 시장에서 OpenAI·Anthropic 양강 구도가 가시화되는 신호로 해석됨</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=665691">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>BBVA puts AI at the core of banking with OpenAI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>BBVA가 OpenAI와 협력해 ChatGPT Enterprise를 10만 직원에게 확장 도입하기로 함</li>
+    <li>글로벌 대형 은행의 전사 단위 AI 도입 사례로 금융권 AI 채택 속도가 한층 빨라질 전망임</li>
+    <li>업무 자동화·고객 응대·리스크 분석 등 핵심 영역에 LLM이 본격 진입했다는 의미를 가짐</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/bbva">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">E2E 테스트</span><span class="topic">클로드 코드</span><span class="topic">오픈소스 전환</span>
+</div>
+
+<div class="item">
+  <h3>AI 에이전트를 위한 Playwright E2E 테스트 하네스 구축하기 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>네이버 D2가 AI 에이전트가 생성한 코드의 신뢰성을 확보하는 Playwright 기반 E2E 테스트 워크플로우를 공개함</li>
+    <li>에이전트가 직접 테스트 코드를 작성·검증하도록 하는 하네스 설계가 핵심임</li>
+    <li>에이전트 코딩 시대에 QA 자동화 패턴을 어떻게 잡을지에 대한 실전 참고 사례임</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/6811215">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>클로드 코드, 자동 모드의 안전장치 보강 업데이트 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 클로드 코드의 권한 규칙을 정교화하고 자동 모드의 안전장치를 보강함</li>
+    <li>개발자 생산성과 보안을 동시에 잡기 위한 정책 변경으로 해석됨</li>
+    <li>에이전트 코딩 도구의 가드레일이 차별화 포인트로 부상하고 있음</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260617210858">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>클로드 코드를 떠나 오픈소스로 돌아간 이유 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>클로드 코드의 불안정한 정책에 실망한 엔지니어가 Ollama·DeepSeek 등 오픈소스로 전환한 경험을 공유함</li>
+    <li>상용 AI 코딩 도구의 한계와 오픈소스 대안의 성숙도를 동시에 보여줌</li>
+    <li>벤더 락인·정책 리스크를 회피하려는 개발 조직에 시사점이 큼</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3801">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">로봇 파운데이션</span><span class="topic">허브-하드웨어</span><span class="topic">피지컬 AI</span>
+</div>
+
+<div class="item">
+  <h3>알리바바, 로봇 AI '큐원-로봇-스위트' 공개…챗봇 넘어 '피지컬 AI' 본격 진출 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>알리바바가 로봇 조작·월드 모델·자율 내비게이션을 통합한 '큐원-로봇-스위트'를 공개함</li>
+    <li>챗봇 중심 모델을 넘어 피지컬 AI 영역으로 전선을 확장한 첫 본격 발표임</li>
+    <li>중국 빅테크가 로봇 파운데이션 모델 경쟁에 정식 참전했다는 신호로 해석됨</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211827">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Hugging Face Hub의 모델을 Strands Agents·LeRobot과 연동해 실제 로봇 하드웨어에 적용하는 파이프라인을 소개함</li>
+    <li>오픈 모델 → 에이전트 → 로봇 제어로 이어지는 풀스택 사례로 진입 장벽을 크게 낮춤</li>
+    <li>로보틱스 스타트업·연구실의 프로토타이핑 속도가 한층 빨라질 전망임</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">AI 안전론</span><span class="topic">멀티에이전트</span><span class="topic">EU 거버넌스</span>
+</div>
+
+<div class="item">
+  <h3>[6월17일] 앤트로픽을 둘러싼 미국의 달라진 시선…"AI 안전론의 역설" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미국 내에서 앤트로픽에 대한 시선이 AI 안전론·정부 규제 이슈와 맞물려 변화하고 있음</li>
+    <li>과거의 지지에서 벗어나 비판적 시각이 확대되며 정치적 부담이 커지는 양상임</li>
+    <li>'안전 우선' 프레이밍이 곧 규제 협력으로 이어진다는 인식이 도전받고 있음</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211815">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Investing in multi-agent AI safety research <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 DeepMind와 파트너들이 멀티에이전트 AI 안전 연구에 1천만 달러 규모 펀딩을 발표함</li>
+    <li>에이전트가 서로 상호작용하는 환경에서의 안전성 검증을 핵심 의제로 제시함</li>
+    <li>빅테크 주도의 안전 연구 인프라 확대가 학계·스타트업 생태계로 확산될 전망임</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Supporting Europe's work in ensuring a trustworthy AI ecosystem <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 EU의 AI 콘텐츠 투명성 실천 강령을 공식 지지한다고 밝힘</li>
+    <li>AI 생성 콘텐츠의 출처·이력 표준 개발과 도구 제공을 약속함</li>
+    <li>EU AI Act 후속 거버넌스 흐름에서 빅테크의 자발적 협력 신호로 읽힘</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">Fable 5</span><span class="topic">Codex</span><span class="topic">코딩 모델</span>
+</div>
+
+<div class="item">
+  <h3>클로드 페이블 5, 출시 하루 만에 너무 막힌다는 반응이 쏟아졌다 + 차단 소식 업데이트 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽의 신규 모델 'Fable 5'가 출시 직후 사용 제한 정책으로 비판을 받고 있음</li>
+    <li>AI 모델 기억 기능을 보강하는 오픈소스 도구 supermemory도 함께 주목받음</li>
+    <li>앤트로픽 CEO의 'AI 정부 검증' 제안 등 정책 담론까지 함께 다룬 종합 큐레이션임</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3798">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>The Pulse: Did Anthropic's new model just boost rival Codex's market share? <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽 신규 모델 Fable의 제한적 정책이 경쟁사 OpenAI Codex의 점유율을 끌어올렸다는 분석임</li>
+    <li>스마트 모델 라우팅 트렌드 등 코딩 모델 시장의 구조 변화를 함께 짚음</li>
+    <li>모델 정책 결정이 즉시 시장 점유율로 이어지는 에이전트 코딩 시장의 민감도를 보여줌</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/did-anthropics-new-model-just-boost">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics">
+  <span class="topic">AX 혁신</span><span class="topic">조직 전환</span><span class="topic">에이전트 운영</span>
+</div>
+
+<div class="item">
+  <h3>"사람과 AI가 원팀" SKT, AX 혁신 2.0 드라이브 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT가 AI 에이전트에 사번을 부여해 구성원과 함께 일하는 조직 모델로 전환을 선언함</li>
+    <li>'AX 혁신 2.0'은 멀티 롤 업무 방식을 전사 단위로 확대하는 것이 핵심임</li>
+    <li>국내 대기업이 제시한 '에이전트=동료' 운영 모델로 HR·조직 설계 측면에서도 시사점이 큼</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/226646">원문 보기</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
