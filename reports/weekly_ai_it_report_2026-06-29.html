@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-06-29)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-06-29 · 2026년 6월 5주차 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>삼성전자 전사 ChatGPT·Codex 배포</strong> — 엔비디아-AWS 인프라 확장과 함께 역대 최대 규모 엔터프라이즈 AI 도입 사례가 등장함</div>
+<div class="headline">② <strong>OpenAI 에이전트·안전 표준 동시 추진</strong> — 'How agents are transforming work' 논문과 Appia Foundation 기반 글로벌 AI 안전 표준 구축을 한 축으로 묶음</div>
+<div class="headline">③ <strong>피지컬 AI 상용화 가속·규제 재점화</strong> — 6백만원대 유니트리 R1 출시·애질리티 SPAC 상장과 페이블 5 차단 사건이 소버린 AI 흐름을 다시 점화함</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">업무 변환</span><span class="topic">AI 워크스페이스</span><span class="topic">K8s 운영</span>
+</div>
+
+<div class="item">
+  <h3>How agents are transforming work (OpenAI 연구 논문) <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 AI 에이전트가 업무 구조와 직무 역할을 어떻게 바꾸는지 실증 데이터 기반으로 분석함</li>
+    <li>길고 복잡한 작업(long-horizon task)을 수행 가능한 에이전트가 생산성 곡선을 끌어올린다고 봄</li>
+    <li>R&R·KPI·툴 디자인까지 영향을 주는 에이전트 네이티브 업무 설계의 필요성을 제시함</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/how-agents-are-transforming-work">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>AI 투자자들이 주목한 젠스파크 — "엔터프라이즈 시장 바꿀 기업" <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트 기반 'AI 워크스페이스' 플랫폼 젠스파크가 글로벌 투자자들의 주목을 받고 있음</li>
+    <li>업무 자동화·엔터프라이즈 도입 가능성으로 기업용 에이전트 시장 재편을 예고함</li>
+    <li>국내 SaaS·생산성 도구 시장의 경쟁 구도 변화 가능성에 주목할 필요가 있음</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260626013347">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>K8s 운영을 AI 에이전트에 맡길 수 있을까? <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>쿠버네티스 운영 업무에 AI 에이전트를 적용한 실험 결과 실무 활용 가능성이 확인됨</li>
+    <li>모델별 성능·효율·비용 차이를 비교 분석해 운영 환경 채택 기준을 제시함</li>
+    <li>SRE/DevOps 영역도 에이전트 보조 운영 패러다임으로 빠르게 이동 중임을 시사함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3817">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">AWS 협력</span><span class="topic">Vera CPU</span><span class="topic">프로덕션 스케일</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA and AWS Collaborate to Bring AI to Production at Scale <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아와 AWS가 저지연 추론, 고속 벡터 검색, 효율적 GPU 활용을 결합한 확장형 AI 인프라 스택을 공동 제공함</li>
+    <li>기업이 생산 단계(production-scale)에서 AI 시스템을 대규모로 구축·운영할 수 있도록 엔드 투 엔드 레퍼런스를 마련함</li>
+    <li>퍼블릭 클라우드 GPU 인프라가 사실상 에이전트·추론 워크로드의 기본 기반으로 자리잡는 흐름을 보여줌</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>로스앨러모스 국립연구소가 엔비디아 Vera CPU 기반의 신형 슈퍼컴퓨터를 구축함</li>
+    <li>단백질·재료·기후 등 과학 분야에서 에이전트형 AI(Agentic Scientific AI) 워크로드를 가속함</li>
+    <li>국가 연구소 단위에서 CPU+GPU 통합 아키텍처가 차세대 과학 컴퓨팅 표준으로 굳어지는 신호임</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">전사 배포</span><span class="topic">SaaS 진화</span><span class="topic">엔터프라이즈 표준</span>
+</div>
+
+<div class="item">
+  <h3>Samsung Electronics brings ChatGPT and Codex to employees <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>삼성전자가 전 세계 임직원을 대상으로 ChatGPT Enterprise와 Codex를 공식 배포함</li>
+    <li>OpenAI 기준 사상 최대 규모의 단일 엔터프라이즈 AI 도입 사례 중 하나로 기록됨</li>
+    <li>대기업의 전사적 LLM·코딩 에이전트 표준 배포 추세가 본격화되고 있음을 시사함</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>SaaS의 종말? AI 시대에 적합한 소프트웨어는 무엇일까 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SaaS는 사라지는 것이 아니라 AI 에이전트와 사람이 함께 쓰는 업무 시스템으로 진화 중임</li>
+    <li>에이전트 친화적 API·데이터 모델·권한 구조를 갖춘 SaaS 설계 원칙을 정리함</li>
+    <li>엔터프라이즈 솔루션 도입·내재화 전략을 다시 점검해야 할 시점임을 시사함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3815">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">Claude Code</span><span class="topic">아티팩트</span><span class="topic">루프 엔지니어링</span>
+</div>
+
+<div class="item">
+  <h3>Claude Code now supports artifacts <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Claude Code가 코드·문서·데이터 아티팩트(artifacts)를 정식 지원함</li>
+    <li>코드 생성·분석 결과를 재사용 가능한 산출물 단위로 관리할 수 있어 개발 워크플로가 단순해짐</li>
+    <li>AI 코딩 에이전트의 사용 경험이 대화에서 아티팩트 중심 협업으로 옮겨가는 흐름임</li>
+  </ul>
+  <p class="source">출처: Claude Blog · <a href="https://claude.com/blog/artifacts-in-claude-code">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>제가 정말 루프 엔지니어링까지 알아야 할까요? <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>프롬프트·컨텍스트·하네스·루프 엔지니어링 등 AI 개발 용어 체계 변화를 정리함</li>
+    <li>바이브 코딩 너머에서 개발자에게 남는 핵심 역량을 짚어줌</li>
+    <li>AI 시대 개발자 커리어 트랙·학습 우선순위 재설계의 기준점을 제공함</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3816">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">저가 휴머노이드</span><span class="topic">SPAC 상장</span><span class="topic">SDV 보안</span>
+</div>
+
+<div class="item">
+  <h3>6백만원대 저가형 휴머노이드 로봇 등장 — 유니트리 'R1' <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>중국 유니트리 로보틱스가 6백만원대 저가형 휴머노이드 로봇 R1을 출시함</li>
+    <li>멀티모달 LLM 기반 AI 시스템과 26개 관절을 갖춰 가정·연구용 보급을 정조준함</li>
+    <li>휴머노이드 가격대가 소비재 가전 수준으로 내려오며 시장 진입 장벽이 급격히 낮아지고 있음</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260625000421">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>휴머노이드 로봇 애질리티 로보틱스, 3.8조 규모 SPAC 상장 추진 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>휴머노이드 로봇 기업 애질리티 로보틱스가 약 3조 8000억원 규모 SPAC 합병을 추진함</li>
+    <li>북미 증권시장 상장을 통한 대규모 자금 조달과 양산 능력 확장이 기대됨</li>
+    <li>피지컬 AI·휴머노이드 영역의 자본시장 본격 진입 사례로 평가됨</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212109">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>아우토크립트, 일렉트로비트 한국 독점 파트너 선정 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>피지컬 AI 보안 전문기업 아우토크립트가 글로벌 자동차 SW 기업 일렉트로비트의 한국 독점 파트너로 선정됨</li>
+    <li>소프트웨어 중심 자동차(SDV) 시장 공략을 위한 보안 솔루션 통합 라인업이 강화됨</li>
+    <li>모빌리티 분야의 피지컬 AI 보안·SDV 거버넌스가 국내에서도 본격 자리잡고 있음</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=666567">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">AI 안전 표준</span><span class="topic">투명성 법안</span><span class="topic">페이블 5</span>
+</div>
+
+<div class="item">
+  <h3>Helping build shared standards for advanced AI <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 Appia Foundation을 통해 고급 AI의 평가·안전 표준 구축을 지원함</li>
+    <li>평가 프레임워크, 안전 운영 관행, 글로벌 협력 거버넌스를 한 데 묶는 시도임</li>
+    <li>AI 안전 영역이 연구 윤리를 넘어 국제 표준 단계로 진입했음을 보여줌</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/helping-build-shared-standards-for-advanced-ai">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub joins coalition advocating for fixes to California AI Transparency Act <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub이 캘리포니아 AI 투명성 법안 수정을 요구하는 연합에 합류함</li>
+    <li>오픈소스 라이선스와 충돌하는 조항을 정비하고 국제 투명성 프레임워크와 정합시키는 것이 목표임</li>
+    <li>플랫폼·오픈소스 생태계가 AI 규제 입안 과정에 직접 개입하는 흐름이 본격화되고 있음</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>앤트로픽 페이블 5(Fable 5) 차단 사건의 전말 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽의 최신 LLM '페이블 5'가 미국 정부 개입으로 사용 중단된 사건의 전개를 정리함</li>
+    <li>AI 보안 우회 논란·정부 규제·오픈소스 및 소버린 AI 흐름에 미치는 파장을 분석함</li>
+    <li>프론티어 모델 규제가 연구·정책 차원에서 실제 차단으로 옮겨가는 전환점이 됨</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3805">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">AI 리더 전망</span><span class="topic">코딩 자동화</span><span class="topic">AGI</span>
+</div>
+
+<div class="item">
+  <h3>오픈AI 사장·딥마인드 CEO·클로드 코드 창시자가 말하는 5가지 미래 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI, 딥마인드, 클로드 코드 등 빅테크 AI 리더들이 AI 시대 5대 변곡점을 전망함</li>
+    <li>코딩 자동화 가속, 조직 역량 중요성, 도메인 지식형 제너럴리스트의 부상이 핵심 주제임</li>
+    <li>AGI 근접성에 대한 업계 리더들의 공통된 시각을 한눈에 정리해 볼 수 있음</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3812">원문 보기</a></p>
+</div>
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics">
+  <span class="topic">국산 AI 반도체</span><span class="topic">공공 AX</span><span class="topic">코딩 에이전트</span>
+</div>
+
+<div class="item">
+  <h3>메가존클라우드, NIPA 국산 AI 반도체 인프라 실증 사업 참여 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메가존클라우드가 NIPA 주관 국산 AI 반도체 인프라 실증 사업에 참여함</li>
+    <li>국산 NPU 기반 대규모 AI 인프라를 구축하고 LLM·혼용 컴퓨팅 환경을 실증할 계획임</li>
+    <li>엔비디아 종속 완화·소버린 AI 인프라 확보 측면에서 국내 생태계에 의미 있는 한 걸음임</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212120">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>AI가 바꾼 K-공공기관? 일반 기업도 알아야 할 공공 부문 AX 가이드 <span class="badge stars s3" aria-label="중요도 별 3개" title="중요도 ★★★">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>전 세계 공공기관의 AI 도입 현황과 국내·해외 AX 성공 사례를 종합 정리함</li>
+    <li>규제·보안 제약을 어떻게 풀어내며 업무 생산성을 끌어올렸는지 실무 관점에서 분석함</li>
+    <li>민간 기업도 동일한 거버넌스·도입 패턴을 벤치마킹할 수 있는 실무 가이드로 활용 가능함</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/public-ax-success-cases">원문 보기</a></p>
+</div>
+
+<div class="item">
+  <h3>Kelos — 쿠버네티스 네이티브 자율 코딩 에이전트 프레임워크 <span class="badge stars s2" aria-label="중요도 별 2개" title="중요도 ★★">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>네이버가 쿠버네티스 환경에서 코딩 에이전트와 그 실행 환경을 API화·관리하는 오픈소스 프레임워크 'Kelos'를 공개함</li>
+    <li>코딩 에이전트의 환경 격리·롤백·관측을 표준화해 자율 코딩의 운영성 문제를 정면으로 다룸</li>
+    <li>국내 빅테크가 코딩 에이전트 인프라 레이어에 직접 기여하기 시작했다는 의미가 큼</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/3015479">원문 보기</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>

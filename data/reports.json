@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-06-29",
+    "date": "2026-06-29",
+    "weekLabel": "2026년 6월 5주차",
+    "title": "삼성전자 전사 AI 배포, OpenAI 에이전트·안전 표준, 피지컬 AI 상용화",
+    "summary": "삼성전자가 전 세계 임직원에 ChatGPT Enterprise·Codex를 배포하며 역대 최대 규모 엔터프라이즈 AI 도입 사례를 만들었다. OpenAI는 에이전트 업무 변환 논문과 Appia Foundation 기반 AI 안전 표준을 동시에 추진했고, 6백만원대 유니트리 R1 출시·애질리티 SPAC 상장과 페이블 5 차단 사건으로 피지컬 AI 상용화와 규제 의제가 함께 부상했다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-06-29.html"
+  },
+  {
     "id": "2026-06-22",
     "date": "2026-06-22",
     "weekLabel": "2026년 6월 4주차",
