@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-07-10)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-07-10 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>GPT-5.6 정식 공개</strong> — OpenAI가 GPT-5.6을 정식 공개하고 Microsoft 365 Copilot 기본 모델로 채택되며 엔터프라이즈 AI 판도가 재편되고 있다.</div>
+<div class="headline">② <strong>인프라·에이전트 경쟁 가속</strong> — 미니맥스 2.7조 매개변수 M3 프로, 메타의 캐나다 1GW 데이터센터, NVIDIA Nemotron·LangChain 통합 등 인프라·에이전트 경쟁이 동시에 가속화됐다.</div>
+<div class="headline">③ <strong>AI 안전·프라이버시 규제 심화</strong> — 알트먼이 정부 규제 필요성을 처음 인정하고, 메타의 '슈퍼 센싱' AI 안경·인스타 사진 무단 학습 논란이 커지며 AI 안전·프라이버시 규제 논의가 심화되고 있다.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">ChatGPT Work</span>
+  <span class="topic">스킬위버 99% 절감</span>
+  <span class="topic">Nemotron × LangChain</span>
+</div>
+
+<div class="item">
+  <h3>ChatGPT is now a partner for your most ambitious work<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 여러 앱·파일을 넘나들며 장기 프로젝트를 지원하는 'ChatGPT Work'를 공개했다.</li>
+    <li>단발 프롬프트를 넘어 목표 → 결과물로 이어지는 에이전트 워크플로에 초점을 맞췄다.</li>
+    <li>일반 사용자용 에이전트 인터페이스의 표준을 새로 정의하려는 시도로 평가된다.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>알리바바 '스킬위버', AI 에이전트 토큰 99% 절감…"도구 다 안 불러온다"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>알리바바가 에이전트 토큰 사용량을 최대 99% 절감하는 프레임워크를 공개했다.</li>
+    <li>필요한 도구만 선별적으로 호출해 비용·응답 지연 문제를 동시에 해결한다.</li>
+    <li>대규모 에이전트 운영 시 등장하는 컨텍스트·비용 병목의 실전 해법으로 주목된다.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260709212158" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Nemotron Achieves Benchmark-Leading Performance With LangChain Deep Agents Harness<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Nemotron 3 Ultra × LangChain Deep Agents 조합이 오픈모델 최상위 성능을 기록했다.</li>
+    <li>동급 폐쇄형 모델 대비 낮은 비용으로 처리량·정확도를 확보한 것이 특징이다.</li>
+    <li>엔터프라이즈용 오픈 에이전트 스택의 경쟁력이 폐쇄형과 대등한 수준까지 올라왔다.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">GPT-5.6</span>
+  <span class="topic">미니맥스 M3 프로</span>
+  <span class="topic">메타 캐나다 1GW DC</span>
+</div>
+
+<div class="item">
+  <h3>GPT-5.6: Frontier intelligence that scales with your ambition<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 GPT-5.6을 공개, 토큰당 지능·비용 효율·고난도 성능을 동시에 강화했다.</li>
+    <li>기업용 워크로드에서 요구되는 장기 실행·복합 추론 역량이 크게 개선됐다.</li>
+    <li>Microsoft 365 Copilot 등 주요 엔터프라이즈 제품군 채택으로 확산이 가속화된다.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/gpt-5-6" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>미니맥스, 2.7조 매개변수 차세대 LLM 'M3 프로' 개발…중국 역대 최대 규모<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>중국 미니맥스가 2조 7000억 개 매개변수의 오픈웨이트 LLM을 개발 중이다.</li>
+    <li>희소 어텐션 기반 초장문 처리와 에이전트 추론 최적화가 핵심 특징이다.</li>
+    <li>글로벌 오픈모델 경쟁 구도에서 중국의 하이엔드 진입이 본격화됐다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212584" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>메타, 캐나다에 1GW 데이터센터 짓는다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타가 캐나다에 91억 달러를 투자해 1기가와트급 AI 데이터센터를 구축한다.</li>
+    <li>북미 전력 인프라 병목을 우회하기 위한 글로벌 지리적 분산 전략의 일환이다.</li>
+    <li>AI 학습·추론 수요가 초대형 전력 인프라 투자로 직결되는 흐름이 뚜렷하다.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260709000415" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">AI 챔피언</span>
+  <span class="topic">Copilot GPT-5.6</span>
+  <span class="topic">MUFG AI-Native</span>
+</div>
+
+<div class="item">
+  <h3>[7월9일] AX의 숨은 주역 'AI 챔피언'…동료가 동료를 설득한다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>많은 기업이 AI에 투자하지만 실제 업무 활용·가치 창출에서 정체되고 있다.</li>
+    <li>BCG는 조직 내부 'AI 챔피언' 확보가 도입의 질을 결정한다고 진단했다.</li>
+    <li>탑다운 도구 배포보다 동료 간 확산 구조가 AX 성패의 핵심 변수로 지목됐다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212566" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GPT-5.6 is now the preferred model in Microsoft 365 Copilot<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Microsoft 365 Copilot의 기본 모델이 GPT-5.6으로 교체되며 성능이 상향 조정됐다.</li>
+    <li>Word·Excel·Outlook 등 오피스 전 제품군에서 즉시 반영되어 확산이 빠르다.</li>
+    <li>업무용 생성 AI가 사실상 GPT-5.6 세대로 단계 이행된다는 신호로 읽힌다.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>MUFG aims to become AI-native with OpenAI<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>일본 대형 금융그룹 MUFG가 ChatGPT Enterprise 전면 도입을 발표했다.</li>
+    <li>내부 워크플로 리엔지니어링과 AI 기반 금융 서비스 확장을 동시에 추진한다.</li>
+    <li>규제산업의 'AI-Native 전환' 사례로 아시아 금융권의 벤치마크가 될 전망이다.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/mufg" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">퍼플렉시티 팀메이트</span>
+  <span class="topic">Claude Code 개발기</span>
+  <span class="topic">SWE-Bench 평가</span>
+</div>
+
+<div class="item">
+  <h3>퍼플렉시티, AI 코딩 시장 노린다…'프로젝트 전담' AI 도구 구축 중<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>퍼플렉시티가 소프트웨어 개발 전 과정을 관리하는 AI 도구 '팀메이트'를 개발 중이다.</li>
+    <li>단순 코드 생성이 아닌 프로젝트 단위 관리·버그 수정까지 목표한다.</li>
+    <li>검색·에이전트 강자의 코딩 시장 진입으로 경쟁 축이 확장됐다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212590" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>The Making of Claude Code<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Anthropic이 Claude Code의 내부 CLI에서 코딩 에이전트로 진화한 과정을 공개했다.</li>
+    <li>연구·엔지니어·초기 사용자 관점의 개발기와 설계 결정 배경이 정리됐다.</li>
+    <li>사내 도구가 외부 제품으로 확장된 대표적 케이스로 참고 가치가 크다.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/features/making-of-claude-code" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Separating signal from noise in coding evaluations<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 SWE-Bench Pro의 벤치마크 신뢰성 이슈를 분석·공개했다.</li>
+    <li>코딩 모델 평가에서 잡음이 상당 부분 포함될 수 있음을 실증했다.</li>
+    <li>AI 코딩 벤치마크 해석과 도구 선택 시 유의점을 재정리하는 계기가 됐다.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">Robostral Navigate</span>
+  <span class="topic">LeRobot 오픈 스택</span>
+  <span class="topic">KAIST B2R 플랫폼</span>
+</div>
+
+<div class="item">
+  <h3>Introducing Robostral Navigate<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Mistral이 로봇의 물리적 공간 내비게이션에 특화된 첫 파운데이션 모델을 공개했다.</li>
+    <li>복잡한 실내·실외 환경에서의 자율 이동 성능이 핵심 초점이다.</li>
+    <li>LLM 강자의 로보틱스 진입으로 Physical AI 경쟁 라인이 확대됐다.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/robostral-navigate" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아와 허깅페이스가 오픈 로보틱스 커뮤니티용 신규 모델·프레임워크를 공개했다.</li>
+    <li>LeRobot 스택 확장을 통해 로봇 개발의 비용·자원 진입장벽을 낮췄다.</li>
+    <li>Physical AI 개발자 생태계에서 오픈소스 기반이 빠르게 두터워지고 있다.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>KAIST, '뇌' 신호로 로봇 제어하는 플랫폼 개발 나서…"새로운 재활 패러다임"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>KAIST가 엔젤로보틱스와 협력해 양방향 브레인-투-로봇 시스템 개발에 착수했다.</li>
+    <li>뇌 신호 기반 로봇 제어와 감각 피드백을 동시에 다루는 것이 특징이다.</li>
+    <li>재활·의료 로보틱스 분야의 국산 원천기술 확보 관점에서 의미가 크다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212118" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">알트먼 규제 인정</span>
+  <span class="topic">슈퍼 센싱 AI 안경</span>
+  <span class="topic">뮤즈 이미지 논란</span>
+</div>
+
+<div class="item">
+  <h3>"우리가 안전성 증명해야"…알트먼, '정부 규제 반대'서 한발 물러섰다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>샘 알트먼이 GPT-5.6 출시 전 미국 정부와 긴밀히 협력했다고 공개했다.</li>
+    <li>기존의 강경한 규제 반대 입장에서 벗어나 안전성 증명 책임을 인정했다.</li>
+    <li>프론티어 모델에 대한 정부-기업 협의 프레임의 실질 전환점으로 해석된다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212605" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>메타, 촬영 시 LED 꺼지는 '슈퍼 센싱' AI 안경 테스트 중…사생활 침해 논란<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타가 촬영 표시 LED를 끌 수 있는 상시 기록형 AI 스마트 안경을 테스트 중이다.</li>
+    <li>공공장소에서 대상 인지 없이 촬영되는 상황에 대한 프라이버시 우려가 커졌다.</li>
+    <li>웨어러블 AI 시대에 요구되는 표시·동의 표준의 재정립 논의가 촉발됐다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212571" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>메타 '뮤즈 이미지', 인스타 사진 무단 도용 논란<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타의 신규 이미지 생성 모델이 인스타그램 사용자 사진을 학습에 활용했다는 의혹이 제기됐다.</li>
+    <li>플랫폼 이용약관과 저작권·초상권 사이의 회색지대가 다시 쟁점화됐다.</li>
+    <li>대규모 플랫폼 보유 기업의 자사 데이터 활용 범위에 대한 규제 논의가 재점화됐다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212586" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">GPT-5.6 시리즈</span>
+  <span class="topic">Bun Rust 재작업</span>
+  <span class="topic">2026 채용 시장</span>
+</div>
+
+<div class="item">
+  <h3>AA 순위 뒤흔든 GPT-5.6 시리즈…'루나', 대세 GLM-5.2 위협<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI의 GPT-5.6 솔·테라·루나 시리즈가 정식 공개되며 리더보드 판도가 바뀌었다.</li>
+    <li>가성비 라인 '루나'가 오픈소스 강자 GLM-5.2의 지위를 위협하고 있다.</li>
+    <li>프론티어·중간·저가 라인업 재편이 시장 세그먼트별 경쟁을 재정의한다.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=212604" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>The Pulse: What can we learn from Bun's rapid Rust rewrite with AI?<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Bun 팀이 AI 코드 도구를 활용해 1년 예상 Rust 재작업을 11일 만에 완료했다.</li>
+    <li>실전 규모의 AI 코딩 생산성 상승치를 보여주는 대표 사례로 부각됐다.</li>
+    <li>코딩 LLM 경쟁 심화와 AI 관련 채용 지표 변화 흐름도 함께 다뤄졌다.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Tech jobs market in 2026, part 3: hiring managers &amp; job seekers<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>50명 이상의 채용 관리자·구직자 데이터를 기반으로 2026년 시장을 분석했다.</li>
+    <li>AI 관련 포지션 강세와 엔지니어링 리더 채용의 구조적 어려움이 동시에 확인됐다.</li>
+    <li>AI 붐 이후의 기술 인재 시장 재편 방향성을 실무 관점에서 정리했다.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/tech-jobs-market-in-2026-part-3-hiring" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
