@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-07-27)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-07-27 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>앤트로픽·오픈AI IPO 초읽기</strong> — 앤트로픽이 시리즈 H로 650억 달러를 유치하며 기업가치 9,650억 달러에 도달하고 SEC에 S-1 초안을 비공개 제출했으며, 오픈AI도 같은 주 S-1을 제출하며 프론티어 AI 상장 레이스가 본격화됨.</div>
+<div class="headline">② <strong>엔비디아 AI 인프라 대공세</strong> — 엔비디아가 에이전트 전용 CPU '베라', Jetson Agentic AI, Blackwell MLPerf 등 풀스택을 공개하고, 오픈AI는 엔비디아 지원 아래 미시간·오하이오에 10GW급 데이터센터 건설을 착공함.</div>
+<div class="headline">③ <strong>에이전트 배포·안전성 전면화</strong> — MS·엔비디아 통합 스택, 미스트랄 'Vibe', OpenAI의 Ona 인수로 에이전트 배포가 전면화됐고, OpenAI 배포 시뮬레이션과 앤트로픽 프로젝트 글래스윙 15개국 확장으로 안전성 체계도 함께 확대됨.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">MS × NVIDIA 통합 스택</span>
+  <span class="topic">OpenAI Ona 인수</span>
+  <span class="topic">Mistral Vibe</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아·MS가 윈도우 기기~클라우드~로컬을 잇는 에이전트 AI 통합 스택을 공동 구축함.</li>
+    <li>Windows Local Cloud Devices까지 아우르는 배포 파이프라인으로 개발자 진입장벽이 대폭 감소함.</li>
+    <li>엔터프라이즈 에이전트가 사내 PC에서 실행되는 '로컬 우선' 배포 시나리오가 본격 개막함.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI to acquire Ona<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 Ona를 인수해 Codex를 안전한 클라우드 기반 장기실행 에이전트 플랫폼으로 확장함.</li>
+    <li>단발 코드 생성이 아닌 '장시간 워크플로우 유지'를 목표로 기업용 코딩 에이전트 표준 재정의를 시도함.</li>
+    <li>Cognition·Cursor 등 코딩 에이전트 스타트업 밸류에이션 급등과 함께 인수 경쟁이 격화되는 신호임.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/openai-to-acquire-ona" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Vibe gets to work.<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄이 장기 생산성·코딩 통합 에이전트 'Vibe'를 공개하고 VS Code 확장까지 함께 제공함.</li>
+    <li>Work·Code 두 모드로 문서 작업과 코드 작업을 하나의 에이전트에서 처리하도록 통합함.</li>
+    <li>Mistral Medium 3.5 기반 원격 에이전트로 유럽 AI 주권 요구와 결합해 MS Copilot 대안으로 부상함.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/vibe-agent" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">NVIDIA Vera CPU</span>
+  <span class="topic">앤트로픽 다중 칩</span>
+  <span class="topic">OpenAI 10GW DC</span>
+</div>
+
+<div class="item">
+  <h3>Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 에이전트 워크로드 전용으로 설계한 첫 CPU '베라(Vera)'를 앤트로픽·오픈AI 등 주요 연구소에 공급 시작함.</li>
+    <li>오라클 클라우드 인프라(OCI)에도 도입되며 에이전트 인프라 표준 자리다툼이 본격화됨.</li>
+    <li>GPU 중심이던 AI 인프라 시장이 '에이전트 전용 CPU'라는 새 카테고리로 확장되는 신호임.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/vera-cpu-delivery" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>'컴퓨팅 비상' 앤트로픽, 아마존·구글 이어 MS 칩까지 손길<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 급증하는 클로드 수요 대응을 위해 MS 자체 AI 칩 '마이아' 기반 서버 도입을 검토함.</li>
+    <li>아마존 트레이니엄, 구글 TPU에 이은 다중 칩 벤더 전략으로 엔비디아 의존 완화가 가속됨.</li>
+    <li>빅테크의 자체 실리콘 경쟁이 AI 서비스 원가 구조와 클라우드 판도까지 뒤흔드는 국면임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=210831" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>오픈AI, 엔비디아 지원으로 10GW급 역대 최대 데이터센터 구축 추진<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 오하이오주에 엔비디아 지원을 받아 10GW급 초대형 AI 데이터센터 캠퍼스 착공을 추진함.</li>
+    <li>미시간 스타게이트 1GW 프로젝트와 함께 인텔리전스 에이지 인프라 투자가 병렬 확장됨.</li>
+    <li>전력·부지·수냉기술이 AI 산업의 새로운 병목으로 부상하며 HD현대일렉·KAIST 냉각기술 등 국내 공급망도 수혜를 봄.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=211582" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">OpenAI on AWS</span>
+  <span class="topic">앤트로픽 서울 오피스</span>
+  <span class="topic">토큰 맥싱 종료</span>
+</div>
+
+<div class="item">
+  <h3>OpenAI frontier models and Codex are now available on AWS<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI 프론티어 모델과 Codex가 AWS 정식 채널을 통해 기업 고객에 제공됨.</li>
+    <li>MS Azure 독점 구도가 완화되며 기업은 기존 AWS 인프라 위에서 오픈AI를 활용할 수 있게 됨.</li>
+    <li>모델 벤더-클라우드 벤더 결합이 유연해지면서 엔터프라이즈 AI 도입 마찰이 크게 감소함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>앤트로픽, 서울 사무소 공식 출범…네이버·넥슨·LG CNS 등과 전방위 협력<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 서울 오피스를 공식 개소하고 국내 기업·연구·공익 분야 전방위 파트너십을 확장함.</li>
+    <li>네이버·넥슨·LG CNS 등이 클로드 코드·클로드 API를 도입하며 국내 대기업 AX가 가속됨.</li>
+    <li>SKT는 '프로젝트 글래스윙'에 합류해 클로드 미토스로 보안 취약점 검증 체계를 구축함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260618000002" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>'토큰 맥싱'의 시대는 끝났다: 메타·아마존·우버의 선택<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타·아마존·우버 등이 내부 AI 토큰 사용량을 통제하며 '무제한 사용' 실험 단계 종료 신호가 나타남.</li>
+    <li>엔지니어링 부서에서 상향식·하향식으로 토큰 비용 최적화 트렌드가 확산 중임.</li>
+    <li>AI ROI 지표가 '사용량'에서 '실제 성과·효율'로 이동하며 기업 AI 도입 전략의 방향 전환이 요구됨.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3790" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">오픈소스 AI 코딩 논쟁</span>
+  <span class="topic">Copilot vs raw API</span>
+  <span class="topic">NVIDIA 과학 AI</span>
+</div>
+
+<div class="item">
+  <h3>"AI는 도구" vs "프로젝트 품질 위협"...오픈소스 진영, AI 코딩 둘러싼 대립<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>생성형 AI의 소프트웨어 개발 도입을 두고 오픈소스 진영 내부 논쟁이 격화됨.</li>
+    <li>생산성 향상 도구라는 옹호론과 품질 저하·유지보수 부담을 우려하는 신중론이 팽팽함.</li>
+    <li>기업 개발 조직도 AI 코딩 가이드라인 수립이 시급한 이슈로 부상함.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260726013356" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Copilot vs. raw API access: What are you actually paying for?<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>깃허브 코파일럿의 과금이 API 요율제로 전환됨에 따라 실제 비용 구조를 비교 분석함.</li>
+    <li>Copilot의 IDE·컨텍스트·에이전트 통합 가치와 raw API 단가 절감 사이의 트레이드오프를 정리함.</li>
+    <li>메타·아마존의 토큰 통제 흐름과 맞물려 개발 팀의 AI 코딩 워크플로우 원가 관리가 핵심 이슈로 부상함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 ISC에서 화학·재료·천문학 등 과학 AI 개발을 가속화할 신규 라이브러리 DAQIRI를 공개함.</li>
+    <li>과학 특화 마이크로서비스 ALCHEMI NIM으로 도메인 특화 파이프라인 구축을 지원함.</li>
+    <li>일반 개발자도 활용 가능한 사이언스 AI 스택이 확장되며 산업 R&amp;D 개발 생산성 향상이 기대됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/ai-for-science-software-cuda" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">Physical AI Agent Skills</span>
+  <span class="topic">Jetson Agentic AI</span>
+  <span class="topic">MolmoAct 2</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 자율주행·로봇·비전 AI 개발을 가속화할 물리 AI 에이전트 스킬셋을 공개함.</li>
+    <li>모델 학습을 넘어 시뮬레이션·데이터·평가까지 아우르는 워크플로우 전주기를 지원함.</li>
+    <li>CVPR 2026 발표를 통해 자율주행 안전성과 로봇 파지 능력 등 실제 성능 지표에서 진전을 보임.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Jetson Brings Agentic AI to the Physical World<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 JetPack 7.2 및 NemoClaw 지원으로 Jetson 플랫폼에 에이전트 AI 기술을 도입함.</li>
+    <li>엣지 디바이스에서 곧바로 물리적 판단·행동을 수행하는 온디바이스 에이전트 시대가 개막함.</li>
+    <li>로봇·드론·산업설비 등 물리적 세계에서의 AI 확장을 위한 표준 하드웨어 스택을 제시함.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/jetson-agentic-ai-physical-world" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>MolmoAct 2: An open foundation for robots that work in the real world<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Ai2가 실제 환경에서 작동하는 로봇을 위한 완전 개방형 파운데이션 모델 MolmoAct 2를 공개함.</li>
+    <li>더 빠르고 강력한 3D 액션 추론으로 오픈소스 로봇 학습 생태계에 새 기준을 제시함.</li>
+    <li>NVIDIA·MolmoAct·Physics AI 등 물리 AI 3대 축이 동시에 진화하며 로보틱스 상용화가 임박함.</li>
+  </ul>
+  <p class="source">출처: Ai2 News (Allen Institute) · <a href="https://allenai.org/blog/molmoact2" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">배포 시뮬레이션</span>
+  <span class="topic">공무원 AI 윤리 지침</span>
+  <span class="topic">프로젝트 글래스윙</span>
+</div>
+
+<div class="item">
+  <h3>Predicting model behavior before release by simulating deployment<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 실제 대화 데이터를 활용해 모델 배포 이전에 행동을 예측하는 '배포 시뮬레이션'을 도입함.</li>
+    <li>사전 안전성 평가의 정확도를 크게 높여 모델 릴리스 프로세스에 새로운 표준을 제시함.</li>
+    <li>모델 신뢰성 이슈가 규제 논의의 핵심이 된 시점에 실무 대응 방법론으로 주목됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/deployment-simulation" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>인사혁신처, 공무원 교육훈련 보고서 AI 윤리 기준 세운다…'생성형 AI 활용 지침' 첫 배포<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>인사혁신처가 공무원 보고서 작성 시 생성형 AI의 윤리적 활용을 위한 첫 공식 지침을 배포함.</li>
+    <li>공공 부문의 AI 활용 기준 마련이 본격화되며 정부 AI 거버넌스 프레임워크 초석이 완성됨.</li>
+    <li>한-EU 디지털통상협정 서명과 맞물려 국내외 AI 규제 정합성 논의도 속도를 냄.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260521000475" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Expanding Project Glasswing<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 프로젝트 글래스윙을 15개국 150여 개 핵심 기관으로 확장, 사이버 취약점 검증 체계를 글로벌로 확산함.</li>
+    <li>고성능 클로드 모델을 활용한 취약점 대응 체계가 정부·기업의 표준 방어 인프라로 편입이 가속됨.</li>
+    <li>SKT 등 국내 사업자도 참여해 국가 사이버 안보-민간 AI 협력 모델이 확립됨.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">앤트로픽 Series H</span>
+  <span class="topic">앤트로픽 S-1</span>
+  <span class="topic">OpenAI S-1</span>
+</div>
+
+<div class="item">
+  <h3>Anthropic raises $65B in Series H funding at $965B post-money valuation<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 Altimeter Capital 주도 시리즈 H에서 650억 달러 유치, 기업가치 9,650억 달러를 달성함.</li>
+    <li>수익성 지표에서 오픈AI를 추월할 가능성이 제기되며 프론티어 AI 재무 성적의 방향성이 변화함.</li>
+    <li>동 기간 SEC에 S-1 초안을 비공개 제출해 IPO 준비 절차가 본격화됐고, 모건스탠리·골드만삭스가 주관함.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Anthropic confidentially submits draft S-1 to the SEC<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 미국 SEC에 S-1 등록 서류 초안을 비공개로 제출하며 IPO 절차에 착수함.</li>
+    <li>2분기 사상 첫 흑자·매출 16조원 전망이 뒷받침되며 상장 시나리오에 무게가 실림.</li>
+    <li>10월 상장 검토설과 함께 AI 산업 최초의 대형 IPO 후보로 시장이 주목함.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI Confidential submission of draft S-1 to the SEC<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI도 SEC에 S-1 초안을 비공개 제출하며 앤트로픽과 동시 IPO 경쟁 구도가 형성됨.</li>
+    <li>구체적 상장 시기는 미정이지만, 두 프론티어 기업의 동시 상장 시도는 AI 자본시장 판도 재편의 신호임.</li>
+    <li>샘 올트먼 CEO의 한국 방문·삼성·카카오·네이버 회동과 겹치며 상장 전 글로벌 파트너십 확장 국면임.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/openai-submits-confidential-s-1" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
