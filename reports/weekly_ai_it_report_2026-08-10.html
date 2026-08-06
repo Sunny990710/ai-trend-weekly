@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-08-10)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-08-10 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>카카오 에이전틱 슈퍼앱</strong> — 카톡 안에서 쿠팡이츠 주문·결제까지 완결하는 '에이전틱 AI' 전략을 공개하며 국내 슈퍼앱 경쟁이 실행형 에이전트 단계로 진입함.</div>
+<div class="headline">② <strong>SKT '일하는 AI'</strong> — 6,880억 파라미터 자체 파운데이션 모델 'A.X K2'를 공개하며 '답하는 AI'에서 '일하는 AI'로의 전환과 소버린 AI 인프라 확보를 본격화함.</div>
+<div class="headline">③ <strong>코파일럿 프롬프트 인젝션</strong> — 워드 문서 숨김 명령으로 MS 365 코파일럿을 조종·자기복제하는 공격이 공개되며 AI 보안 리스크가 급부상함.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">카톡 에이전틱 AI</span>
+  <span class="topic">도입 전략 프레임</span>
+  <span class="topic">Claude Opus 5</span>
+</div>
+
+<div class="item">
+  <h3>카카오, 카톡서 쿠팡이츠 주문·결제까지…'에이전틱 AI' 생태계 확장<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>카카오톡 내 에이전트가 사용자 의도를 파악해 쿠팡이츠 주문·결제까지 직접 실행하는 시나리오를 상용화함.</li>
+    <li>API·미니앱 파트너를 확대해 '카톡 위의 에이전트 OS' 생태계로 확장하는 전략을 명확히 드러냄.</li>
+    <li>단순 챗봇을 넘어선 실행형 에이전트가 국내 소비자에게 도달한 첫 대형 상용 사례로 기록될 전망임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213612" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>비즈니스 AI 에이전트 도입 전략: 단순 자동화를 넘어 핵심 개념 정리까지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>가트너 등은 2026년까지 기업 앱의 40%에 AI 에이전트가 탑재될 것으로 전망, 도입 전략 수립이 시급함.</li>
+    <li>에이전트는 자율적 판단·실행 단계로 진화 중이며, 통제·거버넌스·조직적 협업 설계가 성공의 열쇠임.</li>
+    <li>도입 5단계(파일럿→통합→거버넌스→조직 개편→에이전트 오퍼레이션) 프레임을 제시, 실무 가이드로 유용함.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/ai-agent-business-integration" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing Claude Opus 5<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Anthropic이 장기 실행 에이전트·코딩·전문 태스크 성능을 대폭 개선한 신모델 'Claude Opus 5'를 출시함.</li>
+    <li>수 시간 단위의 자율 실행과 도구 사용 안정성이 강화, 에이전트 오케스트레이션의 실용 임계점을 넘겼다는 평가임.</li>
+    <li>Opus 5는 GPT-5·Gemini 3.5와 함께 하반기 프론티어 모델 경쟁의 축을 형성할 전망임.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">엔비디아 vs AMD</span>
+  <span class="topic">LGU+ AIDC</span>
+  <span class="topic">AI 스토리지</span>
+</div>
+
+<div class="item">
+  <h3>머스크 "엔비디아 칩만 사용" 선언에 휘청…AMD, 리사 수 발언에 반등<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>일론 머스크의 xAI GPU 독점 발언으로 AMD 주가가 급락, AI 칩 시장의 종속성 이슈가 재점화됨.</li>
+    <li>리사 수 CEO의 즉각적인 반박 발언 후 주가는 반등, 주요 인물 코멘트가 시장에 미치는 파급력이 확인됨.</li>
+    <li>엔비디아 편중 리스크와 AMD·경쟁 벤더의 반격이 하반기 AI 인프라 투자 지형의 변수로 부상 중임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213610" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>LGU+, 역대 최대 영업익…기업인프라 매출 급성장<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LG유플러스가 2분기 역대 최대 영업이익을 기록하며 AI 데이터센터(AIDC) 코로케이션이 실적을 견인함.</li>
+    <li>기업 인프라 매출이 두 자릿수 성장, 국내 통신사의 수익 축이 B2C에서 AI 인프라로 빠르게 이동 중임.</li>
+    <li>SKT·KT에 이어 LGU+까지 AIDC 실적을 증명하며 국내 AI 인프라 3강 구도가 뚜렷해지고 있음.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260806114905" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>As AI Increases Demands on Memory, Storage Steps Up<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>대규모 데이터셋과 초장문 컨텍스트 처리가 메모리·스토리지 성능 요구를 급격히 끌어올리고 있음.</li>
+    <li>NVIDIA는 효율적·보안 스토리지 아키텍처의 중요성을 강조하며 AI 워크로드용 스토리지 스택을 재정의 중임.</li>
+    <li>HBM 이후의 병목이 스토리지 계층으로 이동, SK하이닉스·삼성·키옥시아 등 반도체 밸류체인의 판이 재편될 조짐임.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/ai-storage-fms" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">카카오 슈퍼앱</span>
+  <span class="topic">소버린 의료 AI</span>
+  <span class="topic">Circles × OpenAI</span>
+</div>
+
+<div class="item">
+  <h3>카카오, 역대 최대 분기 실적…카톡에 쿠팡이츠 연동해 주문부터 결제까지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>카카오가 역대 최대 분기 실적을 발표, 카카오톡 안에서 쿠팡이츠 주문·결제까지 원스톱 처리하는 통합을 공개함.</li>
+    <li>'에이전틱 AI'를 신규 수익 축으로 명시하며 광고·커머스에 이은 세 번째 성장 엔진으로 육성함.</li>
+    <li>슈퍼앱 전략이 정보 제공을 넘어 실행형 에이전트 단계로 진입, 국내 플랫폼 경쟁의 결정적 분기점이 되고 있음.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260806000235" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>보건소부터 공공병원까지 AI로 연결…'한국형 소버린 의료AI'도 개발<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>정부가 전국 보건소·공공병원을 AI로 연결하는 국가 의료 AI 프로젝트를 공식화함.</li>
+    <li>국내 의료 데이터 기반의 '한국형 소버린 의료 AI'를 개발, 지역·필수·공공의료 공백 해소를 목표로 함.</li>
+    <li>공공 도메인 소버린 AI가 헬스케어를 시작으로 국방·행정 등으로 확산될 신호탄으로 해석됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260806000250" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Circles powers telco personalization with OpenAI technology<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>글로벌 통신사업자 Circles가 OpenAI API·Codex로 고객경험을 AI 개인화, ARPU 22% 증가·이탈률 9% 감소를 달성함.</li>
+    <li>개발 생산성 지표도 유의미하게 개선, LLM 도입이 통신 산업의 수익성 KPI를 실제로 흔들 수 있음을 입증함.</li>
+    <li>국내 통신 3사에도 '엔터프라이즈 AI = 매출 지표' 등식의 벤치마크 케이스가 될 가능성이 높음.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/circles" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">메타 뮤즈 코드</span>
+  <span class="topic">백준 인수</span>
+  <span class="topic">오픈소스 1억 달러</span>
+</div>
+
+<div class="item">
+  <h3>"직원 7,000명이 직접 써보고 고쳐"…메타의 AI 코딩 성능 향상 비결<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>메타가 자체 AI 코딩 도구 '뮤즈 코드'를 전사 7,000여 명 엔지니어에게 배포, 사용·수정 사이클로 성능을 끌어올림.</li>
+    <li>모델 성능은 훈련 데이터가 아닌 '실사용→피드백→재학습' 폐쇄 루프에서 결정된다는 사실이 재확인됨.</li>
+    <li>사내 도그푸딩(dogfooding) 규모가 AI 코딩 도구 경쟁의 실질적 해자가 되고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213614" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>데이원컴퍼니, '백준온라인저지' 인수…"개발자 학습·성장 지원"<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>데이원컴퍼니가 국내 대표 알고리즘 학습 플랫폼 백준온라인저지(BOJ)를 인수함.</li>
+    <li>AI 코딩 시대에도 문제해결·알고리즘 사고 역량 수요가 유지될 것으로 보고 개발자 학습 인프라를 강화함.</li>
+    <li>패스트캠퍼스·BOJ 연결로 국내 개발자 교육 밸류체인의 수직 통합이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260730082437" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>$100 million for open source: A milestone built by the community<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub 스폰서를 통한 오픈소스 기여 누적액이 1억 달러를 돌파, 커뮤니티 주도 지속가능성 모델이 정착 중임.</li>
+    <li>AI 학습에 활용되는 코어 오픈소스 유지보수의 재정 리스크를 완화하는 신호로 해석됨.</li>
+    <li>기업의 오픈소스 후원이 리쿠르팅·PR을 넘어 공급망 리스크 관리 도구로 재정의되고 있음.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">Gemini Robotics ER 2</span>
+  <span class="topic">더 뉴 그랜저</span>
+  <span class="topic">FOX Blueprint</span>
+</div>
+
+<div class="item">
+  <h3>Gemini Robotics ER 2: Video Understanding, Task Orchestration &amp; Multi-Robot Collaboration<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Google DeepMind가 영상 이해·작업 조율·다중 로봇 협업 능력을 강화한 'Gemini Robotics ER 2'를 공개함.</li>
+    <li>여러 로봇이 하나의 태스크를 나눠 수행하는 오케스트레이션 스택이 실용 단계로 진입 중임.</li>
+    <li>공장·물류·서비스 로봇 현장에서 멀티에이전트형 피지컬 AI가 표준 아키텍처로 자리잡는 흐름이 뚜렷함.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>[신차 드라이브] 파격적 변화와 부드러운 주행질감…현대차 AI 탑재한 '더 뉴 그랜저'<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>현대차가 SDV(Software Defined Vehicle) 전략의 대중화 첫 사례로 AI를 탑재한 '더 뉴 그랜저'를 출시함.</li>
+    <li>차량용 음성 에이전트·주행 지원 AI가 프리미엄 세단의 핵심 세일즈 포인트로 부상함.</li>
+    <li>포티투닷 등 계열사 AI 자산이 양산차에 본격 이식되면서 국내 SDV 전환이 가속화되고 있음.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260604000111" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 머신 신호·품질·MES 데이터를 통합하는 자율 공장용 AI 시스템 'Factory Operations Blueprint(FOX)'를 발표함.</li>
+    <li>공장 전반의 지능화를 위한 표준 청사진을 제시, 제조업체가 즉시 도입 가능한 참조 아키텍처를 제공함.</li>
+    <li>SKT·현대차·포스코 등 국내 제조 진영의 디지털 트윈·피지컬 AI 프로젝트에 직접적인 영향이 예상됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">중국산 장비 이슈</span>
+  <span class="topic">코파일럿 인젝션</span>
+  <span class="topic">사이버 평가 거버넌스</span>
+</div>
+
+<div class="item">
+  <h3>"삼성·SK하이닉스, 중국산 반도체 장비 시험 평가"…양사는 공식 부인<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미국의 대중국 반도체 장비 수출 규제 강화 국면에서 국내 메모리 양강의 중국산 장비 시험 정황이 보도됨.</li>
+    <li>삼성전자·SK하이닉스는 공식 부인, 그러나 업계는 대체 공급망 확보 차원의 저강도 검토는 가능하다고 봄.</li>
+    <li>미·중 기술 블록화가 심화되며 국내 반도체 기업의 공급망 다변화 압력이 실무 리스크로 커지고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213608" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>워드 문서에 숨긴 흰 글씨 한 줄이 코파일럿을 감염시킨다…자기 복제 공격<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>워드 문서의 보이지 않는 흰 글씨 명령이 MS 365 코파일럿을 조종·자기복제하는 신형 프롬프트 인젝션 기법이 공개됨.</li>
+    <li>'교차 도메인 프롬프트 인젝션(cross-domain prompt injection)'은 이메일·문서·SaaS 간 확산 가능성을 보여줌.</li>
+    <li>엔터프라이즈 코파일럿 도입 기업은 문서 수신 경로·에이전트 권한 격리 정책 재점검이 시급함.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260806120948" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Third-party cyber evaluations involving OpenAI models<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 자사 모델을 활용한 최근 제3자 사이버 평가 사건을 공식 설명, 재발 방지 안전장치를 추가함.</li>
+    <li>레드팀·평가 파트너에 대한 접근·모니터링 기준을 상향, 프론티어 모델의 남용 가능성을 사전 차단함.</li>
+    <li>EU·미국 규제 논의와 맞물려 '모델 제공자의 평가 거버넌스'가 새 규범으로 자리 잡는 흐름임.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">A.X K2</span>
+  <span class="topic">SKT AI DC</span>
+  <span class="topic">OpenAI vs Apple</span>
+</div>
+
+<div class="item">
+  <h3>"답하는 AI에서 일하는 AI로"…A.X K2가 그리는 소버린 AI의 미래 – 김태윤 파운데이션 모델 담당 인터뷰<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT가 6,880억 파라미터의 자체 파운데이션 모델 'A.X K2'를 공개, 추론·에이전트 역량을 대폭 강화함.</li>
+    <li>'답하는 AI'에서 '일하는 AI'로의 전환을 슬로건화, 소버린 AI 인프라 확보 방향성을 명확히 함.</li>
+    <li>국내 대기업의 자체 파운데이션 모델 경쟁이 규모(파라미터)와 실행 능력(에이전트) 두 축으로 진화 중임.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/228834" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>SK텔레콤, 2026년 2분기 실적 발표 — 내실 다진 통신, 속도 내는 AI DC<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT 2분기 매출 4조 3,591억 원, 영업이익 5,660억 원(전년동기 +67.3%)으로 실적 반등에 성공함.</li>
+    <li>AI 데이터센터 사업 가속화가 향후 성장 서사의 핵심으로 명시됨.</li>
+    <li>통신 본업의 안정 + AI 인프라 신사업이라는 이중 엔진 전략이 국내 통신 업계 스탠더드로 자리잡고 있음.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/228980" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Apple is getting this wrong<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 애플의 소송 주장에 대해 공개 반박, 관련 내부 메시지까지 일부 공개하며 정면 대응에 나섬.</li>
+    <li>AI 인재·기술을 둘러싼 빅테크 간 법적 분쟁이 본격 공개 국면으로 확산됨.</li>
+    <li>AI 산업의 기업 간 협력·경쟁 지형이 법정으로 이동, 하반기 M&amp;A·인재 이동 흐름의 변수로 부상함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/apple-is-getting-this-wrong" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
