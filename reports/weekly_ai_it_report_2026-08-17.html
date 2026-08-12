@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-08-17)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-08-17 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>에이전트 통합 플랫폼 경쟁</strong> — OpenAI가 클로드·커서 작업 환경을 흡수하고, NVIDIA는 '네모 스위치야드'로 에이전트 비용을 74% 절감하며 통합·효율화 경쟁이 본격화됨.</div>
+<div class="headline">② <strong>AI 인프라 투자 지속</strong> — 코어위브·슈퍼마이크로 호실적으로 수요 견조함이 재확인됐고, SK하이퍼 '풀스택 AI'·미스트랄 유럽 독자 인프라로 시장 선점 경쟁이 이어짐.</div>
+<div class="headline">③ <strong>AI 안전·규제 인프라</strong> — 금융보안원의 금융 특화 AI 평가 체계와 암호화 추론 평문 추출 공격 공개로 AI 리스크·규제 인프라가 산업 화두로 부상함.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">네모 스위치야드</span>
+  <span class="topic">에이전트 통합 플랫폼</span>
+  <span class="topic">실행형 엔터프라이즈 AI</span>
+</div>
+
+<div class="item">
+  <h3>엔비디아, 에이전트 비용 74% 낮추는 라우터 '네모 스위치야드' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 오픈소스 라우팅 기술 '네모 스위치야드(NeMo Switchyard)'를 공개함.</li>
+    <li>AI 에이전트가 작업 단계별로 최적의 모델을 자동 선택해 비용을 최대 74% 절감하도록 설계됨.</li>
+    <li>다중 모델 오케스트레이션이 에이전트 운영 비용의 핵심 변수로 부상하고 있음을 보여주는 사례임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213846" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>오픈AI, 클로드·커서 작업 환경 흡수…'에이전트 통합 플랫폼' 승부수<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 챗GPT 플랫폼 내에서 클로드·커서 등 경쟁사 AI 에이전트 작업 환경을 이어받을 수 있는 기능을 출시함.</li>
+    <li>사용자가 여러 AI 에이전트를 오가며 겪던 컨텍스트 단절 문제를 해소하는 데 초점을 맞춤.</li>
+    <li>AI 에이전트 시장의 경쟁 축이 개별 모델 성능에서 '통합 플랫폼' 주도권 다툼으로 이동하고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213849" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>From assistance to execution: How enterprises put AI to work<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI 연구에 따르면 기업들이 ChatGPT·Codex를 활용해 '보조'가 아닌 '실행'을 담당하는 에이전트형 AI 도입을 확산하고 있음.</li>
+    <li>선도 기업들은 워크플로 자체를 에이전트에 이관하며 AI 활용 성숙도에서 격차를 벌리고 있음.</li>
+    <li>도입 단계가 파일럿에서 실무 운영으로 전환되며 조직 구조·역할 재정의가 뒤따르고 있음.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/how-enterprises-put-ai-to-work" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">코어위브·슈퍼마이크로</span>
+  <span class="topic">SK하이퍼 풀스택 AI</span>
+  <span class="topic">미스트랄 유럽 인프라</span>
+</div>
+
+<div class="item">
+  <h3>코어위브·슈퍼마이크로 2분기 호실적…AI 컴퓨팅 수요 '견조'<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 클라우드 기업 코어위브와 서버 제조업체 슈퍼마이크로컴퓨터가 2분기 시장 예상을 상회하는 실적을 발표함.</li>
+    <li>AI 인프라에 대한 견조한 수요와 대규모 투자 열풍이 여전히 지속되고 있음을 실적으로 입증함.</li>
+    <li>클라우드·서버 양대 축이 동반 성장하며 AI 컴퓨팅 밸류체인 전반의 호황 신호로 해석됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=670818" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>취임 후 첫 메시지 낸 SK하이퍼 정석근 "풀스택 AI로 시장 선점"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK하이퍼 정석근 대표가 향후 2~3년을 AI 데이터센터 시장 선점의 '골든타임'으로 규정함.</li>
+    <li>반도체·전력·건설·통신을 아우르는 '풀스택 AI' 역량을 사업 확장의 핵심 축으로 제시함.</li>
+    <li>국내 AI DC 경쟁에서 통합 인프라 전략을 앞세워 초기 선점 효과를 노리겠다는 방향성임.</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=670786" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>유럽 독자 인프라 확장 나선 미스트랄, AI 플랫폼 사업자로 도약<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄 AI가 유럽의 AI 주권 확보를 목표로 오픈 모델 호스팅 서비스와 '지역별 추론 엔드포인트'를 출시함.</li>
+    <li>자체 컴퓨팅 인프라를 확장하며 모델 제공을 넘어 AI 플랫폼 사업자로 포지셔닝을 전환하고 있음.</li>
+    <li>미국 빅테크 의존을 줄이려는 유럽 시장 수요와 맞물려 지역 특화 클라우드 전략이 부각됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213858" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">LG 보안 특화 AI</span>
+  <span class="topic">CARE-X</span>
+  <span class="topic">Univé AI 인력</span>
+</div>
+
+<div class="item">
+  <h3>LG도 보안 특화 AI 출사표…엑사원 기반 컨소시엄 추진<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LG그룹이 LG AI연구원의 초거대 AI 모델 '엑사원'을 기반으로 사이버보안 특화 AI 모델 개발에 나섬.</li>
+    <li>정부의 보안 특화 AI 사업 참여를 위한 컨소시엄을 추진하며 국내 보안 AI 시장 진입을 공식화함.</li>
+    <li>네이버클라우드, SK텔레콤 등 선두 사업자와의 국내 소버린 AI 경쟁이 한층 심화될 전망임.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260812000388" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing CARE-X: 임상 활용 가능한 방사선 VLM<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Microsoft Research가 유방 X-레이 판독에 특화된 임상 활용형 방사선 VLM 'CARE-X'를 공개함.</li>
+    <li>유연한 추론, 보정된 예측, 도구 기반 측정(tool-augmented measurement)을 결합한 통합 접근을 제시함.</li>
+    <li>보조 지도(auxiliary supervision)·보상 정렬 학습으로 임상 신뢰성 확보에 초점을 맞춘 것이 특징임.</li>
+  </ul>
+  <p class="source">출처: Microsoft Research Blog · <a href="https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Univé builds an AI-ready workforce<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>네덜란드 보험사 Univé가 ChatGPT Enterprise를 활용해 조직 전반의 AI 도입을 대규모로 확산시킴.</li>
+    <li>경영진 리더십, 책임감 있는 거버넌스, 직원 주도 혁신 세 축을 결합한 것이 핵심 성공 요인임.</li>
+    <li>단순 툴 도입이 아닌 'AI 준비된 인력' 구축 관점의 전사 변화 관리 사례로 주목받고 있음.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/unive" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">AI 개발 회의론 종식</span>
+  <span class="topic">코더→오케스트레이터</span>
+  <span class="topic">AI-first 기여자</span>
+</div>
+
+<div class="item">
+  <h3>Stop being skeptical about AI for development with Charity Majors<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Honeycomb CTO Charity Majors가 2026년에는 개발 분야에서 AI에 대한 회의론을 접어야 한다고 주장함.</li>
+    <li>AI 개발 도구의 성숙도가 프로덕션 활용 임계치를 넘어섰다는 실무 관점의 판단을 제시함.</li>
+    <li>얼리 어답터에서 주류 개발 방식으로 전환되는 시점임을 강조하며 조직적 채택을 촉구함.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>From coder to orchestrator: How agents shift the role of a developer<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트의 확산으로 개발자의 역할이 '코드 작성자'에서 '코드 전달 시스템 총괄자'로 전환되고 있음.</li>
+    <li>개별 함수·라인을 짜는 시간보다 에이전트 파이프라인 설계·리뷰·검증에 쓰는 시간이 늘어나는 흐름임.</li>
+    <li>개발자 커리어 경로·평가 기준·조직 구조까지 함께 재정의될 필요가 있다는 관점을 제시함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Your contributors are AI-first now. Is your project?<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>AI가 오픈소스 프로젝트의 주요 기여자로 참여하는 시대가 도래하고 있음을 진단함.</li>
+    <li>AutoGPT 관리자가 AI 기여자를 통제·검증하기 위한 저장소 지침과 경계 설정 방안을 공유함.</li>
+    <li>메인테이너 관점에서 AI 기여를 수용할 준비가 되어 있는지에 대한 실무 체크리스트를 제시함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">SKT 디지털 트윈</span>
+  <span class="topic">Physics AI</span>
+  <span class="topic">스마트 브래지어</span>
+</div>
+
+<div class="item">
+  <h3>SKT, GTC 타이베이에서 엔비디아 옴니버스 기반 디지털 트윈 선보여<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT가 엔비디아 옴니버스 기반 디지털 트윈 기술을 SK하이닉스 반도체 팹 현장에 적용함.</li>
+    <li>제조 현장 실증 사례를 확보하며 제조 피지컬 AI 기술 협력 성과를 공식 발표함.</li>
+    <li>반도체 팹 운영 최적화와 국내 제조업 AX(AI 트랜스포메이션)의 대표 레퍼런스로 자리매김하고 있음.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/225819" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Physics AI research that's shaping the industry<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄이 물리 AI(Physics AI) 연구의 최신 성과를 정리해 산업 적용 관점에서 공개함.</li>
+    <li>물리 시뮬레이션·실세계 상호작용을 학습하는 모델이 산업 현장에서 실질적 가치를 창출하는 단계임을 강조함.</li>
+    <li>AI 에이전트가 물리 세계까지 확장하는 흐름에서 유럽 AI 진영의 연구 리더십을 부각시킴.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/physics-ai-research" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"매일 입는 브래지어가 유방암 잡아낸다"…佛 '스마트 브래지어' 개발<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>프랑스 연구진이 개발한 스마트 브래지어 'PHI-BRA'가 유방 표면의 열 변화를 실시간 감지함.</li>
+    <li>임상시험에서 유방 병변을 구별해내는 데 긍정적 결과를 보이며 조기 진단 가능성을 입증함.</li>
+    <li>웨어러블 기반 상시 모니터링이 의료 진단 영역으로 확장되는 대표 사례로 평가됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260812000410" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">금융 AI 평가 체계</span>
+  <span class="topic">암호화 추론 추출</span>
+  <span class="topic">개발 속도 조절</span>
+</div>
+
+<div class="item">
+  <h3>금보원, 국내 첫 금융 특화 AI 안전성·신뢰성 평가 체계 개발<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>금융보안원이 국내 최초로 금융 특화 AI 안전성·신뢰성 평가 프레임워크를 개발함.</li>
+    <li>금융권 AI 활용 확대에 따른 위험을 체계적으로 관리하고 객관적 평가 기준을 제공하는 것이 목적임.</li>
+    <li>금융 도메인에 특화된 검증 체계 마련으로 국내 산업별 AI 거버넌스 표준화 흐름을 앞당길 전망임.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260812223111" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>'암호화' 추론의 허점…오픈AI·앤트로픽·구글 API에서 숨은 사고 과정 추출<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>최첨단 AI 모델의 암호화된 내부 사고 과정에서 평문을 추출하는 새로운 공격 방식이 논문으로 공개됨.</li>
+    <li>OpenAI, Anthropic, Google 등 주요 상용 AI API에 실제 영향을 미치는 것으로 확인됨.</li>
+    <li>Reasoning 모델의 CoT(Chain-of-Thought) 보호 방식에 대한 재설계 필요성이 제기됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260812203252" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>[카드뉴스] AI야, 잠깐 멈춰!<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미국 상원의원이 주요 AI 기업에 개발 속도 조절을 요구하는 경고 편지를 발송함.</li>
+    <li>AI 기술 발전 속도에 대한 정치권의 우려가 커지며 규제 논의가 재점화되고 있음.</li>
+    <li>각국은 안전(EU)·발전(미국)·독립(중국·유럽 일부) 등 서로 다른 목표를 두고 규제 방향을 조율 중임.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260812094152" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">A.X K2 수학 추론</span>
+  <span class="topic">WeatherNext</span>
+  <span class="topic">SKT 2분기 실적</span>
+</div>
+
+<div class="item">
+  <h3>SKT 독자 AI 모델 A.X K2, 세계 최정상급 수학 추론 성능 기록<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SKT의 초거대언어모델 A.X K2가 국제수학올림피아드(IMO) 문제 평가에서 금메달 수준의 점수를 기록함.</li>
+    <li>허깅페이스 MathArena 리더보드에서도 공동 최고점을 달성하며 세계 최정상급 수학 추론 성능을 입증함.</li>
+    <li>국내 소버린 AI 모델이 글로벌 벤치마크에서 프론티어급 성능을 확보한 대표 사례로 평가됨.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/229153" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>WeatherNext: AI model achieves breakthrough in forecasting cyclones<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Google DeepMind가 사이클론 예측 정확도에서 획기적 진전을 이룬 AI 모델 'WeatherNext'를 공개함.</li>
+    <li>기존 물리 기반 기상 모델을 능가하는 예측 성능을 달성해 기상 재해 대응 역량 향상 가능성을 보임.</li>
+    <li>기후·기상 등 물리 과학 영역으로 AI 활용이 본격 확장되는 흐름을 대표하는 결과물임.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>[인포그래픽] 한 눈에 보는 2026년 2분기 실적 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK텔레콤이 2026년 2분기 연결 기준 매출 4조 3,591억 원, 영업이익 5,660억 원을 기록함.</li>
+    <li>전년 동기 대비 영업이익이 67.3% 급증하며 AI·인프라 투자 성과가 실적으로 이어짐.</li>
+    <li>통신사 사업 구조 전환기의 대표적 재무 개선 사례로 인포그래픽 형태로 공유됨.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/229015" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
