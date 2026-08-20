@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-24",
+    "date": "2026-08-24",
+    "weekLabel": "2026년 8월 4주차",
+    "title": "AI 인프라 주권 경쟁, 에이전트 모델 동시 공개, 사이버 보안·거버넌스 재편",
+    "summary": "미스트랄·엔비디아·네이버가 역내 추론·vLLM·AI 팩토리 자본으로 인프라 주권·규모 경쟁을 끌어올렸다. Muse Glimmer·Nemotron 3.5 Lightning·OpenAI Presence 등 에이전트형 모델이 동시 공개됐고, Daybreak·SAFE·미토스 쇼크로 AI 사이버 보안·거버넌스 재편이 화두로 부상했다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-08-24.html"
+  },
+  {
     "id": "2026-08-17",
     "date": "2026-08-17",
     "weekLabel": "2026년 8월 3주차",

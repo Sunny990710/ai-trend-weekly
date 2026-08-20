@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-08-24)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-08-24 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>AI 인프라 주권·규모 경쟁</strong> — 미스트랄·엔비디아·네이버가 역내 추론, vLLM 최적화, AI 팩토리 자본 조달로 AI 인프라의 주권·규모 경쟁을 한 단계 끌어올림.</div>
+<div class="headline">② <strong>에이전트형 모델 동시 공개</strong> — 메타 Muse Glimmer, 엔비디아 Nemotron 3.5 Lightning, OpenAI Presence 등 에이전트형 오픈·엔터프라이즈 모델이 동시다발적으로 공개되며 업무 자동화가 가속화됨.</div>
+<div class="headline">③ <strong>사이버 보안·거버넌스 재편</strong> — OpenAI Daybreak·SAFE 가이드라인·미토스 쇼크로 이어지는 AI 시대 사이버 보안·거버넌스 재편이 이번 주 최대 화두로 부상함.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">Muse Glimmer</span>
+  <span class="topic">Nemotron 3.5 Lightning</span>
+  <span class="topic">OpenAI Presence</span>
+</div>
+
+<div class="item">
+  <h3>Meta is back with Muse Glimmer: local, agentic, multimodal, and open source<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타가 로컬에서 실행되는 에이전트형 멀티모달 오픈소스 모델 'Muse Glimmer'를 공개함.</li>
+    <li>클라우드 종속 없이 온디바이스로 에이전트를 구동할 수 있어 프라이버시·비용 이슈 해소가 기대됨.</li>
+    <li>메타가 다시 오픈소스 진영의 주도권을 노리며 앤트로픽·오픈AI 대비 경쟁 축을 재설정하고 있음.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/muse-glimmer" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 자율 에이전트 AI 워크로드에 최적화된 오픈 모델 'Nemotron 3.5 Lightning'을 발표함.</li>
+    <li>NeMo Switchyard와 결합해 RTX·DGX 전 계층에서 저지연·고효율 에이전트 배포가 가능해짐.</li>
+    <li>엔비디아가 하드웨어를 넘어 에이전트 스택 전 계층을 수직 통합하는 전략이 뚜렷해지고 있음.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing OpenAI Presence<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 신뢰 가능한 음성·챗 기반 엔터프라이즈 에이전트 플랫폼 'Presence'를 출시함.</li>
+    <li>고객 응대와 내부 워크플로우 자동화를 단일 플랫폼으로 통합해 도입 장벽을 낮춘 것이 특징임.</li>
+    <li>기업용 에이전트 시장에서 마이크로소프트 Copilot·구글 Gemini와의 경쟁이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/introducing-openai-presence" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">유럽 주권 인프라</span>
+  <span class="topic">네이버 vLLM</span>
+  <span class="topic">AI Factory CAPEX</span>
+</div>
+
+<div class="item">
+  <h3>In-region inference, open models, and new European infrastructure for sovereign AI<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄이 유럽 AI 주권을 겨냥해 역내 추론 인프라와 오픈 모델을 결합한 로드맵을 공식화함.</li>
+    <li>장기 컴퓨트 약속을 통해 유럽 기업이 데이터 주권과 모델 통제권을 동시에 확보할 수 있는 경로를 제시함.</li>
+    <li>미국·중국 중심의 AI 인프라 이원화 구도에 유럽이라는 '제3의 축'이 실체화되는 신호로 해석됨.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/regional-inference-open-models-new-compute" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>우리 팀만의 vLLM 플러그인 만들기 1편 — 검색 AI 모델 서빙 성능 극대화하기<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>네이버 플레이스 AI MLOps 팀이 검색·추천 스코어링 모델 서빙 구조를 vLLM 기반으로 전환함.</li>
+    <li>처리량을 약 6.2배 향상시킨 성능 최적화 과정과 커스텀 플러그인 설계 방식을 상세히 공개함.</li>
+    <li>대규모 프로덕션 환경에서 오픈소스 서빙 스택을 튜닝하려는 조직에게 실전 레퍼런스로 활용 가능함.</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/0525182" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA AI Factory Compute Is Becoming an Investable Asset Class<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 주요 금융기관과 함께 5천억 달러 이상 규모의 AI 인프라 자본을 동원하고 있음.</li>
+    <li>'AI 팩토리 컴퓨팅' 자체가 부동산·에너지와 같이 투자 가능한 자산군으로 분류되기 시작함.</li>
+    <li>토큰 경제와 데이터센터 CAPEX가 새로운 금융상품으로 이어지며 AI 인프라의 산업화가 본격화됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-ai-factory-compute" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">AI 인재 채용</span>
+  <span class="topic">B2B AI SaaS</span>
+  <span class="topic">GEO 검색</span>
+</div>
+
+<div class="item">
+  <h3>넷플릭스 CPTO가 말하는, AI 시대에 채용하고 싶은 사람의 조건<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>넷플릭스 CPTO가 AI 시대의 인재 채용에서 '시스템 사고' 역량을 가장 중요한 기준으로 지목함.</li>
+    <li>크래프톤의 음성 AI 모델과 AI 에이전트 보안 위험 사례를 통해 AI 도입의 현실적 과제를 함께 다룸.</li>
+    <li>단순 도구 활용을 넘어 조직 구조와 워크플로우를 재설계할 인력이 프로덕트 조직의 핵심으로 부상함.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3888" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>B2B AI SaaS가 성공하려면 뭐가 중요할까?<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>B2B AI SaaS의 성공 조건으로 데이터 거점·암호화 키 분리 등 '하이브리드 보안' 아키텍처가 강조됨.</li>
+    <li>민감도 기반 라우팅과 감사 로그 기반 Trust UX로 세일즈 리드타임을 단축하는 전략이 제시됨.</li>
+    <li>고객사 보안 심의 통과 여부가 계약 전환율을 좌우하는 시대에 필수 참고자료로 평가됨.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3894" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>[티켓 증정 이벤트] 개발자·PM도 알아야 할 검색의 미래, 구글에게 직접 듣는다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI와 LLM 확산으로 검색 엔진의 랭킹·노출 메커니즘이 근본적으로 재편되고 있음.</li>
+    <li>개발자와 PM이 자사 서비스의 AI 검색·LLM 노출 방식을 이해해야 제품 발견성을 확보할 수 있음.</li>
+    <li>SEO 이후의 'GEO(Generative Engine Optimization)' 시대에 대비한 조직 학습 필요성이 커짐.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3892" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">CI/CD · GitOps</span>
+  <span class="topic">Copilot 슬래시 명령</span>
+  <span class="topic">Copilot SDK for Java</span>
+</div>
+
+<div class="item">
+  <h3>CI/CD with Robert Erez<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Octopus Deploy의 Robert Erez가 Kubernetes·GitOps·점진적 배포의 현재 흐름을 정리함.</li>
+    <li>CI/CD 파이프라인에 AI 도구를 통합해 배포 판단·롤백을 자동화하는 사례가 늘고 있음.</li>
+    <li>DevOps 실무자에게 '현대 소프트웨어 딜리버리'의 지형을 조망할 수 있는 핵심 인터뷰임.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/cicd-with-robert-erez" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>A guide to slash commands in the GitHub Copilot app<span class="badge stars s1">중요도 ★</span></h3>
+  <ul class="highlights">
+    <li>GitHub Copilot 앱의 슬래시 명령어를 활용한 개발 워크플로우 계획·자동화 방법을 정리함.</li>
+    <li>협업·맞춤 설정 시나리오별로 실무에 바로 적용 가능한 커맨드 조합을 안내함.</li>
+    <li>AI IDE·에이전트 UX가 '슬래시 커맨드' 중심으로 표준화되는 흐름을 잘 보여줌.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Using the GitHub Copilot SDK for Java<span class="badge stars s1">중요도 ★</span></h3>
+  <ul class="highlights">
+    <li>엔터프라이즈 자바 환경에서 GitHub Copilot SDK를 활용하는 실전 가이드를 공개함.</li>
+    <li>자바 코드 내에서 Copilot 기능을 프로그램적으로 호출해 개발 생산성을 높일 수 있음.</li>
+    <li>기존 자바 기반 SI·엔터프라이즈 조직의 AI 개발 도구 통합 진입 장벽을 낮추는 사례임.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/engineering/using-the-github-copilot-sdk-for-java" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">로닉 큐브</span>
+  <span class="topic">LG CNS 휴머노이드</span>
+</div>
+
+<div class="item">
+  <h3>로닉, 조리 넘어 재고 관리까지 연결한 피지컬 AI 로봇 선봬<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>로봇기업 로닉이 식재료 계량·메뉴 생산·재고·온도 관리를 통합한 피지컬 AI 로봇 '큐브'를 공개함.</li>
+    <li>외식 매장 운영 전반의 자동화를 목표로, 조리 로봇의 활용 범위를 오퍼레이션 전체로 확장함.</li>
+    <li>인력난에 시달리는 국내 F&amp;B 업계에서 서비스형 로봇(RaaS) 모델의 확산이 예상됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260724000251" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>컬리 찍고 LX판토스까지 — LG CNS, 휴머노이드 물류 판 키운다<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>LG CNS가 컬리에 이어 LX판토스 물류센터에 휴머노이드 로봇 기반 자동화 시스템을 구축함.</li>
+    <li>단순 AMR을 넘어 사람과 협업 가능한 휴머노이드 물류 파이프라인 확장이 본격화됨.</li>
+    <li>국내 SI/물류 대기업이 피지컬 AI 시장에서 실증 사업을 선점하려는 움직임이 뚜렷함.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260611095159" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">Daybreak</span>
+  <span class="topic">미토스 쇼크</span>
+  <span class="topic">SAFE 가이드라인</span>
+</div>
+
+<div class="item">
+  <h3>Expanding Daybreak as the Cyber Defense Window Narrows<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 사이버 보안 전용 모델 GPT-5.6-Cyber를 Daybreak Red 프로그램으로 공개함.</li>
+    <li>취약점 연구·익스플로잇 검증·보안 테스트 등 승인된 방어 활동에 한해 활용을 지원함.</li>
+    <li>AI가 공격 자동화 시대의 방어 격차를 좁히는 '사이버 방어 창'으로 재정의되고 있음.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>미토스 쇼크 이후, 보안은 어떻게 바뀌어야 할까?<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽 미토스(Mythos)가 실제 소프트웨어 취약점을 자율적으로 발견하며 업계에 충격을 안김.</li>
+    <li>AI 시대의 보안은 '탐지 속도 · 판단 정확도 · 대응 자동화' 3요소가 경쟁 우위를 결정함.</li>
+    <li>기존 SIEM/EDR 중심 아키텍처의 AI 네이티브 재설계가 조직 보안 전략의 핵심 과제로 떠오름.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3877" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>AI Leaders Propose SAFE Guidelines for Cybersecurity Transparency<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>120개 이상 기관이 참여하는 Open Secure AI Alliance가 SAFE 가이드라인을 제안함.</li>
+    <li>AI 에이전트가 발견한 보안 이슈를 표준화된 방식으로 공유하는 'Shared AI Findings Exchange' 체계임.</li>
+    <li>업계 자율의 첫 대규모 보안 표준안으로, EU AI Act·미국 행정명령과의 연결 여부가 관건임.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance-contributions" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">Anthropic 개발 방식</span>
+  <span class="topic">Gemini 3.6 Flash</span>
+  <span class="topic">문샷 K4</span>
+</div>
+
+<div class="item">
+  <h3>How building software is changing at Anthropic<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽 내부의 소프트웨어 개발 방식이 AI 도구 도입으로 어떻게 변화하고 있는지 심층 분석함.</li>
+    <li>AI가 코드 리뷰·테스트를 확대 수행하며 개발 효율성을 높이는 동시에 '투 피자 팀' 문화는 유지됨.</li>
+    <li>AI 네이티브 조직 설계에 관심 있는 CTO·엔지니어링 리더에게 가장 실질적인 벤치마크로 꼽힘.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/inside-anthropic" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 Gemini 3.6 Flash, 3.5 Flash-Lite, 3.5 Flash Cyber를 동시 공개함.</li>
+    <li>보안 특화 모델(Flash Cyber)까지 라인업에 편입되며 세그먼트별 모델 전략이 정교화됨.</li>
+    <li>가격·지연시간·용도에 따른 티어링이 뚜렷해져, 개발자·조직의 모델 선택 프레임워크가 재편됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>문샷, 차세대 '키미 K4' 구축 착수 — 엔비디아 블랙웰 추가 확보 나서<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>중국 문샷 AI가 초거대 오픈소스 모델 '키미 K3' 성공에 힘입어 차세대 K4 개발에 착수함.</li>
+    <li>엔비디아 블랙웰 GPU 추가 확보를 추진하며 미·중 기술 통제 속에서도 파운데이션 모델 경쟁을 지속함.</li>
+    <li>중국 AI 랩의 자체 프론티어 모델 개발 속도가 미국 대비 격차를 빠르게 좁히고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=213296" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
