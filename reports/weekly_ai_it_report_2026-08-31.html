@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-08-31)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-08-31 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>온디바이스 AI 상용화</strong> — 삼성전자가 AI PC 칩셋 '가이아'에 LPDDR5X-PIM을 세계 최초로 탑재하며 메모리 내 연산 기술의 실제 제품 진입을 알림.</div>
+<div class="headline">② <strong>AIDC 골든타임</strong> — AIDC를 국가 기반시설로 지정하자는 목소리가 커지고, LG CNS 등이 액체냉각·풀스택 인프라 구축에 속도를 냄.</div>
+<div class="headline">③ <strong>도메인 특화 에이전트</strong> — 구글은 법률 특화 '제미나이 엔터프라이즈 포 리걸'을, SK AX는 SAP와 손잡고 ERP AI 에이전트 사업화에 나섬.</div>
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">제미나이 리걸</span>
+  <span class="topic">SK AX × SAP</span>
+  <span class="topic">시큐업 해커톤</span>
+</div>
+
+<div class="item">
+  <h3>구글, 법률 특화 '제미나이 엔터프라이즈 포 리걸' 공개…기업 시장 공략 가속<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글이 법률 업무 특화 에이전트형 AI 플랫폼 '제미나이 엔터프라이즈 포 리걸'을 공개함.</li>
+    <li>법률 문서 검토, 계약서 초안 작성 등 반복성이 높은 리걸 워크플로를 AI 에이전트가 수행하도록 지원함.</li>
+    <li>MS 코파일럿과 하비(Harvey) 등이 선점해온 리걸테크 시장에 구글이 정면 진입하면서 도메인 특화 기업 AI 경쟁이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214374" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>SK AX-SAP, 기술 검증부터 사업화까지 AI 에이전트 협력 강화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK AX가 SAP와 MOU를 체결, 기업 ERP에 AI 에이전트를 적용하기 위한 협력 체계를 구축함.</li>
+    <li>기술 검증(PoC), 공동 개발, 고객 적용, 사업화까지 전 단계를 아우르는 광범위한 협업이 특징임.</li>
+    <li>기간계 시스템에 에이전트를 이식하는 파트너십 모델은 국내 대기업의 AX 확산에서 표준 사례가 될 가능성이 높음.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=671821" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>라온시큐어, 내달 '2026 시큐업&amp;해커톤' 개최<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>라온시큐어가 '안전하고 재밌는 에이전틱 AI'를 주제로 '2026 시큐업&amp;해커톤'을 개최함.</li>
+    <li>에이전틱 AI 기반 보안 자동화 플랫폼과 실전 적용 전략을 선보일 예정임.</li>
+    <li>보안 도메인 에이전트 개발자 커뮤니티 저변을 넓히는 이벤트로, AI 시큐리티 채용·산학 협력 채널 역할이 기대됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260826102716" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">가이아 PIM</span>
+  <span class="topic">AIDC 골든타임</span>
+  <span class="topic">액체냉각</span>
+</div>
+
+<div class="item">
+  <h3>삼성 '가이아'에 LPDDR5X-PIM 탑재…AI PC서 PIM 첫 상용화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>삼성전자가 AI PC용 칩셋 '가이아'에 연산 기능을 내장한 LPDDR5X-PIM을 세계 최초로 탑재함.</li>
+    <li>PIM(프로세싱 인 메모리) 기술이 AI PC 시장에 상용화된 첫 사례로, 온디바이스 AI 성능 경쟁의 판을 바꿀 진전임.</li>
+    <li>메모리 대역폭·전력효율이 병목이던 온디바이스 LLM 추론 환경에서 삼성의 메모리 자산이 실질적 무기가 될 수 있음을 보여줌.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260819173250" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"AIDC 골든타임 놓치면 투자 해외로 샌다"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 경쟁의 축이 모델에서 컴퓨팅 인프라 확보로 이동하는 가운데, AIDC 골든타임을 놓치면 투자가 해외로 유출된다는 경고가 제기됨.</li>
+    <li>AIDC를 국가 기반시설로 지정하고 세제·전력 정책을 전면 정비해야 한다는 정책 제안이 이어짐.</li>
+    <li>글로벌 하이퍼스케일러의 부지 선점 경쟁이 격화되는 가운데, 한국의 전력·용수·인허가 제도가 산업 경쟁력의 병목이 되고 있음.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260826101922" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>LG CNS, 고양 삼송데이터센터에 '액체냉각' 인프라 구축<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LG CNS가 엔비디아 차세대 GPU '베라 루빈' 운영을 겨냥해 고양 삼송데이터센터에 직접칩냉각(DTC) 방식의 액체냉각 인프라를 구축함.</li>
+    <li>고밀도 GPU 서버 확산으로 공랭 한계에 도달한 국내 데이터센터 냉각 방식의 전환점을 보여주는 사례임.</li>
+    <li>국내 SI/클라우드 사업자의 액체냉각 도입이 본격화되며 관련 소부장·설비 시장에도 파급효과가 예상됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=671812" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">뤼튼 유니콘</span>
+  <span class="topic">병원 AICC</span>
+  <span class="topic">AX 직무 역량검사</span>
+</div>
+
+<div class="item">
+  <h3>'AI 유니콘' 뤼튼, 1000억 신규 투자 유치…누적 2300억 달성<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>국내 AI 서비스 스타트업 뤼튼테크놀로지스가 1000억원 규모 시리즈 C 투자를 유치, 국내 AI 서비스 스타트업 최초 기업가치 1조원을 돌파함.</li>
+    <li>누적 투자 유치액은 2300억원 규모로, 일본 등 해외 시장 확장을 위한 실탄이 확보됨.</li>
+    <li>범용 챗 서비스 중심의 K-AI 서비스가 유니콘 반열에 오르며, 국내 소비자·B2B AI 시장 성숙기 진입을 알림.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=671823" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>KTis, 강남세브란스병원에 통합형 AICC 구축<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>KTis가 강남세브란스병원에 국내 상급종합병원 최초로 KT AI 기술 기반 통합형 AICC(AI 컨택센터)를 구축함.</li>
+    <li>환자 예약부터 사후관리까지 의료 서비스 전 여정에 AI가 개입, 상담 자동화와 대기시간 단축 효과가 기대됨.</li>
+    <li>의료 도메인은 규제·프라이버시 이슈로 AI 도입이 지연돼왔으나, 병원 콜센터부터 AX가 본격화되고 있음.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260826103930" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>진학사 캐치, AI 활용 강의부터 평가까지 지원하는 'AX 직무 역량검사' 출시<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>채용 플랫폼 진학사 캐치가 AI 실무 활용 능력을 진단하는 'AX 직무 역량검사'를 출시함.</li>
+    <li>비전공자도 AI 활용법을 익히고 업무에 적용하는 능력을 객관적으로 평가할 수 있음.</li>
+    <li>AI 리터러시가 신입 채용 스크리닝 지표로 자리 잡으면서, HR테크 시장에서 'AI 역량 검증'이 새로운 카테고리로 부상하고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214372" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<p class="category-note">이번 주 Software Development 카테고리에 신규(High/Medium) 항목이 등재되지 않음. 다음 리포트에서 통합 반영 예정.</p>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">M.AX 전문기업</span>
+  <span class="topic">GV90 OLED</span>
+  <span class="topic">톈궁 옴니</span>
+</div>
+
+<div class="item">
+  <h3>크라우드웍스, 피지컬 AI 데이터로 정부 'M.AX 전문 기업' 선정<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>크라우드웍스가 제조업 AI 대전환(M.AX) 전문기업으로 선정됨.</li>
+    <li>제조 현장 데이터 구축 기술과 로봇 데이터 수집·가공·검증에 특화된 '피지컬 AI 데이터 플랫폼'이 인정받음.</li>
+    <li>휴머노이드·제조 로봇 상용화의 병목이 데이터 파이프라인이라는 인식이 정부 정책에도 반영되고 있음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214369" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"90mm 팝업의 힘"…삼성디스플레이, 제네시스 GV90 OLED 접수<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>삼성디스플레이가 정차 시 화면이 팝업되는 차세대 가변형 OLED 패널을 제네시스 GV90에 공급함.</li>
+    <li>프리미엄 차량용 디스플레이 시장에서 폼팩터 혁신을 무기로 주도권을 강화하는 움직임임.</li>
+    <li>차량이 로봇/모빌리티 플랫폼으로 재정의되는 흐름 속, 실물 인터페이스 하드웨어 경쟁도 격화되고 있음.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=671826" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>1등 비결? 中 로봇의 독특한 400m 달리기 자세<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>중국 휴머노이드 로봇 '톈궁 옴니'가 독특한 달리기 자세로 400m 육상 경기에서 우승함.</li>
+    <li>보행·달리기 로코모션 제어에서 중국 팀의 학습 기반 접근이 빠른 성과를 내고 있음을 보여줌.</li>
+    <li>휴머노이드의 스포츠 이벤트 횡행이 자본·인재 유입을 가속하며 물리적 AI 격차 확대 요인으로 작용함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 · <a href="https://www.etnews.com/20260825000311" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">AX-RAY</span>
+  <span class="topic">인과 누설</span>
+</div>
+
+<div class="item">
+  <h3>비드래프트, '인과 누설' 실증 논문서 AX-RAY로…보안 파운데이션 모델 검증 기술로 확장<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>AI 딥테크 기업 비드래프트가 AI 모델의 구조적 결함(인과 누설)을 찾는 연구 성과를 자체 AI 안전성 진단 시스템 'AX-RAY'에 적용함.</li>
+    <li>정부가 추진하는 사이버 보안 특화 AI 파운데이션 모델 개발 사업의 검증 기술로 활용됨.</li>
+    <li>AI 안전성 평가가 '이론'에서 '상용 파운데이션 모델 감사'로 넘어가는 흐름을 보여주는 국내 사례임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214380" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note">이번 주 AI Risk &amp; Regulation 신규 High 항목은 제한적임. 미국·EU·한국 AI 규제 동향은 다음 리포트에서 통합 정리 예정.</p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>

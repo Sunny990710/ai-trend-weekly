@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-31",
+    "date": "2026-08-31",
+    "weekLabel": "2026년 8월 5주차",
+    "title": "온디바이스 AI 상용화, AIDC 골든타임, 도메인 특화 에이전트",
+    "summary": "삼성전자가 AI PC 칩셋 '가이아'에 LPDDR5X-PIM을 세계 최초 탑재하며 온디바이스 AI 상용화를 알렸다. AIDC를 국가 기반시설로 지정하자는 목소리와 LG CNS 액체냉각 구축이 이어졌고, 구글 리걸 에이전트·SK AX-SAP ERP 협력으로 도메인 특화 기업 AI가 본격화됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-08-31.html"
+  },
+  {
     "id": "2026-08-24",
     "date": "2026-08-24",
     "weekLabel": "2026년 8월 4주차",
