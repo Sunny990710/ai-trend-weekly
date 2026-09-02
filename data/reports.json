@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-07",
+    "date": "2026-09-07",
+    "weekLabel": "2026년 9월 2주차",
+    "title": "Claude Fable 5.1·Mythos 5.1 공개, 에이전틱 사이버 보안 격화, AI 인프라 국산화",
+    "summary": "앤트로픽이 Claude Fable 5.1·Mythos 5.1을 공개하며 코딩·지식 작업 성능과 토큰 이코노미를 재정의했다. 엔비디아·크라우드스트라이크 SafeMind, 딥마인드 이중맹검 평가, OpenAI Astra 세이프가드로 에이전트 리스크·평가·보안이 동시에 재편됐고, 한미반도체의 대만 파운드리 양산 진입과 엔비디아 NVHBM·베라 루빈 확장으로 AI 인프라 격전이 전면화됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-09-07.html"
+  },
+  {
     "id": "2026-08-31",
     "date": "2026-08-31",
     "weekLabel": "2026년 9월 1주차",

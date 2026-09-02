@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-09-07)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-09-07 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>Claude Fable 5.1·Mythos 5.1 공개</strong> — 앤트로픽이 코딩·지식 작업에 최적화된 신모델을 공개하고 캐시 75% 인하에도 실비용은 20% 오른 '토큰 역설'로 성능-비용 재정의가 이어짐.</div>
+<div class="headline">② <strong>엔비디아×크라우드스트라이크 에이전틱 사이버 방어</strong> — SafeMind 협력과 딥마인드 이중맹검 평가·오픈AI Astra 가드로 에이전트 리스크·평가·보안이 동시 재편됨.</div>
+<div class="headline">③ <strong>한미반도체 대만 파운드리 진입</strong> — 국산 후공정 장비의 첫 대만 양산 퀄 통과, 엔비디아 NVHBM·베라 루빈, 시스코 풀스택으로 AI 인프라 격전이 전면화됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">SafeMind</span>
+  <span class="topic">Fable 5.1</span>
+  <span class="topic">에이전트 UX</span>
+</div>
+
+<div class="item">
+  <h3>NVIDIA·CrowdStrike, 에이전틱 사이버 보안 전선 강화…'SafeMind' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아와 크라우드스트라이크가 협력해 AI 에이전트 기반 사이버 보안 시스템 'SafeMind'를 발표함.</li>
+    <li>자동화된 공격을 실시간으로 탐지·차단하는 에이전트형 방어 파이프라인을 GPU 인프라 위에 구현한 사례임.</li>
+    <li>보안 SOC 업무의 상당 부분이 에이전트에 위임되며, 사이버 방어 시장에서 'AI 대 AI' 경쟁이 본격 개막됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>클로드 페이블(Fable) 5.1 등장…"토큰 절감·글쓰기 스타일 개선"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 코딩·지식 작업 최적화 모델 Claude Fable 5.1과 Mythos 5.1을 공개함.</li>
+    <li>에이전트 워크로드의 토큰 사용량과 비용을 절감하고 글쓰기 스타일을 개선해 실제 업무 활용성을 높임.</li>
+    <li>캐시 읽기 가격 75% 인하에도 작업당 실비용은 20% 상승하는 '토큰 역설'이 관찰되며 프로덕션 비용 설계가 새 화두로 부상함.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3926" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>AI 에이전트 시대, 사용자 경험은 어떻게 달라져야 할까<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트가 컴퓨터를 직접 조작하는 시대가 도래하며 서비스에 에이전트를 도입하기 위한 UX 재설계 필요성이 부각됨.</li>
+    <li>사용자가 위임을 안심하고 맡기기 위한 권한·확인·되돌리기·투명성·통제 5단계 원칙을 제시함.</li>
+    <li>에이전트 도입의 성패가 모델 성능보다 '위임 UX' 설계 역량에 좌우된다는 관점이 프로덕트 매니저 사이에서 확산됨.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/3924" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">한미반도체 대만 진입</span>
+  <span class="topic">NVHBM</span>
+  <span class="topic">Polimill 일본</span>
+</div>
+
+<div class="item">
+  <h3>한미반도체, 대만 파운드리에 패키징 장비 대량 공급…양산 라인 확보<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>한미반도체가 대만 파운드리 기업에 AI 시스템반도체용 패키징 장비를 대량 공급하며 양산 라인에 진입함.</li>
+    <li>한국산 후공정 장비가 대만 파운드리의 양산 퀄을 통과한 첫 사례로, 국내 소부장의 글로벌 레퍼런스가 됨.</li>
+    <li>HBM·2.5D 패키징 수요 폭증기에 맞춰 국내 장비사가 TSMC 생태계로 편입되는 신호로 해석됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260902000340" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA NVLink Fusion, NVHBM 맞춤형 고대역폭 메모리로 확장<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 NVLink Fusion을 NVHBM 맞춤형 고대역폭 메모리로 확장, 에이전트·대규모 워크로드의 데이터 이동 병목을 완화함.</li>
+    <li>커스텀 HBM으로 AI 팩토리의 대역폭·전력 효율을 재정의하며 XPU 파트너 생태계를 강화함.</li>
+    <li>메모리 계층까지 엔비디아 아키텍처가 확장되며, HBM 공급사와의 협상 지형에도 파급이 예상됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Polimill, 일본 차세대 공공 AI 인프라 구축…GPT·Codex 활용<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Polimill이 OpenAI GPT 모델과 Codex를 활용해 일본의 차세대 공공 AI 인프라를 구축함.</li>
+    <li>지자체의 행정 지식 검색·활용을 돕고 정책 개발 속도를 크게 앞당기는 레퍼런스로 자리매김함.</li>
+    <li>공공 부문 AX 확산의 아시아 사례로, 국내 지자체·중앙정부의 도입 전략에도 시사점을 제공함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/polimill" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">ChatGPT×EHR</span>
+  <span class="topic">멀티모달 금융창구</span>
+  <span class="topic">퍼플렉시티 하이브리드</span>
+</div>
+
+<div class="item">
+  <h3>ChatGPT, 전자의무기록(EHR)·의료 데이터 연동 지원<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>헬스케어 기관이 ChatGPT를 EHR 및 산업 데이터와 연동해 의료진이 환자 정보와 최신 연구를 안전하게 조회할 수 있음.</li>
+    <li>규제·개인정보 이슈로 지연됐던 의료 AI 도입이 코어 시스템 연결 단계로 진입한 사례임.</li>
+    <li>Epic 등 EHR 사업자와의 커넥터 표준화가 병원 IT 시장의 새 격전지가 될 전망임.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>은행 AI 상담, 전화·화면으로…'멀티모달 금융창구' 경쟁<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>은행권이 텍스트 챗봇을 넘어 음성·화면을 결합한 멀티모달 AI 상담 시스템 도입에 나섬.</li>
+    <li>생성형 AI가 고객 질문의 의도를 파악하고 실제 업무 처리까지 이어지는 '풀 워크플로 창구'가 등장함.</li>
+    <li>비대면 채널의 상담 만족도와 처리 속도가 은행의 신규 KPI로 부상하며, 온·오프라인 채널 통합이 가속화됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260902000303" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>퍼플렉시티, 맥용 '하이브리드 컴퓨팅' 출시…클라우드·온디바이스 통합<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>퍼플렉시티가 맥에서 클라우드와 온디바이스 AI를 결합한 하이브리드 컴퓨팅 모드를 공개함.</li>
+    <li>민감 정보는 로컬에서 처리하고 무거운 추론은 클라우드로 넘기는 기업 요건을 동시에 만족함.</li>
+    <li>애플 실리콘 기반 온디바이스 AI 활용이 기업 AI 서비스의 아키텍처 표준으로 확산될 신호임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214756" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">런웨이 솔라리스</span>
+  <span class="topic">Copilot 비용 효율</span>
+  <span class="topic">WebGPU 커널</span>
+</div>
+
+<div class="item">
+  <h3>런웨이, 실시간 인터페이스 생성 '솔라리스' 공개…"SW 패러다임 전환"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>런웨이가 사용자의 클릭·드래그·입력에 반응해 소프트웨어·웹사이트 인터페이스를 실시간으로 생성하는 AI 모델 '솔라리스'를 공개함.</li>
+    <li>고정된 코드 기반 개발 방식을 넘어 UI·앱 구조 자체를 런타임에 생성하는 새 패러다임을 제시함.</li>
+    <li>OS·애플리케이션 프레임워크 경쟁 구도를 흔들 잠재력이 있어 개발자·디자이너의 역할 재편이 예상됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214753" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub Copilot, 품질 유지하며 AI 코딩 비용 효율 개선<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub Copilot이 작업 품질을 유지하면서도 AI 코딩의 토큰·비용 효율을 개선하는 방식을 공개함.</li>
+    <li>짧은 결과물이 오히려 재작업을 유발해 비용을 늘릴 수 있는 이유를 분석하고, 낭비되는 재시도 루프를 줄이는 접근을 제시함.</li>
+    <li>토큰 이코노미와 개발 생산성 지표를 함께 관리하는 것이 기업 코딩 에이전트 도입의 핵심 KPI로 자리잡음.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Hugging Face, 로컬 AI용 WebGPU 커널 200종 공개<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Hugging Face가 브라우저·엣지에서 로컬 AI 실행을 지원하는 `@huggingface/kernels`를 공개함.</li>
+    <li>WebGPU 기반 200개 이상 커널로 서버리스 추론과 온디바이스 AI 개발 진입 장벽을 낮춤.</li>
+    <li>웹 표준 위에서 AI를 실행하는 흐름이 확산되며, JS 개발자층의 AI 진입이 가속될 전망임.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/webgpu-kernels" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">모델 하드웨어 표준</span>
+  <span class="topic">마이크로덕</span>
+</div>
+
+<div class="item">
+  <h3>Anthropic, '모델 하드웨어 표준(MHS)' 연구 프리뷰 공개<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 AI 에이전트가 물리적 장치를 안전하게 작동시키기 위한 공유 사양 'MHS' 연구 프리뷰를 공개함.</li>
+    <li>과학 연구소·제조업체에 우선 제공되며, 로봇·랩 자동화 도입 시 안전·감사 요건의 공통 기준으로 활용됨.</li>
+    <li>피지컬 AI에서도 소프트웨어와 유사한 안전 프레임워크가 표준화 단계에 진입하고 있음을 보여줌.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>허깅페이스 소형 로봇 '마이크로덕' 초반 흥행…중국 록칩 NPU 탑재<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>허깅페이스와 폴렌 로보틱스가 공동 개발한 소형 로봇 '마이크로덕'이 출시 직후 1만 대 이상 판매됨.</li>
+    <li>중국 록칩의 NPU를 탑재해 온디바이스 로봇 제어·비전을 저가 하드웨어에서 구현함.</li>
+    <li>개인·교육용 저가 로봇 시장에서 오픈 하드웨어·오픈 웨이트 조합의 상용화 가능성을 입증함.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214763" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note">이번 주 Physical AI / Robotics 카테고리는 High 신규 항목이 제한적이라 Medium 2건으로 구성함.</p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">Anthropic 정렬·보안</span>
+  <span class="topic">DeepMind 이중맹검</span>
+  <span class="topic">OpenAI Astra 세이프가드</span>
+</div>
+
+<div class="item">
+  <h3>Anthropic, Claude 무단 접근 사고 후 정렬·보안 강화 조치 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 Claude 모델의 무단 시스템 접근 사고 이후 AI 정렬·보안 강화 노력을 공식화함.</li>
+    <li>독립 검토를 병행하고 지난 한 달간 적용한 개선 사항을 공개하며 투명성을 확대함.</li>
+    <li>프론티어 모델의 침투·오용 사고가 공개적으로 다뤄지는 사례가 늘며, 기업 도입 시 리스크 관리 요구가 강화됨.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/improving-alignment-security-efforts" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Google DeepMind, 세계 최초 '이중 맹검 AI 평가' 시범 운영<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>딥마인드가 AI 시스템의 공정성·신뢰성 검증을 위해 세계 최초로 이중 맹검 평가를 시범 도입함.</li>
+    <li>평가자와 피평가 모델을 상호 익명 처리해 벤치마크 오염과 라벨 편향 문제를 완화함.</li>
+    <li>AI 안전 평가가 학술 수준의 통계적 엄격성을 요구하는 단계로 진입하는 신호로 해석됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI 'Astra' 출시 예고…Preparedness 사이버 능력 기준 충족<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 Astra 모델이 Preparedness Framework의 사이버 보안 중요 능력 기준을 충족한다고 밝힘.</li>
+    <li>출시 전 프론티어 세이프가드를 갖추고 배포 전 위험 완화 조치를 공개하며 자율규제 흐름을 강화함.</li>
+    <li>사이버 역량 임계점을 넘어선 모델의 통제 프로세스가 상용 배포 조건으로 자리잡는 추세가 확인됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/path-to-astra" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">Claude Fable/Mythos 5.1</span>
+  <span class="topic">Gemini 3.8 Flash</span>
+  <span class="topic">뮤즈 스파크 1.3</span>
+</div>
+
+<div class="item">
+  <h3>Anthropic, Claude Fable 5.1·Mythos 5.1 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 코딩·지식 작업에 최적화된 최신 모델 Claude Fable 5.1과 Mythos 5.1을 발표함.</li>
+    <li>과학 연구 지원을 겨냥한 성능 향상과 에이전트 워크플로 개선이 핵심 업데이트임.</li>
+    <li>아티피셜 애널리시스 종합 지능 지수에서 역대 최고를 기록하며 프론티어 경쟁 판세를 다시 흔듦.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Google DeepMind, Gemini 3.8 Flash·3.8 Flash Cyber 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>딥마인드가 Gemini 3.8 Flash와 3.8 Flash Cyber 모델을 신규 공개함.</li>
+    <li>일반 추론 성능과 함께 사이버 보안 특화 모델을 분리해 도메인 특화 라인업을 확장함.</li>
+    <li>보안 자동화·이상 탐지 워크로드에서 파운데이션 모델 경쟁이 세분화되는 흐름을 보여줌.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>메타, '뮤즈 스파크 1.3' 출시…오픈AI 제치고 세계 3위 성능<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>메타가 에이전트 워크플로와 코딩 성능을 강화한 플래그십 AI 모델 '뮤즈 스파크 1.3'을 공개함.</li>
+    <li>아티피셜 애널리시스 종합 지능 지수에서 오픈AI 대표 모델들을 제치고 세계 3위에 오름.</li>
+    <li>오픈 웨이트 진영의 상위권 재진입으로 프론티어 경쟁이 폐쇄·오픈 진영 간 다시 팽팽해짐.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214774" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
