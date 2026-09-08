@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-14",
+    "date": "2026-09-14",
+    "weekLabel": "2026년 9월 3주차",
+    "title": "GPT-6 Astra 개막, 삼성SDS AX 총공세, 엔비디아×허깅페이스",
+    "summary": "OpenAI가 GPT-6 Astra를 공개하고 젠슨황이 AGI 시대 도래를 선언하며 NVL72 협력을 강조했다. 삼성SDS는 패브릭스 2.0과 오픈AI·앤트로픽 협력을 통해 기업 AX와 로봇 제조 혁신을 동시에 가속했고, 엔비디아의 허깅페이스 129억 달러 인수와 OpenAI Daybreak 10억 달러 이니셔티브로 AI 인프라·오픈소스·사이버 안전 지형이 재편됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-09-14.html"
+  },
+  {
     "id": "2026-09-07",
     "date": "2026-09-07",
     "weekLabel": "2026년 9월 2주차",

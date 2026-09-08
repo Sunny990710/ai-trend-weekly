@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-09-14)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-09-14 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>GPT-6 Astra 공개·젠슨황 AGI 선언</strong> — OpenAI가 컴퓨터 사용·코딩·사이버 최상위 성능의 차세대 플래그십 GPT-6 Astra를 공개하고, 엔비디아 CEO가 NVL72 기반 대규모 GPU 협력과 AGI 시대 도래를 축하함.</div>
+<div class="headline">② <strong>삼성SDS AX·로봇 총공세</strong> — 오픈AI·앤트로픽과 손잡고 기업 AI 전환과 로봇 제조 혁신을 동시에 추진하며, 패브릭스 2.0으로 에이전트 거버넌스와 스마트 라우팅을 고도화함.</div>
+<div class="headline">③ <strong>엔비디아, 허깅페이스 129억 달러 인수</strong> — AI 인프라와 오픈소스 개발자 생태계를 결합, Daybreak 10억 달러 사이버 방어와 함께 안전·인프라·오픈 진영 판도가 동시에 재편됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics">
+  <span class="topic">AI 대리결제</span>
+  <span class="topic">관리형 에이전트</span>
+  <span class="topic">연구 자동화</span>
+</div>
+
+<div class="item">
+  <h3>사람 대신 AI가 대리결제…에스와이폴라리스, 국내 첫 구현<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>에스와이폴라리스가 사용자를 대신해 AI 에이전트가 카드 결제를 수행하는 대리결제 기술을 국내 카드 인증 인프라에서 검증함.</li>
+    <li>에이전트가 결제 흐름의 마지막 단계까지 스스로 처리하는 실사례로, 결제·인증 표준의 재설계 필요성이 부각됨.</li>
+    <li>커머스·구독·B2B 정기결제에서 에이전트 위임 결제가 확산될 신호로, 카드사·PG의 대응 전략이 급물살을 탈 전망임.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260908000197" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>오픈AI, 29일 데브데이서 인프라 없는 '관리형 에이전트' 공개 유력<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 데브데이에서 인프라 구축 없이 개발자가 실행 환경과 세션을 직접 생성·관리하는 '관리형 에이전트' 서비스를 공개할 전망임.</li>
+    <li>에이전트 배포의 진입 장벽을 낮춰 실질적인 프로덕션 도입 속도를 크게 앞당길 것으로 예상됨.</li>
+    <li>에이전트 프레임워크·MCP 생태계가 관리형 런타임으로 수렴하는 흐름이 뚜렷해짐.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214976" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI 내부, 코딩 에이전트로 AI 연구 속도·실험 효율 대폭 개선<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 내부에서 코딩 에이전트를 활용해 AI 연구 속도와 실험 회수율을 크게 끌어올린 실증 데이터를 공개함.</li>
+    <li>연구자 1인당 처리 가능한 실험 개수와 코드 리팩터링 규모가 급증하며, R&D 조직 운영의 새 표준으로 부상함.</li>
+    <li>기업의 연구·분석 조직에도 코딩 에이전트가 '연구 가속기'로 자리 잡을 가능성이 확인됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics">
+  <span class="topic">국산 NPU</span>
+  <span class="topic">태양광 DC</span>
+  <span class="topic">데이터 벽</span>
+</div>
+
+<div class="item">
+  <h3>한컴, 퓨리오사AI '레니게이드' 탑재한 AX 어플라이언스 개발<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>한컴이 퓨리오사AI·한컴이노스트림과 협력해 에이전틱 OS와 2세대 NPU '레니게이드'를 결합한 AX 어플라이언스 패키지를 개발함.</li>
+    <li>국산 NPU 기반 온프레미스 AI 인프라를 오피스·업무 소프트웨어 스택에 직결한 첫 상용화 사례로 자리매김함.</li>
+    <li>공공·금융 등 데이터 주권 요구가 큰 영역에서 국산 AX 어플라이언스가 대체재로 부상할 전망임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214977" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>구글, 태양광·장주기 배터리 결합해 AI 데이터센터 전력 공급<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글이 미국 웨스트버지니아에서 태양광과 장주기 에너지저장장치(LDES)를 결합한 대규모 에너지 프로젝트에 참여함.</li>
+    <li>AI 데이터센터의 24시간 안정 전력 확보를 위해 재생에너지·장주기 저장 조합이 상용 규모로 확장됨.</li>
+    <li>전력·물 등 물리적 자원 확보가 AI 인프라 경쟁의 핵심 병목으로 굳어지며 에너지·AI 통합 투자가 본격화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214968" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>'데이터 벽(Data Wall)'이 바꾸는 AI 시대 경쟁의 법칙<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>공개 데이터 학습의 한계로 인한 '데이터 벽' 현상이 심화되며 고품질 데이터 확보가 새로운 승부처로 부상함.</li>
+    <li>합성 데이터·전용 파트너십·라이선싱 등 데이터 조달 전략이 모델 성능 못지않은 경쟁력 요소가 됨.</li>
+    <li>데이터·모델·인프라 3축이 통합된 사업자만이 지속적 성능 개선을 확보할 수 있는 구조로 재편됨.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/230316" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics">
+  <span class="topic">패브릭스 2.0</span>
+  <span class="topic">삼성SDS 로봇</span>
+  <span class="topic">DeepMind 사이버 방어</span>
+</div>
+
+<div class="item">
+  <h3>삼성SDS, 기업용 AI 플랫폼 '패브릭스 2.0' 내달 출시…에이전트 운영 고도화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>삼성SDS가 AI 에이전트 거버넌스와 스마트 라우팅 기능을 강화한 기업용 AI 플랫폼 '패브릭스 2.0'을 내달 출시함.</li>
+    <li>모델·에이전트·데이터 파이프라인의 통합 운영과 비용·성능 최적화를 한 축에서 관리할 수 있음.</li>
+    <li>대기업 AX 프로젝트의 표준 플랫폼 경쟁에서 국내 SI·클라우드 사업자 간 정면 대결이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260908122112" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>삼성SDS, 오픈AI·앤트로픽 손잡고 AX 넘어 로봇까지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>삼성SDS가 오픈AI 및 앤트로픽과의 협력을 바탕으로 기업용 AI 전환과 로봇 기반 제조 혁신 사업을 동시에 추진함.</li>
+    <li>파운데이션 모델·에이전트·피지컬 AI를 하나의 사업 축으로 묶어 제조·물류 현장 AX를 전면화함.</li>
+    <li>모델 파트너십을 통해 제조 도메인 특화 에이전트 시장에서 선제적 레퍼런스를 확보할 전망임.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260908000113" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>구글 딥마인드, 정부·기업 대상 '선제적 사이버 방어' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 정부·기업을 겨냥한 선제적 사이버 방어 솔루션을 공개하며 AI 기반 보안 역량을 강화함.</li>
+    <li>공격 탐지·대응 자동화에 프론티어 모델을 접목해 기존 SOC 인력·툴 대비 대응 속도를 대폭 단축함.</li>
+    <li>사이버 방어 시장에서 프론티어 랩의 직접 진출이 본격화되며, 보안 벤더와의 경쟁·협력 구도가 재편됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics">
+  <span class="topic">AI 엔지니어링</span>
+  <span class="topic">Codex 마이그레이션</span>
+</div>
+
+<div class="item">
+  <h3>구글 Addy Osmani, "AI 에이전트가 SW 엔지니어링·개발자 워크플로를 재편 중"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 Addy Osmani가 AI 에이전트가 SW 엔지니어링·개발자 워크플로·필요 기술을 어떻게 재편하는지를 조망함.</li>
+    <li>브라우저 DevTools 경험에서 AI 엔지니어링까지의 전환이 개발자 커리어 트랙에 실질 변화를 만든다는 통찰을 제시함.</li>
+    <li>에이전트 도입 이후 개발자에게 요구되는 역량이 '코드 작성'에서 '문제 정의·검증·설계'로 이동하는 신호가 확인됨.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/from-chrome-devtools-to-ai-engineering" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Asana, OpenAI Codex로 5년치 엔지니어링 작업을 2주 만에 완료<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Asana가 OpenAI Codex를 활용해 노후 테스트 시스템을 약 1만 2천 달러 수준의 비용으로 교체함.</li>
+    <li>5년치 규모의 마이그레이션을 2주 만에 소화하며 AI 코딩 에이전트의 프로덕션 ROI가 실증됨.</li>
+    <li>레거시 현대화 시장에서 AI 마이그레이션 전문성이 새로운 서비스 축으로 부상할 전망임.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/asana" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note">이번 주 Software Development 카테고리는 High 신규 항목 중 최신 2건으로 구성함.</p>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics">
+  <span class="topic">중국 휴머노이드</span>
+  <span class="topic">자율주행 규제</span>
+</div>
+
+<div class="item">
+  <h3>샤오펑 자회사 도고틱스, 1.2조 유치…중국 휴머노이드 역대 최대<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>샤오펑의 휴머노이드 로봇 자회사 도고틱스가 9억 달러 이상의 대규모 투자를 유치함.</li>
+    <li>중국 피지컬 AI·휴머노이드 산업 사상 최대 규모의 단일 비상장 기업 투자 기록을 세움.</li>
+    <li>글로벌 휴머노이드 자본 경쟁이 미·중 진영 간 격돌 구도로 재편되며, 한국 로봇 스타트업의 자본 전략도 시험대에 오름.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214341" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>핸들 없는 택시부터 2억 마일 데이터까지…자율주행의 현재와 미래<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>핸들 없는 로보택시와 2억 마일 규모 데이터 축적 등 자율주행 기술·서비스 진화가 가속화됨.</li>
+    <li>2026년 세계 최초 ADS 안전 규제 채택, 2027년 국내 레벨4 상용화 등 제도·시장의 이중 변화가 임박함.</li>
+    <li>완성차·클라우드·통신 3자가 얽힌 자율주행 밸류체인에서 피지컬 AI 기업의 협력 포지셔닝이 관건이 됨.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/autonomous-driving-future" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note">이번 주 Physical AI / Robotics 카테고리는 High 신규 항목이 제한적이라 최신 2건으로 구성함.</p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics">
+  <span class="topic">Alignment 경고</span>
+  <span class="topic">Daybreak 10억 달러</span>
+  <span class="topic">Astra 사이버 세이프가드</span>
+</div>
+
+<div class="item">
+  <h3>오픈AI 파초키, "AI는 낯선 지성"…국제 안전장치·통제 공조 촉구<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI 야쿱 파초키 수석연구원이 급격히 발전하는 AI 정렬(Alignment)의 난제를 정면으로 지적함.</li>
+    <li>모델을 '외계 지성'에 비유하며 국제적 안전장치와 통제 공조의 필요성을 강조함.</li>
+    <li>프론티어 랩 최상위 연구자의 공개 경고로, AI 거버넌스 논의가 정책·산업 양쪽에서 재점화됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/an-alien-mind" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, 필수 서비스 보호 위한 10억 달러 사이버보안 이니셔티브 'Daybreak' 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 필수 서비스 보호를 위해 10억 달러 규모의 사이버보안 AI 지원 이니셔티브 'Daybreak'를 발표함.</li>
+    <li>공공·에너지·의료 등 핵심 인프라를 프론티어 방어 모델로 강화하는 프론트라인 디펜더 프로그램을 가동함.</li>
+    <li>사이버 방어 자본이 프론티어 랩 중심으로 집결되며 국가 안보·AI 안전이 결합된 새로운 정책 축이 형성됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/daybreak-for-frontline-defenders" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, GPT-6 Astra 사이버 보안 능력 'Critical' 도달…Preparedness 세이프가드 적용<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>GPT-6 Astra가 OpenAI Preparedness Framework 기준으로 사이버보안 역량에서 최초로 'Critical' 수준에 도달함.</li>
+    <li>배포 전 프론티어 세이프가드와 위험 완화 조치를 공개하며 자율규제·투명성 기조를 유지함.</li>
+    <li>사이버 임계점을 넘은 모델의 상용 배포 조건이 정형화되며, 프론티어 랩의 안전 절차가 사실상 산업 표준이 됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/safety-overview-gpt-6-astra" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics">
+  <span class="topic">GPT-6 Astra</span>
+  <span class="topic">젠슨황 AGI</span>
+  <span class="topic">NVIDIA×Hugging Face</span>
+</div>
+
+<div class="item">
+  <h3>젠슨 황 "AGI 시대 도래했다"…오픈AI '아스트라'에 축하 메시지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>젠슨 황 엔비디아 CEO가 오픈AI GPT-6 Astra 출시를 공개적으로 축하하며 AGI 시대의 도래를 선언함.</li>
+    <li>NV링크72 기반 대규모 GPU 인프라 협력과 차세대 모델 학습·추론 파트너십을 강조함.</li>
+    <li>모델·인프라·발화 라인업이 하나의 축으로 정렬되며, 프론티어 경쟁이 사실상 '동맹 전쟁'으로 확장됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214974" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, 차세대 플래그십 'GPT-6 Astra' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 컴퓨터 사용·코딩·사이버보안 분야에서 최고 수준 성능을 발휘하는 차세대 플래그십 'GPT-6 Astra'를 공개함.</li>
+    <li>에이전트·개발자 워크로드에 특화된 성능 프로파일로 프론티어 경쟁 판세를 다시 흔듦.</li>
+    <li>기업의 파운데이션 모델 재선정 사이클이 촉발되며, 벤더·플랫폼 록인 이슈가 다시 수면 위로 부상함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/gpt-6-astra" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA, 허깅페이스 129억 달러에 인수 합의<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 허깅페이스를 약 129억 달러에 인수하기로 합의하며 AI 인프라 진영을 대폭 강화함.</li>
+    <li>글로벌 오픈소스 개발자 생태계를 자사 GPU·소프트웨어 스택과 직결해 모델 유통 경로를 통합함.</li>
+    <li>오픈 진영과 상용 인프라 진영의 경계가 흐려지며, 오픈모델 경쟁 지형이 상업 자본 중심으로 재편됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
