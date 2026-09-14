@@ -51,11 +51,56 @@ function getLogSheet_() {
 function ensureLogHeader_(sheet) {
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(LOG_HEADERS);
+    fitColumns_(sheet, LOG_HEADERS.length, "log");
     return;
   }
   var first = String(sheet.getRange(1, 1).getValue() || "");
   // 영문 헤더로 시작한 기존 시트는 그대로 두고 데이터만 이어서 쌓음
-  if (!first) sheet.appendRow(LOG_HEADERS);
+  if (!first) {
+    sheet.appendRow(LOG_HEADERS);
+    fitColumns_(sheet, LOG_HEADERS.length, "log");
+  }
+}
+
+/** 열 너비를 데이터에 맞춤 (너무 길면 URL 등만 상한 적용) */
+function fitColumns_(sheet, numCols, mode) {
+  SpreadsheetApp.flush();
+  sheet.autoResizeColumns(1, numCols);
+
+  var maxByMode = {
+    log: [170, 110, 420, 360],
+    summary: [60, 110, 420, 80, 130, 360, 170]
+  };
+  var minByMode = {
+    log: [140, 100, 200, 180],
+    summary: [50, 100, 220, 70, 120, 180, 150]
+  };
+  var maxes = maxByMode[mode] || [];
+  var mins = minByMode[mode] || [];
+
+  for (var c = 1; c <= numCols; c++) {
+    var w = sheet.getColumnWidth(c);
+    var minW = mins[c - 1] || 60;
+    var maxW = maxes[c - 1] || 420;
+    if (w < minW) sheet.setColumnWidth(c, minW);
+    else if (w > maxW) sheet.setColumnWidth(c, maxW);
+  }
+
+  // 제목 열은 줄바꿈해서 읽기 쉽게
+  if (mode === "summary") {
+    sheet.getRange(1, 3, Math.max(sheet.getLastRow(), 1), 3).setWrap(true);
+  } else if (mode === "log") {
+    sheet.getRange(1, 3, Math.max(sheet.getLastRow(), 1), 3).setWrap(true);
+  }
+}
+
+/** 편집기에서 수동 실행: 로그/요약 열 너비만 다시 맞춤 */
+function fitAllColumns() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var logSheet = getLogSheet_();
+  var summary = ss.getSheetByName("요약");
+  fitColumns_(logSheet, LOG_HEADERS.length, "log");
+  if (summary) fitColumns_(summary, SUMMARY_HEADERS.length, "summary");
 }
 
 function doPost(e) {
@@ -76,6 +121,7 @@ function doPost(e) {
     data.article_title || "",
     data.article_url || ""
   ]);
+  fitColumns_(logSheet, LOG_HEADERS.length, "log");
 
   rebuildSummary_();
 
@@ -169,7 +215,7 @@ function rebuildSummary_() {
   }
 
   summary.setFrozenRows(1);
-  summary.autoResizeColumns(1, SUMMARY_HEADERS.length);
+  fitColumns_(summary, SUMMARY_HEADERS.length, "summary");
   // 요약 시트를 앞으로
   try { ss.setActiveSheet(summary); ss.moveActiveSheet(1); } catch (e2) {}
 }
