@@ -11,6 +11,17 @@
  * 5) 시트 1행에 헤더 자동 생성됨: ts / report_date / article_title / article_url
  * 6) 피벗 테이블로 article_url 기준 COUNTA 하면 기사별 클릭 수
  */
+function toSeoulTimestamp(value) {
+  var tz = "Asia/Seoul";
+  var d = value ? new Date(value) : new Date();
+  if (isNaN(d.getTime())) {
+    // 이미 "2026-09-14 11:12:44" 형태면 그대로 사용
+    if (typeof value === "string" && value.indexOf("-") > -1) return value;
+    d = new Date();
+  }
+  return Utilities.formatDate(d, tz, "yyyy-MM-dd HH:mm:ss");
+}
+
 function doPost(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
   if (sheet.getLastRow() === 0) {
@@ -26,7 +37,7 @@ function doPost(e) {
   }
 
   sheet.appendRow([
-    data.ts || new Date().toISOString(),
+    toSeoulTimestamp(data.ts),
     data.report_date || "",
     data.article_title || "",
     data.article_url || ""

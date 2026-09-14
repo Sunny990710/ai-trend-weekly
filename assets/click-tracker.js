@@ -32,6 +32,31 @@
     return (clone.textContent || "").replace(/\s+/g, " ").trim();
   }
 
+  // Asia/Seoul 로컬 시각: 2026-09-14 11:12:44
+  function seoulTimestamp(date) {
+    var d = date || new Date();
+    try {
+      var parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Seoul",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).formatToParts(d);
+      var map = {};
+      for (var i = 0; i < parts.length; i++) {
+        if (parts[i].type !== "literal") map[parts[i].type] = parts[i].value;
+      }
+      return map.year + "-" + map.month + "-" + map.day + " " + map.hour + ":" + map.minute + ":" + map.second;
+    } catch (err) {
+      var kst = new Date(d.getTime() + 9 * 60 * 60 * 1000);
+      return kst.toISOString().replace("T", " ").replace(/\.\d{3}Z$/, "");
+    }
+  }
+
   function initGa() {
     if (!gaId || window.__aiTrendGaReady) return;
     window.__aiTrendGaReady = true;
@@ -85,7 +110,7 @@
       if (!href || href.indexOf("http") !== 0) return;
 
       var payload = {
-        ts: new Date().toISOString(),
+        ts: seoulTimestamp(new Date()),
         report_date: getReportDate(),
         article_title: getArticleTitle(a).slice(0, 180),
         article_url: href
