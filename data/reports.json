@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-21",
+    "date": "2026-09-21",
+    "weekLabel": "2026년 9월 4주차",
+    "title": "GPT-6 Astra 에이전트 표준화, NVIDIA 인프라·CRM 삼각 공세, 1.4조 피지컬 AI 프로젝트",
+    "summary": "OpenAI가 Agents API와 데이터 에이전트를 공식 출시하고 Perplexity·Cognition Devin·Legora가 GPT-6 Astra로 엔드투엔드 업무 자동화를 실증하며 프론티어 모델이 실사용 표준으로 자리 잡았다. 엔비디아는 AI 인프라 서밋의 Vera Rubin·DSX, 드림포스의 세일즈포스 CRM AI 'Koa', 미스트랄-클라우데라 소버린 AI 파트너십으로 인프라·엔터프라이즈 삼각 공세를 펼쳤다. 정부 1.4조 피지컬 AI 프로젝트와 어질리티 '디지트 5', 오픈AI '프로젝트 릴리' 논란·앤트로픽 위협 인텔리전스 보고서로 실물 AI와 에이전트 리스크 대응이 전면화됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-09-21.html"
+  },
+  {
     "id": "2026-09-14",
     "date": "2026-09-14",
     "weekLabel": "2026년 9월 3주차",
