@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-28",
+    "date": "2026-09-28",
+    "weekLabel": "2026년 10월 1주차",
+    "title": "GPT-6 Sol·Luna·Claude Opus 5.5 등장, Vera Rubin NVL72 MLPerf 1위, 에이전틱 AI 전면 확산",
+    "summary": "OpenAI 'GPT-6 Sol·Luna'와 앤트로픽 '클로드 오퍼스 5.5'가 동시에 공개되며 프론티어 모델 가격·성능 경쟁이 격화됐다. 엔비디아 베라 루빈 NVL72가 MLPerf 추론 v6.1 데뷔에서 최고 성능을 기록하고 LG CNS·리벨리온·SKT-F5로 국내외 AI 인프라 진영이 확장됐다. 퀄컴 에이전틱 AI 선언과 Parallel·V7·Claude 통합, 온플법·OpenAI 국제 표준 제안까지 에이전트 상용화와 거버넌스 논의가 전면화됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-09-28.html"
+  },
+  {
     "id": "2026-09-21",
     "date": "2026-09-21",
     "weekLabel": "2026년 9월 4주차",
@@ -62,7 +71,6 @@
     "views": 0,
     "file": "reports/weekly_ai_it_report_2026-08-10.html"
   },
-
   {
     "id": "2026-08-03",
     "date": "2026-08-03",
@@ -72,7 +80,6 @@
     "views": 0,
     "file": "reports/weekly_ai_it_report_2026-08-03.html"
   },
-
   {
     "id": "2026-07-27",
     "date": "2026-07-27",

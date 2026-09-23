@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-09-28)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-09-28 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>프론티어 모델 가격·성능 경쟁 재점화</strong> — OpenAI 'GPT-6 솔·루나'와 앤트로픽 '클로드 오퍼스 5.5'가 잇달아 공개되며 최고 성능과 40~50%대 가격 인하가 동시에 이뤄져 프론티어 모델의 워크로드별 세분화·재편이 본격화됨.</div>
+<div class="headline">② <strong>AI 인프라, MLPerf·데이터센터 인증·해외 진출로 진영 확장</strong> — 엔비디아 베라 루빈 NVL72가 MLPerf 추론 v6.1 데뷔서 선두 성능을 기록하고, LG CNS의 공간안전인증과 리벨리온 일본 100대 리벨랙 공급이 국내외 AI 인프라 경쟁력 지형을 넓힘.</div>
+<div class="headline">③ <strong>에이전틱 AI 상용화·거버넌스 논의 전면화</strong> — 퀄컴 에이전틱 AI 선언과 Parallel·V7·Claude 통합으로 에이전트가 프로덕션 표준으로 자리 잡는 한편, 온플법 자율규제·OpenAI 국제 표준 제안·AI 자동화 방어까지 리스크·정책 대응이 동시에 가속됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">에이전틱 AI</span>
+  <span class="topic">GPT-6 Astra</span>
+  <span class="topic">Claude 통합</span></div>
+<div class="item">
+  <h3>퀄컴 "스마트폰 앱 시대 가고 에이전틱 AI 시대 온다"…구글과 동맹·2nm 모바일 플랫폼 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>퀄컴이 모바일 환경을 앱 중심에서 에이전틱 AI 중심으로 전환하는 로드맵을 공개함.</li>
+    <li>구글과의 동맹을 강화하고 2nm 기반 모바일 플랫폼을 발표하며 온디바이스 에이전트 경쟁을 가속함.</li>
+    <li>스마트폰 UX 패러다임이 앱 실행에서 에이전트 위임으로 이동하며 OS·앱 생태계 재편이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260923063855" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Parallel, GPT-6 Astra로 데이터 리서치 시간·비용 절반으로 단축<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Parallel이 GPT-6 Astra 에이전트를 도입해 대규모 데이터 리서치 워크플로의 시간과 비용을 각각 절반으로 줄임.</li>
+    <li>다단계 웹 크롤링·요약·검증 파이프라인을 에이전트가 자율 수행하며 리서치 생산성이 급상승함.</li>
+    <li>프론티어 모델 기반 에이전트가 지식 노동 자동화의 실측 사례로 확산되며 도입 임계점을 넘김.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/parallel-cuts-time-and-cost-with-astra" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>앤트로픽, Claude Cowork와 채팅 통합…"하나의 Claude"로 재편<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 Claude Cowork(협업 워크스페이스)와 대화형 인터페이스를 단일 Claude 제품으로 통합함.</li>
+    <li>채팅·문서·에이전트가 하나의 세션에서 이어지며 개인·팀 워크플로 경계가 사라짐.</li>
+    <li>MS 코파일럿·ChatGPT Work 등 통합 워크스페이스 경쟁이 프론티어 랩 전면전으로 확산됨.</li>
+  </ul>
+  <p class="source">출처: Claude Blog · <a href="https://claude.com/blog/cowork-is-now-claude" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">Vera Rubin NVL72</span>
+  <span class="topic">공간안전인증</span>
+  <span class="topic">일본 추론 인프라</span></div>
+<div class="item">
+  <h3>NVIDIA 베라 루빈 NVL72, MLPerf 추론 v6.1 데뷔서 최고 성능…AI 팩토리 경제성 입증<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아 베라 루빈 NVL72가 MLPerf 추론 v6.1 첫 등판에서 주요 워크로드 선두 성능을 기록함.</li>
+    <li>추론 단위 토큰당 처리량과 전력 효율에서 앞서며 AI 팩토리의 총소유비용 최적화 근거를 강화함.</li>
+    <li>하이퍼스케일러·소버린 AI 진영의 차세대 인프라 표준으로 자리매김하며 수주 경쟁이 격화됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>LG CNS, 데이터센터 업계 첫 '공간안전인증' 획득…디지털 트윈·AI로 재난 대응 공인<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LG CNS가 디지털 트윈·AI 기반 재난 대응 체계를 인정받아 국내 데이터센터 업계 최초로 공간안전인증을 획득함.</li>
+    <li>센서·시뮬레이션으로 침수·화재·정전 시나리오를 상시 점검하며 AI 워크로드의 물리 리스크를 정량 관리함.</li>
+    <li>AIDC의 신뢰성이 규제·보험·계약 요건으로 확산되며 국내 데이터센터 운영 기준이 높아짐.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20260923083710" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>리벨리온, 일본 현지에 AI 추론 특화 '리벨랙' 100대 이상 공급 계획<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>리벨리온이 글로벌 AI 기업 ai&와 파트너십을 체결하고 일본 이기종 인프라 시장에 추론 특화 반도체 '리벨랙'을 공급함.</li>
+    <li>국산 NPU 기반 랙 시스템이 첫 대규모 해외 상용 레퍼런스를 확보하며 소버린 AI 진영 진입에 성공함.</li>
+    <li>일본·중동 중심 비-엔비디아 추론 인프라 수요와 맞물려 K-AI 반도체 수출 경로가 열림.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215358" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">브라우저 AI</span>
+  <span class="topic">예측 의료</span></div>
+<div class="item">
+  <h3>미스트랄·모질라, 파이어폭스에 오픈·프라이빗·다국어 AI 통합 파트너십<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄 AI와 모질라가 파이어폭스 브라우저에 오픈소스 기반 프라이빗 다국어 AI를 기본 탑재함.</li>
+    <li>사용자 데이터가 로컬·유럽 리전에 머무는 구조로 GDPR·프라이버시 규제 대응력이 강화됨.</li>
+    <li>구글·마이크로소프트 중심 브라우저 AI 스택에 유럽 오픈 진영의 대안 축이 형성됨.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/mistral-x-mozilla" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>베스핀글로벌, 디지털 트윈·유전자 분석 AI로 '예측 의료' 사례 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>디지털 트윈과 유전자 분석 AI를 결합해 질병 발생 전 이상 신호를 미리 감지하는 헬스케어 AI 활용 사례가 소개됨.</li>
+    <li>환자별 시뮬레이션으로 상태 악화 시점을 예측하고 개인 맞춤 개입 시점을 제안함.</li>
+    <li>예측·예방 중심의 AX가 보험·바이오·병원 IT 스택으로 확장되며 새로운 데이터 거버넌스 이슈가 부상함.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsletter/ai-predictive-healthcare-digital-twin" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">프롬프트 캐싱</span>
+  <span class="topic">Rust 마이그레이션</span>
+  <span class="topic">GPT-Live-1</span></div>
+<div class="item">
+  <h3>OpenAI, GPT-6 프롬프트 캐싱 개선…비용·지연시간 대폭 절감<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 GPT-6의 프롬프트 캐싱 메커니즘을 강화해 캐시 적중률과 재사용 효율을 크게 높임.</li>
+    <li>장문·에이전트 워크플로의 반복 비용과 응답 지연이 줄어 프로덕션 도입 경제성이 개선됨.</li>
+    <li>토큰 이코노미와 프롬프트 설계가 API 비용 최적화 핵심 지표로 자리 잡음.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/better-prompt-caching-for-gpt-6" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub, 코파일럿 활용해 코파일럿 런타임을 Rust로 마이그레이션…80만 줄 코드 이관<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>깃허브가 자체 AI 에이전트를 사용해 80만 줄 규모의 코파일럿 런타임을 Rust로 성공적으로 이관함.</li>
+    <li>메모리 안전성과 성능을 확보하면서 대규모 리팩터링 비용을 대폭 절감하는 실전 사례를 확보함.</li>
+    <li>AI 에이전트가 언어 마이그레이션·리아키텍처를 실제로 수행하는 시대의 상용 레퍼런스로 부상함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, API에 실시간 음성 모델 'GPT-Live-1' 출시…자연스러운 양방향 음성 앱 지원<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>API에 GPT-Live-1이 추가되어 저지연 실시간 양방향 음성 대화, 맞춤형 음성, 전화 통화 통합이 가능해짐.</li>
+    <li>명령어 추종·감정·톤 표현 정확도가 개선되며 콜센터·에이전트 음성 UX 수준이 크게 높아짐.</li>
+    <li>음성 에이전트·리얼타임 미디어 앱 개발 진입장벽이 낮아지며 관련 스타트업 경쟁이 재점화됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/introducing-gpt-live-1-in-the-api" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">Isaac ROS 5.0</span>
+  <span class="topic">S1 파운데이션</span>
+  <span class="topic">로보택시</span></div>
+<div class="item">
+  <h3>NVIDIA, 에이전틱·오픈소스 로보틱스 개발 지원하는 'Isaac ROS 5.0' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 GPU 가속 기반의 오픈소스 로보틱스 프레임워크 아이작 ROS 5.0을 공개함.</li>
+    <li>에이전틱 AI 통합·시뮬레이션·엣지 배포 파이프라인이 강화되어 자율 로봇 개발이 표준화됨.</li>
+    <li>산업용·서비스 로봇 생태계가 엔비디아 스택 위에서 빠르게 응집되며 피지컬 AI 진영이 확장됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>스킬드 AI, 단 한 편의 영상으로 새 작업 학습하는 'S1' 피지컬 AI 파운데이션 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>스킬드 AI가 시연 영상 한 편만으로 로봇이 새로운 조작 작업을 학습하는 S1 파운데이션 모델을 공개함.</li>
+    <li>엔비디아 피지컬 AI 스택과 결합해 데이터 라벨링·튜닝 비용을 크게 낮춤.</li>
+    <li>로봇 파운데이션 모델 경쟁이 태스크 학습 효율에서 사전 학습·시뮬레이션 스케일로 이동함.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>글로벌 로보택시 선도 기업, 엔비디아 피지컬 AI로 상용 무인 자율주행 플릿 확장 가속<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Waymo·Zoox 등 글로벌 로보택시 리더들이 엔비디아 피지컬 AI 풀스택으로 상용 무인 플릿을 확장함.</li>
+    <li>실차 데이터·시뮬레이션·차량용 AI 컴퓨팅이 통합되며 스케일업·안전성 검증 사이클이 단축됨.</li>
+    <li>자율주행 산업이 시연을 넘어 대규모 상용 배포 국면으로 진입하며 도시 모빌리티 재편이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/robotaxi-leaders-full-stack-open-platform" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">자율규제</span>
+  <span class="topic">국제 표준</span>
+  <span class="topic">AI 사이버 방어</span></div>
+<div class="item">
+  <h3>산학연 "AI 시대 플랫폼 정책, 사전규제보다 자율규제로"…온플법 재점화 속 제언<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>온라인플랫폼법 재점화 속에 산학연이 AI 시대 국내 플랫폼 경쟁력을 위해 자율규제 도입을 제안함.</li>
+    <li>AI 서비스의 빠른 반복·다기능성 특성상 사전규제는 혁신 위축과 해외 사업자 유리 효과를 낳는다는 지적이 이어짐.</li>
+    <li>자율규제 프레임과 사후·투명성 규제 조합이 국내 플랫폼·AI 정책의 실질적 대안으로 부상함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260922000467" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, 차세대 AI 안전을 위한 국제 표준 수립 제안…공동 평가·거버넌스 강조<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 글로벌 AI 안전성을 높이기 위한 공동 평가와 국제 거버넌스 프레임워크 수립을 공식 제안함.</li>
+    <li>정부·기관·랩이 공유 가능한 평가·리포팅 표준을 통해 규제 파편화를 완화하려는 시도를 본격화함.</li>
+    <li>EU AI Act·미국 행정 지침·G7 가이드라인 등과 정합하는 프론티어 랩 주도 표준 경쟁이 시작됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/building-standards-next-phase-ai" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>[IT메가비전 2026] "AI가 사고 치는 시대, 수비도 AI로"…자동화 방어가 보안 핵심 과제로 부상<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트의 자율 행동으로 인한 사이버 공격 위험이 커지며 규제 준수를 넘어 AI 행동 통제가 핵심 과제로 부상함.</li>
+    <li>공격·방어 모두 AI가 주도하며 SOC의 자동화 대응·모델 위험 관리가 신규 투자 우선순위로 옮김.</li>
+    <li>AI 안전·보안 시장이 프레임워크·평가 툴 중심에서 실시간 방어 오퍼레이션으로 이동함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260916000284" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">GPT-6 Sol·Luna</span>
+  <span class="topic">Claude Opus 5.5</span>
+  <span class="topic">OpenAI 소프트웨어 팩토리</span></div>
+<div class="item">
+  <h3>OpenAI, 'GPT-6 솔·루나' 공개…"필요 성능만 올리고 가격은 절반"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 실무 효율성과 가격 경제성에 집중한 'GPT-6 솔'과 '루나'를 공개하고 API 사용료를 절반 이하로 인하함.</li>
+    <li>라인업이 최상위·플래그십·경제형으로 세분화되며 워크로드별 최적 모델 선택이 표준이 됨.</li>
+    <li>프론티어 랩 간 가격 경쟁이 격화되고 엔터프라이즈 도입 문턱이 크게 낮아짐.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215584" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>앤트로픽, '클로드 오퍼스 5.5' 공개…최고 추론·코딩 성능·비용 40% 절감<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 복잡 추론·코딩 벤치마크 1위를 기록하고 운영 비용을 40% 절감한 플래그십 '클로드 오퍼스 5.5'를 출시함.</li>
+    <li>장기 세션·에이전트 도구 사용 정확도가 대폭 향상되며 소프트웨어 엔지니어링 워크로드 표준으로 부상함.</li>
+    <li>OpenAI GPT-6 솔·루나와 정면 경쟁 구도가 형성되며 코딩 에이전트 시장이 재편됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215583" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Pragmatic Engineer, 오픈AI 내부 '에이전틱 소프트웨어 팩토리' 조명<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 사내 개발 공정에 Codex 기반 에이전트를 전면 도입해 릴리스 사이클을 재설계한 사례가 공개됨.</li>
+    <li>10억 사용자 서비스 운영에 필요한 코드 리뷰·테스트·배포를 에이전트가 상시 처리함.</li>
+    <li>AI 네이티브 엔지니어링 조직 설계가 프론티어 기업의 경쟁 우위로 자리 잡음.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/openai-software-factory" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"><span class="topic">뉴 실크로드</span>
+  <span class="topic">월드 모델</span></div>
+<div class="item">
+  <h3>李대통령, '중앙아 뉴 실크로드'로 韓 기업 무대 확장…AI·첨단 제조 협력 강화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>한-중앙아시아 정상회의에서 핵심광물·AI·첨단 제조·인프라 협력을 강화하는 '뉴 실크로드' 구상이 발표됨.</li>
+    <li>국내 AI·반도체·에너지 기업의 유라시아 진출 통로가 넓어지며 신흥국 소버린 AI 수요와 맞물림.</li>
+    <li>미·중 공급망 재편 속에 한국의 제3 시장 축이 부상하며 관련 정책·금융 지원이 이어질 전망임.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20260916000327" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>월드랩스, 옴니 월드모델 '아틀라스' 공개…사진 한 장으로 3D 공간 추론<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>페이페이 리가 이끄는 월드랩스가 텍스트·이미지·비디오·3D 데이터를 통합한 옴니 월드 모델 '아틀라스'를 공개함.</li>
+    <li>사진 한 장으로 3D 공간을 추론·재구성해 공간지능 AI 경쟁의 기준선을 높임.</li>
+    <li>피지컬 AI·로보틱스·XR 등 실물 세계 응용의 파운데이션 계층이 빠르게 통합됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=214750" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
+
