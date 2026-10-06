@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-10-12)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-10-12 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>구글 '제미나이 4 아르곤' 공개</strong> — 전문 분야·코딩 특화 차세대 모델이 등장하며 미스트랄 라지 4·오픈AI GPT-6 아스트라 울트라패스트까지 프런티어 모델 세대 경쟁이 다시 격화됨.</div>
+<div class="headline">② <strong>엔터프라이즈 AI 재편: 코히어 '노스 2' vs MS·메타 Claude 축소</strong> — 코히어가 에이전트 비용·보안 통제 플랫폼을 출시한 가운데 MS 3분의 1·메타 절반까지 클로드 사내 사용을 줄이며 기업용 AI 공급망이 재편됨.</div>
+<div class="headline">③ <strong>노르웨이 공공장소 AI 안경 금지·국내 금융권 보안 투자 2%</strong> — 노르웨이가 세계 최초로 AI 안경 공공장소 사용 금지 법안을 추진하고 국내 5대 은행 보안 투자 미달·티빙 질타 등 AI 리스크 거버넌스가 전면화됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">North 2</span>
+  <span class="topic">컨텍스트 설계</span>
+  <span class="topic">반자동 모드</span></div>
+<div class="item">
+  <h3>코히어, 에이전트 비용·보안 통제 플랫폼 '노스 2' 출시…알레프 알파 인수 후 첫 행보<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>코히어가 기업용 AI 에이전트 도입 시 발생하는 비용 폭증·보안 사고를 통합 통제·관리하는 플랫폼 '노스 2'를 공식 공개함.</li>
+    <li>알레프 알파 인수 이후 첫 결과물로 유럽·엔터프라이즈 소버린 AI 수요와 맞물려 공급 측면이 강화됨.</li>
+    <li>에이전트 토큰 이코노미와 거버넌스가 엔터프라이즈 AX 핵심 의제로 자리 잡으며 플랫폼 경쟁이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216014" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>카카오, 데이터 분석 에이전트를 만들며 배운 컨텍스트 설계 노하우 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>카카오가 LLM 기반 데이터 분석 에이전트를 운영하며 체득한 컨텍스트·도구 연동 설계 원칙을 사례 중심으로 정리함.</li>
+    <li>효율적 컨텍스트 관리와 도구 호출 구조가 실제 분석 품질과 비용에 결정적으로 작용함을 실험으로 입증함.</li>
+    <li>국내 대기업의 프로덕션 에이전트 구축 모범 사례로 공유되며 하네스 설계 공통 레퍼런스가 확장됨.</li>
+  </ul>
+  <p class="source">출처: 카카오 기술블로그 · <a href="https://tech.kakao.com/posts/838" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"캠페인 기획 시간 7시간서 1시간으로"…블럭스, '반자동 모드' 추가<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>AI CRM 마케팅 기업 블럭스가 데이터 분석부터 캠페인 기획안 제시까지 선제 수행하는 '반자동 모드'를 공개함.</li>
+    <li>기존 7시간 걸리던 캠페인 기획 공수가 1시간대로 단축되며 마케팅 업무의 에이전트 전환 사례가 축적됨.</li>
+    <li>국내 SaaS가 자율 에이전트 반자동 모드로 수평 확산되며 중견기업 AX 도입 장벽이 낮아짐.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261006220142" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">GPT-6 Astra</span>
+  <span class="topic">Groq 소송</span>
+  <span class="topic">DGX Spark</span></div>
+<div class="item">
+  <h3>NVIDIA GPU, 오픈AI GPT-6 아스트라 울트라패스트 가속…토큰 생성 최대 8배<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아 블랙웰 GPU가 오픈AI GPT-6 아스트라 울트라패스트의 토큰 생성 속도를 기존 대비 최대 8배까지 끌어올림.</li>
+    <li>프런티어 모델 추론 비용·지연이 급감하며 실시간 에이전트·멀티모달 서비스 운영 경제성이 재정의됨.</li>
+    <li>엔비디아·오픈AI 수직 통합이 심화되며 추론 인프라 공급망 재편과 가격 경쟁이 가속됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>엔비디아-그로크 27조 계약 파장…소외된 엔지니어들 "거래 불공정" 소송<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아와 AI 칩 스타트업 그로크 간 27조 원 규모 대형 계약이 전직 엔지니어들의 소송에 휘말림.</li>
+    <li>주주 이익 침해·핵심 기술 유출 가능성이 제기되며 AI 반도체 M&A·협력 거버넌스가 다시 쟁점으로 부상함.</li>
+    <li>엔비디아 중심 인프라 결속이 가속되는 가운데 지배구조·독점 리스크 논의가 수면 위로 떠오름.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216009" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA DGX Spark 64GB, 로컬·에이전트 AI 개발 지원 폭 확대<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 통합 메모리 64GB를 탑재한 신규 DGX Spark로 로컬 AI와 온프레미스 에이전트 개발 환경을 확장함.</li>
+    <li>개발자가 클라우드 의존 없이 중대형 모델을 로컬에서 파인튜닝·추론할 수 있는 하드웨어 선택지가 늘어남.</li>
+    <li>엔터프라이즈 소버린 AI와 보안 민감 워크로드 수요가 로컬 추론 하드웨어 수요 확대로 이어짐.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">Claude 축소</span>
+  <span class="topic">Embed 5</span>
+  <span class="topic">Codex 도입</span></div>
+<div class="item">
+  <h3>MS는 3분의 1·메타는 절반…'클로드' 사내 사용 대폭 축소<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>마이크로소프트와 메타가 비용 절감·자체 모델 활용 확대 기조로 사내 클로드 사용 비중을 큰 폭으로 줄이고 있음.</li>
+    <li>빅테크의 모델 다변화·내재화 가속으로 앤트로픽 등 외부 LLM 공급사의 엔터프라이즈 리스크가 커짐.</li>
+    <li>엔터프라이즈 AI 공급망이 '멀티 모델·자체 모델' 혼합 구조로 빠르게 재편됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215998" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Cohere, 프런티어 임베딩 모델 신제품군 'Embed 5' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>코히어가 기업용 검색·RAG 성능을 극대화하는 고성능 임베딩 모델 라인업 'Embed 5'를 공식 출시함.</li>
+    <li>장문·멀티모달·멀티링구얼 처리 효율이 개선되며 사내 지식·고객 데이터 검색 품질이 한층 향상됨.</li>
+    <li>엔터프라이즈 RAG·에이전트 조합이 범용화되며 임베딩 모델 경쟁이 재점화됨.</li>
+  </ul>
+  <p class="source">출처: Cohere Blog · <a href="https://cohere.com/blog/embed-5" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Chatham Financial, Codex·GPT-5.6로 거래 검증 30분→4분 미만 단축<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Chatham Financial이 Codex와 GPT-5.6을 도입해 거래 검증 소요 시간을 30분에서 4분 미만으로 압축함.</li>
+    <li>금융 미들·백오피스 업무 자동화가 실제 ROI 수치로 입증되며 B2B 레퍼런스가 축적됨.</li>
+    <li>오픈AI의 엔터프라이즈 유즈케이스 확장이 금융권 AX 가속의 신호로 해석됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/chatham-financial" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">Agent-scale Git</span>
+  <span class="topic">ReviewBench</span>
+  <span class="topic">개발자 역량</span></div>
+<div class="item">
+  <h3>GitHub, 에이전트 스케일 개발을 위한 차세대 Git 인프라 재구축 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub가 AI 에이전트 중심의 대규모 동시 작업에 대비해 Git 인프라를 재설계하는 프로젝트를 공식 공개함.</li>
+    <li>에이전트가 생성하는 수천 개의 브랜치·PR·커밋 트래픽을 안정적으로 수용하는 아키텍처로 전환함.</li>
+    <li>'에이전트 네이티브' 개발 생태계 전환이 가시화되며 코드 호스팅 플랫폼의 역할이 재정의됨.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub, AI 코드 리뷰 오픈 벤치마크 'ReviewBench' 공개<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>실제 풀 리퀘스트 데이터를 바탕으로 AI 코드 리뷰 에이전트의 성능을 평가하는 오픈 벤치마크가 공개됨.</li>
+    <li>리뷰 품질·오탐·커버리지를 객관 지표로 비교할 수 있어 코파일럿·클로드 코드 등 솔루션 간 선택 기준이 명확해짐.</li>
+    <li>AI 코드 리뷰가 CI 파이프라인 표준 모듈로 편입되는 흐름이 가속됨.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub, "AI 시대 개발자는 에이전트 지시·결과 검토·기술 판단력을 강화하라"<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub가 AI 도입으로 개발자 업무가 재편되며 에이전트 지시·결과 검토·기술적 판단력이 핵심 역량으로 떠올랐다고 분석함.</li>
+    <li>단순 코딩 숙련보다 아키텍처 설계·검증 역량과 커뮤니케이션이 커리어 상위 조건으로 자리 잡음.</li>
+    <li>국내외 조직이 AI 네이티브 역할 재정의와 성과 지표 재설계에 착수함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">웰니스 로봇</span>
+  <span class="topic">피지컬 AI 국책</span></div>
+<div class="item">
+  <h3>SK인텔릭스, AI 웰니스 로봇 '나무엑스' 중국 위탁생산 추진…원가 경쟁력 승부수<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK인텔릭스가 AI 웰니스 로봇 '나무엑스' 생산 체계를 중국 OEM 위탁 방식으로 전환하는 작업에 착수함.</li>
+    <li>원가 경쟁력과 수익성 확보를 통해 소비자용 서비스 로봇 가격 경쟁에 선제 대응함.</li>
+    <li>국내 로봇 기업의 중국 공급망 전략이 피지컬 AI 상용화 궤도에서 재정비됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261006000060" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>두산로보틱스, 989억 규모 피지컬 AI 국책과제 2건 선정<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>두산로보틱스가 온디바이스 AI 반도체 기반 협동로봇과 원전 특화 용접 AI 솔루션 개발 과제에 동시 선정됨.</li>
+    <li>총 989억 원 규모의 국책 프로젝트로 산업·에너지 현장 피지컬 AI 상용화가 본격화됨.</li>
+    <li>국내 로봇·반도체 생태계의 수직 결합이 정부 과제 중심으로 가시화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216013" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">AI 안경 규제</span>
+  <span class="topic">금융 보안</span>
+  <span class="topic">알트먼 vs 앤트로픽</span></div>
+<div class="item">
+  <h3>노르웨이, 공공장소 'AI 안경' 일시 금지 추진…세계 첫 규제 움직임<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>노르웨이 정부가 사생활 침해 우려를 이유로 세계 최초로 공공장소 내 AI 안경 사용 일시 금지 법안을 추진함.</li>
+    <li>얼굴 인식·실시간 녹취 기능이 확산되는 가운데 웨어러블 AI에 대한 국가 단위 규제가 처음 공식화됨.</li>
+    <li>EU·국내 규제 당국의 동조 가능성이 커지며 글로벌 AI 하드웨어 설계·판매 전략에 영향이 미침.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215999" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>수조원 버는 5대 시중은행, 정보보호 투자는 2% 안팎<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>국내 5대 시중은행의 정보보호 투자 비중이 전체 예산의 1~2% 수준에 그친다는 지적이 국회에서 제기됨.</li>
+    <li>AI 기반 해킹 공격이 고도화되는 상황에서 금융권 보안 투자 부족이 시스템 리스크로 지목됨.</li>
+    <li>티빙 개인정보 유출 사태와 맞물려 보안 투자 하한선 규제 논의가 본격화됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261006000267" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>알트먼 "앤트로픽과 근본적으로 다르다"…AI 안전 접근법 세계관 차이 공식화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>샘 알트먼 오픈AI CEO가 AI 규제·위험 대응 접근법에서 앤트로픽과 근본적인 세계관 차이가 있다고 공개 발언함.</li>
+    <li>프런티어 모델 안전·배포 철학 분화가 공식화되며 업계 거버넌스 노선이 명확히 갈림.</li>
+    <li>미국 규제 당국과 글로벌 표준 논의에서 양사의 입장 차이가 중요한 변수로 떠오름.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215995" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">Gemini 4 Argon</span>
+  <span class="topic">Mistral Large 4</span>
+  <span class="topic">ChatGPT 광고</span></div>
+<div class="item">
+  <h3>구글, 전문 분야·코딩 특화 '제미나이 4 아르곤' 공개…일반 출시는 아직<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글이 전문 분야 추론과 코딩 업무에 특화된 차세대 모델 '제미나이 4 아르곤'을 공개하며 공백기를 끝냄.</li>
+    <li>일반 사용자 대상 롤아웃은 아직이지만 API·엔터프라이즈 평가 채널을 통해 시장 반응 확인에 들어감.</li>
+    <li>GPT-6·클로드 소넷 5.5와의 프런티어 성능 경쟁이 다시 격화됨.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/google-cloud-insight/gemini-4-argon" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Mistral, 차세대 대형언어모델 'Mistral Large 4' 공식 출시<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄 AI가 추론 능력과 처리 성능을 크게 향상시킨 차세대 모델 Mistral Large 4를 공개함.</li>
+    <li>유럽 소버린 AI 수요와 맞물려 비 미국계 프런티어 모델 선택지가 두터워짐.</li>
+    <li>Vibe·OCR 4 등 미스트랄 라인업과 결합되며 엔터프라이즈 통합 플랫폼 경쟁이 심화됨.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/mistral-large-4" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>오픈AI, 챗GPT에 '시각적 광고' 도입…이미지 생성 옆 노출<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 미국 일부 광고주 대상으로 챗GPT 이미지 생성 결과 옆에 시각적 광고를 노출하는 수익화 실험을 시작함.</li>
+    <li>월간 활성 사용자 급증 대비 수익 모델 다변화의 신호로 해석되며 광고·커머스 통합 수요가 부상함.</li>
+    <li>프라이버시·편향·검색 중립성 등 광고형 생성 AI를 둘러싼 규제 논쟁이 재점화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=215993" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"><span class="topic">노벨 물리학상</span>
+  <span class="topic">AI페스타 2026</span></div>
+<div class="item">
+  <h3>노벨물리학상, '중성미자 관측 개척' 프랜시스 할젠 교수 단독 수상<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>아이스큐브 중성미자 관측소를 통해 고에너지 중성미자를 발견한 프랜시스 할젠 교수가 2026 노벨 물리학상을 단독 수상함.</li>
+    <li>천체물리·우주 입자 분야의 장기 데이터 분석과 AI 기반 신호 식별 기술이 함께 조명됨.</li>
+    <li>국내 연구계도 거대 과학 데이터·AI 융합 연구의 레퍼런스로 활용 가능성을 검토함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261006000420" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>한기대 AI 역량 빛났다…'AI페스타 2026'서 시선 집중<span class="badge stars s1">중요도 ★</span></h3>
+  <ul class="highlights">
+    <li>한국기술교육대학교가 'AI페스타 2026'에서 학생들이 기획·제작한 AI·소프트웨어 기반 졸업 연구작품 7점을 전시함.</li>
+    <li>현장 중심 AI 교육 성과가 전시 콘텐츠로 가시화되며 산업 연계 가능성이 조명됨.</li>
+    <li>지역 거점 공과대학의 AI 커리큘럼 확산 사례로 공유됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261006223744" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
