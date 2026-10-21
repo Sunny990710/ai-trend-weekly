@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-10-26)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-10-26 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>AI 보안·에이전트 전면 상용화</strong> — 한진정보통신 AWS 시큐리티 에이전트, 셀렉트스타-시스코 AI 보안·신뢰성 평가 협력, Terminal X GPT-6.1 Eval Agent 등 B2B AI 에이전트가 보안·투자 영역의 실무 자동화 축으로 자리 잡음.</div>
+<div class="headline">② <strong>오픈소스 인프라·휴머노이드 플랫폼 가속</strong> — AI2 'Olmo-core 3' MoE 학습 인프라와 로보파티 풀스택 오픈소스 휴머노이드 'RP1'이 공개되며 AI 모델·로봇 생태계가 오픈소스 중심으로 재편됨.</div>
+<div class="headline">③ <strong>공공기관 개인정보·오픈AI 리스크 거버넌스 전면화</strong> — 공공기관 개인정보 유출 손해배상 책임 요구, 앤트로픽 2026 사용 정책 개정, 위키피디아의 오픈AI 불량 에이전트 지적으로 AI 리스크·거버넌스 쟁점이 전방위로 확장됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">AWS 시큐리티 에이전트</span>
+  <span class="topic">Terminal X Eval</span>
+  <span class="topic">LFM2.5 온디바이스</span></div>
+<div class="item">
+  <h3>항공사 해킹 위협에 AI로 맞선다…한진정보통신, 보안 사업 확대<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>한진정보통신이 'AWS 시큐리티 에이전트' 기반의 AI 보안 취약점 자동 점검 서비스를 출시함.</li>
+    <li>항공·여행 산업 대상 매니지드 보안 시장을 겨냥해 수작업 중심의 보안 점검을 에이전트로 대체함.</li>
+    <li>국내 산업 특화 AI 보안 에이전트의 상용 레퍼런스가 축적되며 보안 운영 자동화가 가속됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261021114658" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Terminal X, GPT-6.1 기반 Eval Agent로 선임 투자자 판단과 88.6% 일치<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Terminal X가 GPT-6.1 기반 Eval Agent를 도입해 선임 투자자의 투자 판단과 88.6% 일치하는 결과를 확보함.</li>
+    <li>펀드 가이드라인 위반 탐지 효율이 25% 개선되며 투자 심사 영역에서 AI 에이전트의 실효성이 입증됨.</li>
+    <li>금융·운용 영역에 고신뢰 평가 에이전트가 실배치되며 전문가 보조 AI 수요가 확산됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/terminal-x" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Liquid AI, 온디바이스용 프라이빗 에이전트 모델 'LFM2.5-24B-A2B' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>리퀴드 AI가 디바이스 내에서 빠르게 동작하는 프라이빗 에이전트 모델 'LFM2.5-24B-A2B'를 공개함.</li>
+    <li>클라우드 전송 없이 민감 데이터를 디바이스에서 처리하며 온디바이스 에이전트 상용화를 앞당김.</li>
+    <li>개인정보·규제 민감 산업의 AI 에이전트 도입 장벽이 낮아지며 엔터프라이즈 엣지 AI 경쟁이 격화됨.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">Olmo-core 3</span>
+  <span class="topic">Nordics NVIDIA</span>
+  <span class="topic">공공 클라우드</span></div>
+<div class="item">
+  <h3>AI2, 대규모 MoE 학습 인프라 'Olmo-core 3' 오픈소스 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI2가 대규모 MoE(혼합 전문가) 모델을 효율적이고 유연하게 확장 학습할 수 있는 오픈소스 인프라 'Olmo-core 3'를 공개함.</li>
+    <li>MoE 모델 학습의 복잡한 분산·스케일링 로직을 모듈화해 연구·기업 모두가 재사용 가능하게 함.</li>
+    <li>오픈 모델 생태계가 학습 인프라까지 공개되며 폐쇄형 프런티어 모델과의 격차 축소가 가속됨.</li>
+  </ul>
+  <p class="source">출처: Ai2 News (Allen Institute) · <a href="https://allenai.org/blog/olmocore3" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>북유럽, 엔비디아와 함께 선도적 컴퓨팅 생태계·AI 인프라 구축 가속<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>북유럽 각국이 엔비디아와 협력해 지역 단위 AI 인프라 투자와 선도적 컴퓨팅 생태계 구축을 본격화함.</li>
+    <li>소버린 AI 데이터센터와 연구 네트워크가 연결되며 지역 공동체 기반의 AI 자립 모델이 가시화됨.</li>
+    <li>유럽 공공 영역이 하이퍼스케일러 외의 지역 거점 인프라 전략으로 선회하는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/nordics-technology-ecosystem" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>삼성SDS·네이버클라우드 등 6개사, 공공 클라우드 수요기관 설명회 참여<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>행정안전부가 공공기관의 민간 클라우드 전환 지원을 위해 국내 주요 6개 CSP와 함께 서비스 설명회를 개최함.</li>
+    <li>삼성SDS·네이버클라우드 등 국내 CSP가 공공 레퍼런스 확보 경쟁에 본격 진입함.</li>
+    <li>공공 AI·클라우드 수요가 민간 CSP로 흡수되며 국내 소버린 AI 인프라 지형이 재편됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=675108" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">시스코·셀렉트스타</span>
+  <span class="topic">Cosmos3-H-Dreams</span>
+  <span class="topic">AX 사례집</span></div>
+<div class="item">
+  <h3>AI 보안은 시스코, 신뢰성 평가는 셀렉트스타…협력 시동<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>셀렉트스타가 시스코와 전략적 협력 의향서(LOI)를 체결하고 기업 고객용 AI 보안·신뢰성 평가 연동을 추진함.</li>
+    <li>맞춤형 컨설팅과 평가 솔루션 결합으로 엔터프라이즈 AI 거버넌스 수요에 공동 대응함.</li>
+    <li>글로벌 보안 벤더와 국내 평가 전문기업의 결합 모델이 AI 신뢰성 시장의 레퍼런스로 떠오름.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261021112344" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>NVIDIA Cosmos3-H-Dreams, 임상 수술 생성형 시뮬레이션 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 임상 수술 장면을 시뮬레이션할 수 있는 의료 생성형 AI 모델 'Cosmos3-H-Dreams'를 공개함.</li>
+    <li>헬스케어 가상 시뮬레이션 환경이 확장되며 수술 교육·로봇 수술 R&amp;D의 데이터 공백이 메워짐.</li>
+    <li>엔터프라이즈 헬스케어 AI가 영상 판독을 넘어 수술 시뮬레이션 영역까지 확대됨.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/nvidia/cosmos3-h-dreams" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>베스핀글로벌, 금융·공공·제조·유통 '2026 산업별 AX 고객 사례집' 발간<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>베스핀글로벌이 금융·공공·제조·유통 등 주요 산업의 AI 전환(AX) 성공 사례를 모은 보고서를 발간함.</li>
+    <li>산업별 적용 패턴과 성과 지표가 정리되며 국내 엔터프라이즈 AX 레퍼런스의 공백이 보완됨.</li>
+    <li>후발 도입 기업의 AX 설계 시 활용할 수 있는 산업 특화 벤치마크가 축적됨.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsroom/news-pr-ax-customer-casebook-261020" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">AnyLanguageModel 1.0</span>
+  <span class="topic">Ambient Intelligence</span>
+  <span class="topic">JavaScript 2026</span></div>
+<div class="item">
+  <h3>AnyLanguageModel 1.0, 애플 플랫폼 로컬 모델 1년 성과 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>애플 플랫폼에서 로컬 AI 모델을 손쉽게 구동하도록 지원하는 'AnyLanguageModel 1.0' 1주년 업데이트가 공유됨.</li>
+    <li>온디바이스 모델 로딩·추론 추상화가 성숙되며 iOS·macOS 앱 개발자의 AI 통합 비용이 낮아짐.</li>
+    <li>프라이빗 추론 중심의 애플 생태계 AI 개발 저변이 확장됨.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/anylanguagemodel-1-0" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>GitHub, "차세대 개발자 인터페이스는 엠비언트 인텔리전스"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>깃허브가 AI·에이전트·음성 제어가 통합된 '엠비언트 인텔리전스'를 차세대 개발자 인터페이스로 제시함.</li>
+    <li>개발자의 명시적 코드 작성보다 의도 표현 중심으로 작업 흐름이 재편되는 패러다임을 강조함.</li>
+    <li>IDE·터미널·에이전트 통합 흐름이 공식화되며 개발 생산성 도구 경쟁이 UX 중심으로 이동함.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>네이버 D2, 2026년 이후 JavaScript 동향…브라우저 밖의 JS 생태계<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>Node.js 릴리스 일정 변경과 Deno·Bun 성장, 빅테크 합류로 재편되는 JS 런타임 지형을 조명함.</li>
+    <li>지난 7년의 변화와 향후 동향을 함께 다루며 서버·엣지 JS 전략 설계 자료로 활용 가능함.</li>
+    <li>JS 런타임 경쟁이 AI 에이전트·서버리스 환경으로 확장되는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 네이버 D2 · <a href="https://d2.naver.com/helloworld/1443473" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">로보파티 RP1</span>
+  <span class="topic">스페이스X·테슬라 합병</span>
+  <span class="topic">스카이-001</span></div>
+<div class="item">
+  <h3>로보파티, 연구용 풀스택 오픈소스 휴머노이드 플랫폼 'RP1' 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>로보파티가 로봇공학 및 체화된 AI(Embodied AI) 연구용 풀스택 오픈소스 휴머노이드 'RP1'을 공개함.</li>
+    <li>하드웨어·소프트웨어 전반에 접근 가능한 구조로 대학·스타트업의 휴머노이드 연구 진입 장벽이 낮아짐.</li>
+    <li>오픈소스 피지컬 AI 플랫폼 확산으로 VLA·행동 모델 학습 데이터·실험 레이어가 공유됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261021121014" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>머스크, 스페이스X·테슬라 합병 공식 확인…AI·반도체·로보틱스 시너지 검토<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>일론 머스크가 스페이스X와 테슬라의 합병 가능성을 공식 확인하고 양사에 특별위원회를 구성함.</li>
+    <li>AI 소프트웨어·반도체·로보틱스·우주 운송 영역의 시너지가 검토되며 3.5조 달러 규모 지주 가능성이 거론됨.</li>
+    <li>피지컬 AI 공급망의 수직 통합이 가시화되며 글로벌 로봇·우주·자동차 산업 지형이 재편될 전망임.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216460" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>스카이폴AI, CAD·BIM 3D 설계 자동화 월드모델 '스카이-001' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>스카이폴 AI가 아이디어·스케치 입력만으로 CAD·BIM용 3D 설계와 계층적 제작 계획을 생성하는 월드모델 '스카이-001'을 공개함.</li>
+    <li>설계 자동화가 2D 도면 생성에서 3D 공정 계획 영역까지 확장되며 건축·제조 워크플로가 재구성됨.</li>
+    <li>월드모델 기반 피지컬 AI가 설계·제조 현장의 디지털 트윈과 결합되는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216450" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">공공기관 유출 배상</span>
+  <span class="topic">Anthropic 사용 정책</span>
+  <span class="topic">OpenAI 불량 에이전트</span></div>
+<div class="item">
+  <h3>"공공기관 개인정보 유출도 배상해야"…국감서 책임론 확산<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>국정감사에서 공공기관의 개인정보 유출에 대해 민간 기업 수준의 손해배상 책임과 제재 체계를 요구함.</li>
+    <li>그동안 공공 영역에 적용되지 않던 손해배상·제재 수단이 입법 과제로 재부상함.</li>
+    <li>공공 AI·데이터 플랫폼 운영 리스크가 커지며 공공기관의 보안·거버넌스 투자가 불가피해짐.</li>
+  </ul>
+  <p class="source">출처: 블로터 · <a href="https://www.bloter.net/news/articleView.html?idxno=676231" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Anthropic, 2026 Usage Policy 개정 발표<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 AI 모델·서비스 이용 가이드라인을 개정한 2026년 사용자 정책 주요 변경 사항을 공개함.</li>
+    <li>에이전트 활용 사례 증가에 맞춰 금지 행위·고위험 사용 범위가 재정비됨.</li>
+    <li>프런티어 모델 공급자의 사용 정책이 산업 표준처럼 작동하며 기업 운영 가이드에 영향을 미침.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>위키피디아, "오픈AI 불량 에이전트, 5월 장애·무단 편집 연관 가능성"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>위키미디어 재단이 오픈AI 에이전트의 과도한 데이터 요청이 5월 서비스 장애·무단 편집과 연관되었을 가능성을 제기함.</li>
+    <li>생성형 AI 에이전트의 크롤링·편집 활동이 공공 지식 플랫폼의 운영 리스크로 전환됨.</li>
+    <li>AI 에이전트 접근 통제·레이트 리밋 등 공공 서비스 보호 가이드라인 필요성이 커짐.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216002" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">제미나이 노트북</span>
+  <span class="topic">앤트로픽 차세대</span>
+  <span class="topic">Mistral Timestral</span></div>
+<div class="item">
+  <h3>구글, 제미나이 노트북 개편…"슬라이드·영상 생성 전 구성 검토"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글이 제미나이 노트북에 슬라이드·영상 자동 생성 전 AI와 사용자가 함께 기획안을 검토하는 공동 제작 기능을 도입함.</li>
+    <li>생성형 결과물의 품질·일관성이 사전 승인 흐름으로 통제되며 지식 작업 UX가 재구성됨.</li>
+    <li>'출력 전 공동 기획' 패턴이 엔터프라이즈 AI 도구 UX의 새로운 표준으로 자리 잡는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216438" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"오퍼스 5.5 넘었다"…앤트로픽, 차세대 모델 실전 라우팅 테스트 중<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 미공개 차세대 고성능 모델을 기존 트래픽에 우회 배치하는 실전 라우팅 테스트를 진행 중인 것으로 포착됨.</li>
+    <li>오퍼스 5.5를 상회하는 성능 지표가 거론되며 프런티어 모델 세대 교체 신호가 포착됨.</li>
+    <li>실제 사용 트래픽을 기반으로 한 모델 평가가 상용 사전 단계로 자리 잡는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216200" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Mistral, CPU에서도 대형 모델 능가하는 시계열 예측 모델 'Timestral' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄 AI가 CPU 환경에서도 대형 모델을 능가하는 2억 9백만 파라미터 규모 시계열 확률 예측 모델 'Timestral'을 공개함.</li>
+    <li>GPU 없이도 운용 가능한 특화 모델이 등장하며 비용 부담이 큰 수요·공급 예측 영역에 새 선택지가 생김.</li>
+    <li>경량·전용 모델이 범용 LLM과 역할을 분담하는 멀티 모델 운영 전략이 확산됨.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/timestral" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"><span class="topic">AI 과학연구 지수</span>
+  <span class="topic">반도체 청년고용</span>
+  <span class="topic">GPT-Rosalind</span></div>
+<div class="item">
+  <h3>AI는 과학 연구를 얼마나 잘할까…일반 업무와 달랐던 성능 순위<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>발스 AI가 발표한 과학 연구 종합 능력 지수에서 오픈AI 모델이 1위를 기록함.</li>
+    <li>일반 업무 성능 평가와 달리 세부 과학 분야별 성적에는 유의미한 차이가 확인됨.</li>
+    <li>연구용 AI 평가 축이 분화되며 분야별 과학 AI 평가 체계 수요가 부각됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216432" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>AI 시대 반도체 고용 7% 뛰었는데…청년 일자리는 5.5만명 줄었다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 반도체 업황 회복으로 전체 고용보험 가입자는 증가했으나 29세 이하 청년층 가입자는 5만 5천 명 감소함.</li>
+    <li>자동화·AI 전환이 신규 채용보다 중견 인력 중심의 성장 패턴을 강화하는 양상이 확인됨.</li>
+    <li>국내 AI·반도체 인력 정책의 세대별 격차 문제가 산업 정책 과제로 부상함.</li>
+  </ul>
+  <p class="source">출처: 전자신문 · <a href="https://www.etnews.com/20261014000150" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, 대학 연구소 대상 생명과학 특화 'GPT-Rosalind' Academic Plan 발표<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 생명과학 특화 모델 GPT-Rosalind의 스폰서십 접근권을 대학 연구소에 제공하는 Rosalind Academic Plan을 발표함.</li>
+    <li>학술 연구용 프런티어 모델 접근 비용 장벽이 낮아지며 바이오·헬스케어 연구 저변이 넓어짐.</li>
+    <li>프런티어 모델 공급자의 학술 생태계 포섭 경쟁이 가속되는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/introducing-the-rosalind-academic-plan" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
