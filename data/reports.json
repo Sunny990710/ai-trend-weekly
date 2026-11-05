@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-11-09",
+    "date": "2026-11-09",
+    "weekLabel": "2026년 11월 2주차",
+    "title": "실행형 AI 에이전트 전면 상용화, 미 중간선거發 AI 인프라 재편, 프런티어 AI 안전·공급망 보안 쟁점화",
+    "summary": "베스핀 '헬프나우 컴퓨터', 미스트랄 Le Chonk(Large 4), 라이너 Router API로 실행형·자율 코딩 에이전트가 B2B 상용 단계로 진입했다. 미 중간선거 '블루 쓰나미' 속 데이터센터 규제 우려와 빅테크 랠리가 동시에 발생하고 SKT 통신·AI 두 축 성장, 위성·지상망 통합으로 AI 인프라 지형이 재편됐다. 앤트로픽 RSI 안전 공시, 구글 LLM재킹 경고, OpenAI Daybreak Red GovCloud 공개, DeepMind Gemini 4 Carbon 발표로 AI 안전·보안·에너지 효율이 산업 전면 쟁점이 됐다.",
+    "views": 0,
+    "file": "reports/weekly_ai_it_report_2026-11-09.html"
+  },
+  {
     "id": "2026-11-02",
     "date": "2026-11-02",
     "weekLabel": "2026년 11월 1주차",

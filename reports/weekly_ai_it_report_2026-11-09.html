@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-11-09)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-11-09 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>국내외 실행형 AI 에이전트 전면 상용화</strong> — 베스핀글로벌 '헬프나우 컴퓨터', 미스트랄 Le Chonk(Large 4), 라이너 Router API로 실행형·자율 코딩 에이전트가 국내외 B2B 상용 단계로 진입함.</div>
+<div class="headline">② <strong>美 중간선거·통신사 실적으로 AI 인프라 지형 재편</strong> — 민주당 압승 속 데이터센터 규제 우려와 빅테크 랠리가 동시에 발생하고 SKT 2026 3분기 통신·AI 두 축 성장, 위성·지상망 통합 경쟁으로 AI 인프라 구도가 재편됨.</div>
+<div class="headline">③ <strong>프런티어 AI 안전·공급망 보안 전방위 쟁점화</strong> — 앤트로픽 RSI 안전 공시, 구글 LLM재킹 공격 경고, OpenAI Daybreak Red GovCloud 공개, DeepMind Gemini 4 Carbon 발표로 AI 안전·보안·에너지 효율이 산업 전면 쟁점이 됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">헬프나우 컴퓨터</span>
+  <span class="topic">Mistral Large 4</span>
+  <span class="topic">모델 라우팅</span></div>
+<div class="item">
+  <h3>베스핀글로벌, '헬프나우 컴퓨터' 출시… 답변 넘어 실행하는 AI 시대 연다<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>베스핀글로벌이 단순 질의응답을 넘어 사내 시스템과 연동해 과업을 실행하는 AI 에이전트 '헬프나우 컴퓨터'를 공식 출시함.</li>
+    <li>국내 엔터프라이즈 환경에서 보안·권한·업무 연동까지 아우르는 '실행형 AI' 레퍼런스가 확보됨.</li>
+    <li>답변형 챗봇 중심이던 국내 B2B AI 시장이 '실행형 에이전트' 중심으로 재편되는 전환점이 마련됨.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/newsroom/news-pr-helpnow-computer-launch-261103" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Mistral, 자율 코딩·사이버 보안 특화 오픈 가중치 모델 'Le Chonk(Mistral Large 4)' 출시<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미스트랄이 자율 코딩 에이전트와 사이버 보안 업무에 특화된 오픈 가중치 플래그십 'Le Chonk'를 공개함.</li>
+    <li>에이전틱 코딩·공격 탐지 성능을 전면에 내세우며 Hugging Face를 통해 즉시 내려받아 활용할 수 있도록 공개됨.</li>
+    <li>유럽 프런티어 오픈 모델이 코딩·보안 에이전트 영역에서 OpenAI·Anthropic과 직접 경쟁하는 구도가 형성됨.</li>
+  </ul>
+  <p class="source">출처: Mistral News · <a href="https://mistral.ai/news/mistral-large-4-oss" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>AI 에이전트 비용, 모델 라우팅으로 얼마나 줄까(Liner Router API 실측기)<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>라이너가 공개한 Router API를 실측한 결과 상위 모델 대비 약 28% 수준 비용으로 동일한 응답 품질을 확보함.</li>
+    <li>에이전트 워크플로우에서 쿼리별로 저가·고가 모델을 자동 선택하는 모델 라우팅의 비용 구조가 정량적으로 검증됨.</li>
+    <li>LLM 비용이 에이전트 상용화의 걸림돌이던 상황에서 라우팅 레이어가 사실상의 표준 운영 패턴으로 자리잡음.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/4015" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">SKT 3분기 실적</span>
+  <span class="topic">미 중간선거·데이터센터</span>
+  <span class="topic">위성·지상망 통합</span></div>
+<div class="item">
+  <h3>SK텔레콤, 2026년 3분기 실적 발표… 통신·AI 두 축 성장세 지속<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK텔레콤이 2026년 3분기 매출 4조 4,973억 원·영업이익 5,523억 원을 기록하며 통신·AI 두 축 성장세가 이어짐.</li>
+    <li>AI 데이터센터 사업 체계를 본격 구축하고 AI 신사업을 실적 기여 축으로 포지셔닝함.</li>
+    <li>국내 통신사가 AIDC·에이전트 사업 수익화로 이동하며 '텔코의 AI 플랫폼화' 전환이 가시화됨.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/232790" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>美 중간선거 '블루 쓰나미'… 데이터센터 규제 우려에도 빅테크 랠리<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미 중간선거에서 민주당이 승리하며 AI 데이터센터 규제 우려가 제기됐으나 빅테크 주가가 동반 상승함.</li>
+    <li>신규 데이터센터 건설 지연이 기존 AIDC 자산 가치를 끌어올린다는 기대가 반영된 결과로 분석됨.</li>
+    <li>AI 인프라 투자 사이클이 정책 리스크와 공급 제약 이슈 사이에서 재가격화되는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=677778" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>지상망·위성망 경계 허문다… 아마존, 스타링크 맹추격<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AT&T·아마존 등 글로벌 통신·클라우드 기업이 지상 이동통신과 위성망을 잇는 핸드오버 기술 검증·인수에 나섬.</li>
+    <li>AI 서비스 커버리지 확대를 위한 '지상-위성 통합' 네트워크가 통신 인프라 투자 전면으로 이동함.</li>
+    <li>AI 에이전트·엣지 디바이스 상시연결 수요에 대응하는 하이브리드 커넥티비티 경쟁이 본격화됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261104152005" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">SKT AX 혁신 2.0</span>
+  <span class="topic">FDE 인재 전쟁</span>
+  <span class="topic">모델 사업화 역설</span></div>
+<div class="item">
+  <h3>SKT, AI 전환 고속도로 뚫는다… 'AX 혁신 2.0' 본격화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>SK텔레콤이 AX 이네이블러 TF 신설과 사내 샌드박스 도입을 포함한 'AX 혁신 2.0' 전사 전환 전략을 본격화함.</li>
+    <li>구성원이 직접 에이전트를 학습·운영하는 현장 중심 AX 추진 체계가 공식화됨.</li>
+    <li>국내 대기업 AI 전환이 PoC·시범 단계에서 '전사 운영 모델 재설계' 단계로 이동하는 흐름이 뚜렷해짐.</li>
+  </ul>
+  <p class="source">출처: SK텔레콤 뉴스룸 · <a href="https://news.sktelecom.com/232606" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>"AI 현장 엔지니어 연봉 최대 19억원"… 기업들 FDE 확보 총력<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 시스템 현장 구축을 주도하는 전방 배치 엔지니어(FDE)의 연봉이 최고 19억 원까지 치솟음.</li>
+    <li>AI 도입이 인프라 구축에서 사업 성과 창출 단계로 이동하며 '현장 적용 인재' 확보전이 격화됨.</li>
+    <li>기업 AI ROI를 좌우하는 축이 모델에서 FDE·AX 엔지니어 조직으로 이동하는 구조적 변화가 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217007" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>모델이 그렇게 좋다면 오픈AI는 왜 직접 회사를 차리지 않을까<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>파운데이션 모델의 성능 우위가 왜 사업 성공으로 직결되지 않는지 앤트로픽 S-1 분석을 바탕으로 짚어냄.</li>
+    <li>엔터프라이즈 AI 수익 구조는 모델이 아닌 유통·운영·업계 특화 레이어에서 결정된다는 점이 수치로 제시됨.</li>
+    <li>AI 투자·채택 전략이 '모델 선택'에서 '업무 통합 자산 확보'로 중심이 옮겨가야 함이 재확인됨.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/4017" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">GitHub Octoverse 2026</span>
+  <span class="topic">코딩 면접 폐지</span>
+  <span class="topic">OpenAI Pierre 인수</span></div>
+<div class="item">
+  <h3>GitHub Octoverse 2026: 에이전트 기반 개발 급증으로 커밋·푸시 사상 최고<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>깃허브 Octoverse 2026에 따르면 AI 에이전트를 활용한 개발 활동이 급증해 커밋·푸시 수치가 사상 최고치를 경신함.</li>
+    <li>에이전틱 코딩이 사이드 실험을 넘어 전 세계 개발자의 기본 워크플로우로 자리잡는 지표가 확인됨.</li>
+    <li>오픈소스·엔터프라이즈 코드베이스 모두에서 '사람+에이전트' 공동 개발 패턴이 표준으로 굳어지는 흐름임.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>The Pulse: Anthropic, 전통 코딩 인터뷰 폐지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 릿코드형 코딩 테스트를 채용 과정에서 전면 폐지하는 결정을 공식화함.</li>
+    <li>AI 시대에 요구되는 '문제 정의·시스템 설계·에이전트 운영' 역량 중심 평가로 전환되는 흐름이 명확해짐.</li>
+    <li>프런티어 AI 랩이 먼저 채용 패러다임을 바꾸며 글로벌 소프트웨어 엔지니어 평가 표준 변화가 가속됨.</li>
+  </ul>
+  <p class="source">출처: The Pragmatic Engineer · <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, Pierre Computer Company 인수… Codex 코드 작성·리뷰 기능 확장<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 코딩 도구 Codex의 작성·검토 기능을 강화하기 위해 Pierre Computer Company를 인수함.</li>
+    <li>자율 코딩 에이전트·코드 리뷰 영역에서 수직 통합을 가속하는 전략이 확인됨.</li>
+    <li>AI 코딩 도구 시장이 모델 공급자의 '제품·조직 인수' 중심 재편 국면으로 진입함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/openai-to-acquire-pierre" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">물리 엔지니어링 자동화</span>
+  <span class="topic">브레인코 BCI 비만치료</span></div>
+<div class="item">
+  <h3>OpenAI, 물리 세계 엔지니어링 가속: ChatGPT·Codex로 CAD·PCB 설계 자동화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 ChatGPT·Codex를 활용해 CAD·PCB 설계·시뮬레이션 등 물리 엔지니어링 워크플로를 가속하는 방안을 공개함.</li>
+    <li>소프트웨어에 머물던 코딩 에이전트가 하드웨어 설계 전 단계로 적용 범위를 확장함.</li>
+    <li>로보틱스·반도체·제조 영역에서 '에이전트 지원 엔지니어링' 체계가 실무 도입 단계로 진입함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/accelerating-engineering-for-the-physical-world" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>중국 브레인코, 뇌 자극 '전자식 비만 치료제' 개발 중<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>중국 BCI 스타트업 브레인코가 뇌 신경 자극으로 식욕을 억제하는 웨어러블 비만 치료 기기를 개발 중임.</li>
+    <li>약물 투여 없이 GLP-1 계열 비만 치료제 효과를 대체하겠다는 전자의약·BCI 결합 접근이 제시됨.</li>
+    <li>2~3년 내 상용화를 목표로 물리 디바이스·신경 자극이 디지털 치료제 영역으로 확장되는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217015" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">RSI 안전 통제</span>
+  <span class="topic">LLM재킹</span>
+  <span class="topic">GovCloud 사이버 모델</span></div>
+<div class="item">
+  <h3>앤트로픽 "RSI 가속에 AI 안전 대책 뒤처질 수도"… 통제 강화 검토<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 AI의 재귀적 자기개선(RSI) 속도가 안전 제어 체계를 앞지를 위험을 SEC 신고서에 명시함.</li>
+    <li>자율적 능력 향상 국면에서 인간 감독을 어떻게 보강할지에 대한 통제 강화 방안이 검토됨.</li>
+    <li>프런티어 모델 안전성이 공식 공시 리스크로 등록되며 AI 거버넌스 논의가 자본시장 영역으로 확장됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216984" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>구글, LLM 재킹 주의보… "하루 10만 달러 부정 사용 적발"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글·맨디언트가 기업의 LLM 계정·API 접근권을 탈취해 막대한 요금을 발생시키는 'LLM재킹' 공격을 경고함.</li>
+    <li>일 10만 달러 규모 무단 사용 사례가 탐지되며 AI 사용료가 새로운 사이버 공격 수익원으로 부상함.</li>
+    <li>LLM 키 관리·사용량 이상 탐지가 엔터프라이즈 AI 보안의 1순위 통제 포인트로 재정의됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261104210925" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>OpenAI, 자율 사이버보안 모델 'Daybreak Red' AWS GovCloud 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 자율 사이버보안 모델 GPT-5.6 Cyber 기반 Daybreak Red를 AWS GovCloud(US-East)에서 개시함.</li>
+    <li>미 정부·승인 고객을 대상으로 '방어형 에이전트'의 공공 조달 경로가 정식으로 열림.</li>
+    <li>AI 보안 운영이 민간 SOC를 넘어 공공·군·연방기관 영역으로 확산되는 전환점이 마련됨.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/daybreak-red-aws-govcloud" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">Gemini 4 Carbon</span>
+  <span class="topic">오픈AI 하드웨어 자동 설계</span>
+  <span class="topic">MS 합성데이터 평가</span></div>
+<div class="item">
+  <h3>Google DeepMind, 차세대 프론티어 모델 'Gemini 4 Carbon' 공개<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 성능·지속가능성을 동시에 강화한 차세대 프런티어 모델 'Gemini 4 Carbon'을 발표함.</li>
+    <li>에너지 효율 축을 공식 지표로 전면에 내세우며 모델 평가 기준에 '탄소 효율성'을 포함시킴.</li>
+    <li>프런티어 모델 경쟁 축이 성능 단일 축에서 '성능×에너지 효율×안전'의 다축 구조로 재편됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>오픈AI, AI로 하드웨어 설계 일주일 만에 완료… 실제 시제품 제작<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 GPT-6 계열 모델을 활용해 설계부터 시제품 제작까지 하드웨어 개발 전 과정을 일주일 만에 자동화함.</li>
+    <li>사람 수작업 수정 없이 AI가 물리적 장치 설계를 직접 실행할 수 있음을 시제품 수준에서 입증함.</li>
+    <li>AI 에이전트가 소프트웨어를 넘어 하드웨어·로봇 설계 영역으로 역할을 확장하는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=216989" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Microsoft Research, 합성 엔터프라이즈 데이터 평가로 Copilot AI 신뢰도 강화<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>마이크로소프트 리서치가 민감 정보 노출 없이 코파일럿 성능을 평가하는 합성 엔터프라이즈 데이터 체계를 공개함.</li>
+    <li>기업 규모 데이터에 접근하지 않고도 모델 품질·안전성을 지속 측정하는 방법론이 제시됨.</li>
+    <li>엔터프라이즈 AI 평가가 '프라이버시 보존 + 지속적 벤치마킹' 체계로 표준화되는 방향이 분명해짐.</li>
+  </ul>
+  <p class="source">출처: Microsoft Research Blog · <a href="https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"><span class="topic">(이번 주 해당 없음)</span></div>
+
+<p class="category-note">이번 주에는 국내 연구기관·정책 영역의 High/Medium 신규 항목이 수집되지 않아 본 섹션은 비워 둠.</p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
+
