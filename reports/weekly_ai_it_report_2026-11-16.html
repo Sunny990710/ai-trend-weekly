@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-11-16)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-11-16 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>앤트로픽, 1.4조 달러 밸류 IPO 로드쇼 개시</strong> — 공모가 70~78달러·644억 달러 조달 규모의 초대형 상장 추진으로 AI 산업 전반의 고비용 인프라 투자·수익성 지속가능성을 검증하는 시험대가 열림.</div>
+<div class="headline">② <strong>피지컬 AI 실세계 적용 전면 실증</strong> — Gemini Robotics 2.5 공개, 궤도 상 세계 최초 로봇 조립 성공, 바퀴 장착 아틀라스 360도 점프 시연으로 로보틱스가 실험실·공장을 넘어 우주·물리 환경으로 확장됨.</div>
+<div class="headline">③ <strong>AI 보안·공급망 리스크 전방위 쟁점화</strong> — 금융보안원 해킹, Git 핵심 보안 취약점 공표, 엔비디아 CEO 겨냥 '기술 첩보전' 의혹까지 AI 공급망·안전·거버넌스 리스크가 산업 전면 쟁점으로 부상함.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">에이전트 전용 OS</span>
+  <span class="topic">보안 에이전트</span>
+  <span class="topic">에이전틱 엔지니어링</span></div>
+<div class="item">
+  <h3>에이전틱 AI 겨냥한 새 PC 운영체제 '코라(KORA)' 도전장<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 에이전트가 파일·앱·시스템 자원에 직접 접근해 다단계 작업을 자율 수행할 수 있도록 설계된 리눅스 기반 차세대 OS '코라'가 공개됨.</li>
+    <li>기존 윈도우·맥 운영체제가 사람 입력에 맞춰 설계된 것과 달리, 코라는 에이전트의 권한·메모리·태스크 큐를 기본 단위로 삼아 OS 계층부터 재설계됨.</li>
+    <li>에이전트 실행 환경 표준이 브라우저·IDE를 넘어 운영체제 레벨로 확장되는 흐름이 가시화됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261110160632" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Korea's AI Ecosystem Advances and Secures Agentic AI With NVIDIA<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>현대차그룹과 AIM 인텔리전스가 엔비디아의 NemoClaw·OpenShell을 도입해 보안성이 강화된 에이전트형 AI 시스템을 구축함.</li>
+    <li>국내 대기업의 에이전트 도입이 '모델 선택'을 넘어 공급망·권한·안전 레이어 통합 단계로 진입함.</li>
+    <li>한국형 소버린 AI 전략과 에이전트 보안 표준이 글로벌 레퍼런스로 연결되는 구도가 형성됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/korea-secure-agentic-ai" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Beyond code generation: A developer's guide to agentic engineering<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>GitHub Copilot을 활용해 단순 코드 생성을 넘어 기획·코드 리뷰·운영 이슈 조사까지 자동화하는 에이전틱 엔지니어링 가이드가 제시됨.</li>
+    <li>개발자 역할이 '코드 작성자'에서 '에이전트 지휘·검증자'로 이동하는 실무 패턴이 정리됨.</li>
+    <li>엔지니어링 조직이 에이전트 운영 체계를 표준화해야 생산성 ROI가 실질적으로 발생함이 확인됨.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">양자·AI 하이브리드</span>
+  <span class="topic">TSMC 역대 최대</span>
+  <span class="topic">AI 데이터센터 투자</span></div>
+<div class="item">
+  <h3>퀀티넘-RIKEN, 일본 내 양자-AI 하이브리드 슈퍼컴퓨팅 상용화 앞당겨 줄 파트너십 확대<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>퀀티넘과 일본 이화학연구소(RIKEN)가 양자-AI 하이브리드 슈퍼컴퓨팅 상용화를 위해 파트너십을 확대함.</li>
+    <li>소프트뱅크와의 데이터센터 연동 협력까지 추가되며 양자·AI 통합 인프라가 실사용 단계로 진입함.</li>
+    <li>차세대 AI 인프라 경쟁이 GPU·가속기 수준을 넘어 양자 하이브리드 영역으로 확장됨.</li>
+  </ul>
+  <p class="source">출처: ZDNet Korea · <a href="https://zdnet.co.kr/view/?no=20261111061003" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>TSMC, AI 반도체 호황에 10월 매출 5869억대만달러…월간 기준 사상 최대치<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>TSMC가 AI 반도체 수요 급증에 힘입어 10월 매출 약 5869억 대만달러를 기록하며 월간 기준 역대 최대 실적을 달성함.</li>
+    <li>HBM·첨단패키징·엔비디아 플랫폼 수요가 동시에 집중되며 AI 인프라 가치사슬의 공급 병목이 TSMC에 집중되는 구도가 유지됨.</li>
+    <li>AI 사이클이 매출 레벨에서도 반도체 수퍼사이클로 이어지고 있음이 숫자로 확인됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261110000479" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>스페이스X, 텍사스에 32조 AI 데이터센터·가스발전소 건설 추진<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>스페이스X가 연산 전력 공급과 망 연결 대기 시간 감소를 위해 텍사스 스타베이스에 240억 달러 규모의 AI 데이터센터 건설을 추진함.</li>
+    <li>데이터센터와 연계한 자체 가스발전소까지 함께 짓는 '컴퓨트+전력' 수직통합 모델이 공식화됨.</li>
+    <li>빅테크·AI 기업의 인프라 전략이 전력·부지 확보 단계를 지나 자가발전·토지 확보 경쟁으로 이동함.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217214" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">앤트로픽 IPO</span>
+  <span class="topic">ChatGPT 기업용</span>
+  <span class="topic">AI 챗봇 점유율</span></div>
+<div class="item">
+  <h3>앤트로픽, 기업가치 1.4조달러로 IPO 추진…644억달러 조달<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 기업가치 최대 1.4조 달러를 목표로 644억 달러 규모의 공모 자금을 조달하는 초대형 IPO를 추진함.</li>
+    <li>공모가 범위 70~78달러로 공식 로드쇼가 개시되며 AI 프런티어 기업의 자본시장 진입이 본격화됨.</li>
+    <li>AI 산업 전반의 고비용 인프라 투자·수익성·지속가능성을 시장이 검증하는 단일 상장 이벤트가 됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217248" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing Businesses in ChatGPT<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>OpenAI가 ChatGPT 내에서 기업 정보를 관리하고 비즈니스 인사이트를 도출할 수 있는 'Businesses in ChatGPT'를 출시함.</li>
+    <li>기업 데이터 연결·운영 지표 분석·에이전트 호출을 단일 창에서 수행하는 B2B 레이어가 공식화됨.</li>
+    <li>엔터프라이즈 AI 시장에서 ChatGPT가 '대화형 UX'를 넘어 '업무 플랫폼'으로 포지셔닝을 전환함.</li>
+  </ul>
+  <p class="source">출처: OpenAI News · <a href="https://openai.com/index/introducing-businesses-chatgpt" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>챗GPT, 주요 AI 챗봇 이용량 81% 차지…클로드 급성장에도 독주<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>주요 경쟁 챗봇의 성장에도 불구하고 오픈AI 챗GPT가 점유율 81.2%를 차지하며 글로벌 AI 챗봇 시장에서 압도적 독주 체제를 유지함.</li>
+    <li>클로드가 빠르게 성장하고 있음에도 기업·개인 사용자 트래픽은 여전히 챗GPT로 수렴하는 흐름이 확인됨.</li>
+    <li>AI 챗봇 시장이 '모델 멀티벤더'와 '기본 챗봇 1강' 구도로 이원화되는 양상이 뚜렷해짐.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217239" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">Claude Fable 5.2</span>
+  <span class="topic">AI 소프트웨어 검증</span>
+  <span class="topic">하드웨어 자동 설계</span></div>
+<div class="item">
+  <h3>Introducing Claude Fable 5.2 and Claude Mythos 5.2<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 코딩·금융·과학 등 고난도 기술 작업 성능을 대폭 개선한 신규 모델 Claude Fable 5.2와 Claude Mythos 5.2를 공개함.</li>
+    <li>장기 코딩·멀티스텝 추론 벤치마크에서 전 세대 대비 유의미한 격차를 확보함.</li>
+    <li>개발·전문 업무 중심 프런티어 모델 경쟁이 다시 격화되는 전환점이 마련됨.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/claude-fable-and-mythos-5-2" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>클로드 페이블 5.2, 전자기기 3종 설계…회로 수정 없이 시제품 제작<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽의 클로드 페이블 5.2가 회로 설계·펌웨어 작성·부품 배치 등 주요 하드웨어 개발 프로세스를 수행해 작동하는 전자기기 시제품 3종을 제작함.</li>
+    <li>별도 회로 수정 없이 동작하는 결과가 확인되며 AI의 기술 작업 범위가 소프트웨어를 넘어 하드웨어 설계로 확장됨.</li>
+    <li>AI 에이전트의 실질적 과업 수행 영역이 'HW 설계·프로토타이핑'까지 넓어진 레퍼런스가 등장함.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217243" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Introducing AlphaProof Code: a breakthrough in verifying complex software at depth<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 복잡한 소프트웨어 검증을 자동화하는 AlphaProof Code를 발표하고 시그널 암호화 로직 검증에 성공함.</li>
+    <li>형식 검증 수준의 깊이 있는 소프트웨어 안정성 검증이 AI 자동화 범위로 편입됨.</li>
+    <li>보안·암호·고신뢰 시스템 영역에서 AI가 사람 검증자를 보조하는 표준 도구로 자리 잡는 방향성이 확인됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/introducing-alphaproof-code" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">우주 궤도 조립</span>
+  <span class="topic">아틀라스 진화</span>
+  <span class="topic">Gemini Robotics 2.5</span></div>
+<div class="item">
+  <h3>우주에서 건축하는 로봇…세계 최초 성공<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미 연구진이 우주 궤도 상에서 로봇팔을 이용한 구조물 자동 조립 실험에 세계 최초로 성공함.</li>
+    <li>궤도 조립 성공으로 대형 우주 구조물의 지상 발사 제약이 완화되는 경로가 열림.</li>
+    <li>피지컬 AI 적용 범위가 공장·도로를 지나 궤도·심우주 환경으로 확장됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261110000423" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>발에 바퀴 단 '아틀라스'…360도 회전 점프까지<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>보스턴다이내믹스가 바퀴를 탑재해 좌우 자율 주행 및 360도 점프 동작을 수행하는 휴머노이드 아틀라스의 시연 영상을 공개함.</li>
+    <li>보행·휠 이동을 상황에 맞게 전환하는 하이브리드 구동 설계로 실내 물류·현장 투입성이 크게 향상됨.</li>
+    <li>휴머노이드가 실험실 시연을 지나 실사용 환경에 가까워지는 단계적 진화가 가시화됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261110000302" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Gemini Robotics 2.5 accelerates real-world general dexterity<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>로봇의 정교한 조작 능력과 안전성을 획기적으로 개선한 VLA(Vision-Language-Action) 모델 Gemini Robotics 2.5가 공개됨.</li>
+    <li>물체 인식·언어 지시·물리 조작을 단일 모델로 통합한 범용 조작 성능이 공개되며 로봇 지능의 기반 모델 경쟁이 가속됨.</li>
+    <li>공장·가정·물류 등 복잡한 환경에서의 일반화 성능이 실사용 기준에 근접함이 확인됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">기술 첩보전</span>
+  <span class="topic">금융권 보안사고</span>
+  <span class="topic">Git 보안 취약점</span></div>
+<div class="item">
+  <h3>[11월10일] 젠슨 황 불륜 스캔들 뒤에 가려진 'AI 스파이 전쟁'<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아 CEO 개인 신상 논란 배후에 국가 차원의 기술 첩보전 가능성이 제기되며 핵심 AI 기업·경영진 대상 정보 보안 위험이 부각됨.</li>
+    <li>AI 공급망 핵심 인물을 겨냥한 심리·평판 공작 가능성이 리스크 시나리오로 공식 논의됨.</li>
+    <li>AI 산업 보안 범위가 모델·데이터·인프라를 넘어 핵심 인력 보호 영역까지 확장됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217207" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>금융보안원도 뚫렸다…금융사 평가자료 유출<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>금융보안원의 정보보호 상시평가 지원시스템이 해킹되어 일부 금융사 평가 자료가 유출되는 침해사고가 발생함.</li>
+    <li>은행·보험사 등 200여 곳 회원을 둔 보안 전담 기관이 뚫리며 금융권 공급망 보안 신뢰에 균열이 생김.</li>
+    <li>AI·자동화 공격이 보안 기관을 직격하는 구도가 현실화되며 거버넌스 수준의 재점검 필요성이 커짐.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261110000480" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Git security vulnerabilities announced<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>재귀적 클론·참조 처리 등에서 발견된 Git의 6가지 보안 취약점과 이에 대한 업데이트 조치가 공식 공지됨.</li>
+    <li>전 세계 개발자·AI 코드 에이전트의 핵심 공급망인 Git 자체의 취약점이 드러나며 패치 대응이 시급해짐.</li>
+    <li>AI 에이전트 자동 clone·build 환경에서 공급망 공격 표면이 넓어지는 리스크가 재확인됨.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">Gemini 4 Carbon</span>
+  <span class="topic">Anthropic IPO 로드쇼</span></div>
+<div class="item">
+  <h3>Gemini 4 Carbon is now available<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 성능과 효율성을 한층 강화한 차세대 AI 모델 Gemini 4 Carbon을 정식 출시함.</li>
+    <li>동일 품질 응답을 더 낮은 연산 비용으로 제공하는 '효율 프런티어' 모델 라인이 공식화됨.</li>
+    <li>프런티어 경쟁 축이 '성능 최대화'에서 '성능 대비 토큰 경제성'으로 빠르게 이동함.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>Anthropic launches roadshow for proposed initial public offering<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤스로픽이 보통주 기업공개(IPO) 추진을 위해 공식 로드쇼를 개최함.</li>
+    <li>기관투자자 대상 설명회·가격 산정이 본격화되며 프런티어 AI 기업의 자본시장 데뷔가 임박함.</li>
+    <li>AI 섹터 전반의 밸류에이션·투자 지속성 논의가 로드쇼 결과에 좌우되는 구도가 형성됨.</li>
+  </ul>
+  <p class="source">출처: Anthropic News · <a href="https://www.anthropic.com/news/roadshow-launch" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"><span class="topic">MSIT-NVIDIA</span>
+  <span class="topic">소버린 AI 협력</span></div>
+<div class="item">
+  <h3>NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>과기정통부와 엔비디아가 AI 스타트업 파트너십 포럼을 개최하고 국내 핵심 AI 스타트업 현황을 공유함.</li>
+    <li>엔비디아의 신규 투자 계획이 공식 발표되며 한국 AI 생태계로 실투자 자금이 유입되는 경로가 확정됨.</li>
+    <li>정부-글로벌 AI 기업 간 스타트업 육성 협력이 정례화 단계로 진입함.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/korean-startup-investments-msit" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<div class="item">
+  <h3>From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>과학기술정보통신부와 엔비디아가 소버린 AI 생태계 확장을 위해 NPU·XPU의 NVLink Fusion 참여 및 인재 양성 등 전방위적 협업을 확대함.</li>
+    <li>칩·네트워크·인력 양성으로 이어지는 '풀스택 소버린 AI' 협력 틀이 공식화됨.</li>
+    <li>국내 AI 자립 전략이 모델·데이터 수준을 넘어 가속기 생태계까지 결합되는 구조로 정비됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<p class="category-note"></p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
