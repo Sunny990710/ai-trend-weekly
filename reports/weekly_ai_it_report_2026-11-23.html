@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>이번 주 주목할 AI/IT 뉴스 (2026-11-23)</title>
+<style>
+  :root { color-scheme: light; }
+  html { background: #ffffff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, sans-serif; line-height: 1.6; max-width: 880px; margin: 32px auto; padding: 0 20px; color: #1f2328; background: #ffffff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 36px; font-size: 20px; }
+  h2.cat-title {
+    margin-top: 52px;
+    margin-bottom: 10px;
+    padding: 2px 0 2px 14px;
+    border-bottom: none;
+    border-left: 5px solid #2563eb;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.35;
+  }
+  .category-note { margin: 8px 0 0; font-size: 13px; color: #6b7280; }
+  h3 { margin: 0 0 4px; font-size: 16px; }
+  .topics { margin: 4px 0 6px 0; }
+  .topics + .item { padding-top: 4px; }
+  .topic { display: inline-block; padding: 4px 12px; border-radius: 14px; background: #f3f4f6; color: #4b5563; font-size: 13px; margin-right: 6px; margin-bottom: 6px; }
+  .headline { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 14px 18px; border-radius: 6px; margin: 10px 0; }
+  .item { padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+  .item:last-child { border-bottom: none; }
+  .item:not(:has(+ .item)) { border-bottom: none; }
+  .highlights { margin: 8px 0 10px 0; padding-left: 1.25rem; color: #374151; }
+  .highlights li { margin: 5px 0; padding-left: 2px; }
+  .highlights li::marker { color: #1f2328; }
+  .source { font-size: 13px; color: #4b5563; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .badge.stars {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    opacity: 1;
+  }
+  .badge.stars.s3 {
+    background: #fee2e2;
+    border-color: rgba(153, 27, 27, 0.25);
+    color: #991b1b;
+  }
+  .badge.stars.s2 {
+    background: #fef3c7;
+    border-color: rgba(146, 64, 14, 0.25);
+    color: #92400e;
+  }
+  .badge.stars.s1 {
+    background: #e5e7eb;
+    border-color: rgba(55, 65, 81, 0.25);
+    color: #374151;
+  }
+  a { color: #2563eb; }
+  .feedback {
+    margin-top: 48px;
+    padding: 32px 0 48px;
+    text-align: center;
+  }
+  .feedback p { margin: 0 0 16px; font-size: 15px; color: #6b7280; }
+  .feedback-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .feedback-btn:hover { background: #1d4ed8; }
+  .back-to-top {
+    position: fixed;
+    right: max(16px, calc((100vw - 880px) / 2 - 56px));
+    bottom: 28px;
+    z-index: 100;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2563eb;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background 0.18s ease;
+  }
+  .back-to-top svg { width: 18px; height: 18px; }
+  .back-to-top:hover { background: #f3f4f6; }
+  .back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 640px) {
+    .back-to-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>이번 주 주목할 AI/IT 뉴스</h1>
+<div class="meta">발행일 2026-11-23 · 출처: AI/IT 트렌드 피드 (Notion DB) · 카테고리별 2~3건 선별</div>
+
+<h2>핵심 3줄 요약</h2>
+<div class="headline">① <strong>앤트로픽, 나스닥 상장 첫날 기업가치 2조달러 돌파</strong> — 프런티어 AI 기업 최초의 공개 상장이 성사되며 공모가 대비 34% 급등으로 스페이스X를 넘어서 AI 산업 자본시장 주도권 전환의 분수령이 마련됨.</div>
+<div class="headline">② <strong>구글 Gemini 4 세대(Hydrogen·Neon)·Genie 4 전면 공개</strong> — 효율 특화 Hydrogen, 고성능 Neon, 상호작용 가상세계 Genie 4까지 라인업이 완성되며 차세대 모델·월드모델 경쟁이 재점화됨.</div>
+<div class="headline">③ <strong>미·중 반도체 수출 규제 재강화·MS 바이트댄스 공급 논란</strong> — 美 중국 반도체 수출 허가 예외 폐지로 삼성·TSMC 일부 출하가 중단되고 MS의 바이트댄스 오픈AI 모델 공급에 미 의회가 설명을 요구하며 AI 공급망·거버넌스 리스크가 전면화됨.</div>
+
+<!--
+  운영 규칙(LLM에게 그대로 지시):
+  - 기본 6개 카테고리는 항상 노출: AI Infrastructure / Enterprise AI / AI Agent / AI Risk & Regulation / Physical AI / Software Development
+  - 빅테크 리서치 블로그는 High가 있을 때만 추가(총 7개까지 허용)
+  - 각 카테고리별 2~3개 아이템
+  - 각 아이템은: 제목 + 중요도 칩(중요도 ★★★/★★/★) + 불릿 3줄(~다 체 금지, ~함/~임 종결) + 출처 + 원문 링크
+-->
+
+<h2 class="cat-title">AI Agent / 업무 자동화</h2>
+<div class="topics"><span class="topic">Agent Host Protocol</span>
+  <span class="topic">과학 AI 에이전트</span>
+  <span class="topic">국내 에이전트 최적화</span></div>
+<div class="item">
+  <h3>Building the Agent Host Protocol for sessions that continue across devices<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>깃허브가 에디터·모바일·클라우드 등 서로 다른 호스트 환경 간에 AI 에이전트 작업 세션을 연속 유지할 수 있는 개방 규격 'Agent Host Protocol'을 발표함.</li>
+    <li>브라우저·IDE·CLI·모바일 앱이 동일한 에이전트 세션을 이어받는 표준이 생기며 에이전트 운영 환경이 멀티 호스트 기반으로 확장됨.</li>
+    <li>에이전트 상호운용성 레이어가 모델·툴콜 표준(MCP)에서 '세션 지속성' 영역까지 확장됨이 확인됨.</li>
+  </ul>
+  <p class="source">출처: GitHub Blog · <a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>Ian Buck Kicks Off NVIDIA's Week at SC26 as Science Enters the Age of Agents<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 SC26에서 연구자의 실험 계획·코드 실행을 자율 수행하는 과학용 에이전트 'Nemotron for Science'와 차세대 HPC 플랫폼을 공개함.</li>
+    <li>슈퍼컴퓨팅·HPC 영역이 '시뮬레이션 실행 환경'에서 '에이전트가 과학을 수행하는 환경'으로 포지셔닝이 전환됨.</li>
+    <li>에이전트 적용 범위가 업무 자동화·코딩을 넘어 과학 연구 파이프라인 자동화까지 확장됨.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/ian-buck-sc26" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>노타, 에이전트까지 최적화 확장…적자 확대 속 수익화 과제<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>AI 추론 효율화 기업 노타가 모델 경량화에서 나아가 에이전트 작업 흐름 최적화까지 사업 영역을 확장함.</li>
+    <li>B2B 레퍼런스 확대로 매출이 성장했으나 R&D 투자 확대로 영업손실도 함께 커져 수익화가 과제로 부상함.</li>
+    <li>국내 'AI 추론 효율화' 세그먼트가 모델 레이어에서 에이전트 런타임 최적화 레이어로 이동 중임이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=679166" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">AI Infrastructure</h2>
+<div class="topics"><span class="topic">Vera Rubin MLPerf</span>
+  <span class="topic">AI가 설계한 GPU</span>
+  <span class="topic">LLM 추론 효율</span></div>
+<div class="item">
+  <h3>NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아 베라 루빈 플랫폼이 MLPerf 트레이닝·엔드포인트 전 항목에서 1위를 차지하며 공식 데뷔에 성공함.</li>
+    <li>에이전트형 AI 추론 기준 전력 대 성능비가 전 세대 대비 10배 이상 개선된 수치가 벤치마크로 확인됨.</li>
+    <li>AI 인프라 세대 교체 사이클이 '학습 성능'에서 '추론 전력 효율' 중심으로 이동함이 뚜렷해짐.</li>
+  </ul>
+  <p class="source">출처: NVIDIA Blog · <a href="https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>오픈AI, AI로 AMD GPU 설계 개선…"5개월 만에 1년치 진전"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>오픈AI가 자체 AI 모델을 활용해 AMD의 주력 GPU 회로 설계를 최적화하며 5개월 만에 사람이 1년에 해당하는 수준의 성능 개선 성과를 거둠.</li>
+    <li>AI가 AI 가속기 설계를 자율 개선하는 '설계 루프'가 산업 레퍼런스로 공식화됨.</li>
+    <li>엔비디아 중심 GPU 지형에 대한 AMD의 반격 카드가 'AI 기반 자동 설계'로 가시화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217562" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>같은 GPU로 더 많은 AI 요청을 처리할 수 있을까? ― KV 캐시 오프로딩 × EPP 라우팅<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>카카오가 KV 캐시 오프로딩과 EPP 라우팅을 결합해 동일 GPU 구성에서 LLM 추론 처리 시간을 121분에서 47분으로 단축함.</li>
+    <li>GPU를 추가 증설하지 않고도 처리량을 2배 이상 끌어올리는 국내 실전 엔지니어링 레퍼런스가 공개됨.</li>
+    <li>AI 인프라 비용 급등 국면에서 '증설'이 아닌 '캐싱·라우팅 최적화'가 CAPEX 완화의 핵심 지렛대임이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 카카오 기술블로그 · <a href="https://tech.kakao.com/posts/848" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Enterprise AI</h2>
+<div class="topics"><span class="topic">앤트로픽 상장</span>
+  <span class="topic">클로드 코드 통제</span>
+  <span class="topic">2027 AI 전망</span></div>
+<div class="item">
+  <h3>앤트로픽, 나스닥 상장 첫날 기업가치 2조달러…스페이스X 추월<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽이 미국 나스닥 상장 첫날 공모가 대비 34% 급등하며 기업가치 2조 달러를 기록, 스페이스X를 넘어섬.</li>
+    <li>프런티어 AI 기업 최초의 공개 상장이 성공적으로 데뷔하며 AI 산업 수익성·지속가능성에 대한 시장 검증이 1차 통과됨.</li>
+    <li>엔터프라이즈 AI 공급사의 자본 조달 경로가 PE 라운드에서 공개 시장으로 확장되는 전환점이 마련됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217594" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>골드만삭스는 왜 트레이더에게서 클로드 코드를 뺏었을까<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>골드만삭스·유나이티드항공 등 기업이 보안·비용·부서 간 정보 차단을 이유로 개인용 AI 에이전트와 코딩 도구 사용을 제한·통제하는 추세가 확인됨.</li>
+    <li>기업 내 AI 도구 도입이 '전원 자율 허용'에서 '거버넌스 기반 통제 허용'으로 전환됨.</li>
+    <li>엔터프라이즈 AI 운영 체계가 '모델 선택'을 넘어 '권한·데이터 경계·감사'를 포함한 통합 플랫폼으로 이동함.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/4037" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>[전망 리포트] 2027 AI는 어떻게 기업의 성과가 되는가<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>베스핀글로벌이 2027년까지 AI 시장 전망과 산업별 성숙도 분석을 담은 기업 전략 리포트를 공개함.</li>
+    <li>경영진이 비즈니스 성과로 연결하기 위한 AI 도입·운영 전략 가이드가 제시됨.</li>
+    <li>엔터프라이즈 AI 담론이 'PoC·도입'에서 '성과 측정·ROI 검증' 단계로 이동 중임이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 베스핀글로벌 트렌드레터 · <a href="https://www.bespinglobal.com/bespin-insight/2027-ai-outlook-report" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Software Development</h2>
+<div class="topics"><span class="topic">llama.cpp v1.0.0</span>
+  <span class="topic">코딩 에이전트 어댑터</span>
+  <span class="topic">병렬 코딩 워크플로우</span></div>
+<div class="item">
+  <h3>llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>로컬 AI 추론 인프라의 핵심 라이브러리인 llama.cpp가 정식 v1.0.0으로 공식 출시됨.</li>
+    <li>온디바이스·개인화 AI 및 로컬 LLM 실행 환경의 프레임워크 안정성이 확립됨.</li>
+    <li>오픈웨이트 모델 생태계의 기반 레이어가 '실험 단계'에서 '프로덕션 레디' 단계로 이동함이 확인됨.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>허깅페이스, 코딩 에이전트 맞춤 어댑터 공개…'큐원' 고난도 평가 39%→65%<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>허깅페이스가 알리바바 큐원(Qwen) 모델을 코딩 에이전트용으로 튜닝한 LoRA 어댑터를 공개함.</li>
+    <li>고난도 코딩 과제 성공률이 39%에서 64.7%로 대폭 향상되며 오픈웨이트 코딩 에이전트의 경쟁력이 상용급으로 근접함.</li>
+    <li>코딩 에이전트 분야에서 'LoRA 기반 특화'가 모델 재학습을 대체하는 비용 효율적 대안으로 자리잡음.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217584" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>AI 코딩 세션 10개를 동시에 관리하는 개발 워크플로우<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>Claude Code와 Codex를 활용해 10개의 AI 코딩 세션을 병렬로 운영한 국내 개발자 워크플로우가 공개됨.</li>
+    <li>주간 PR 병합 건수가 기존 대비 7배 이상 증가한 실측 수치가 확인됨.</li>
+    <li>개발자 역할이 '단일 세션 코더'에서 '다중 에이전트 지휘자'로 재정의되는 흐름이 실무 레퍼런스로 등장함.</li>
+  </ul>
+  <p class="source">출처: 요즘IT (위시켓) · <a href="https://yozm.wishket.com/magazine/detail/4043" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<h2 class="cat-title">Physical AI / Robotics</h2>
+<div class="topics"><span class="topic">LG 피지컬 AI 인사</span>
+  <span class="topic">휴머노이드 실사용</span>
+  <span class="topic">로봇 시뮬레이션</span></div>
+<div class="item">
+  <h3>LG, 인재 중용 '피지컬 AI' 전진 배치…연구서 사업화로<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>LG그룹이 2027년 임원인사에서 피지컬 AI 및 AI 인프라 R&D 핵심 인재를 전면 전진 배치함.</li>
+    <li>'연구 조직 중심'이던 피지컬 AI가 사업화 조직 중심으로 포지션을 이동함.</li>
+    <li>국내 대기업의 피지컬 AI 전략이 R&D 선행 단계에서 제품·사업화 단계로 공식 이행됨이 확인됨.</li>
+  </ul>
+  <p class="source">출처: 블로터 (Bloter) · <a href="https://www.bloter.net/news/articleView.html?idxno=679188" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>닭장에 나타난 '휴머노이드'…임무는 달걀 수거<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미 노스캐롤라이나주립대 연구진이 방사형 닭장에서 달걀을 수거하는 휴머노이드 로봇 '하울(Howl)'을 개발함.</li>
+    <li>농업 현장의 수작업 영역에 휴머노이드 폼팩터가 투입되는 실사용 레퍼런스가 등장함.</li>
+    <li>피지컬 AI 적용 범위가 공장·물류를 넘어 농업·축산 등 비정형 현장으로 확장되는 신호가 확인됨.</li>
+  </ul>
+  <p class="source">출처: 전자신문 (ETNews) · <a href="https://www.etnews.com/20261119000421" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>Build a Robot Pick-and-Place Simulation with SimReady Assets<span class="badge stars s2">중요도 ★★</span></h3>
+  <ul class="highlights">
+    <li>엔비디아가 SimReady 에셋을 활용해 로봇 픽앤플레이스 작업 시뮬레이션을 손쉽게 구축하는 가이드를 공개함.</li>
+    <li>로봇 학습용 가상 환경 조성 비용·시간이 크게 낮아지며 피지컬 AI 개발 저변이 확장됨.</li>
+    <li>'시뮬레이션 우선(Sim-First) 로보틱스'가 산업 표준 워크플로우로 자리잡는 흐름이 확인됨.</li>
+  </ul>
+  <p class="source">출처: Hugging Face Blog · <a href="https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+<p class="category-note"></p>
+
+<h2 class="cat-title">AI Risk &amp; Regulation</h2>
+<div class="topics"><span class="topic">앤트로픽 안전 기조</span>
+  <span class="topic">미중 반도체 규제</span>
+  <span class="topic">MS·바이트댄스 논란</span></div>
+<div class="item">
+  <h3>아모데이 "AI 개발 속도 조절…사업·정치적 압력에 굴복 안 해"<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>앤트로픽 다리오 아모데이 CEO가 나스닥 상장 직후에도 외부 사업·정치적 압력에 굴하지 않고 AI 안전성 확보를 위한 모델 개발·배포 속도 조절 방침을 재확인함.</li>
+    <li>프런티어 AI 기업의 공시 의무가 발생한 이후에도 'RSP(Responsible Scaling Policy)' 기조를 유지하겠다는 선언이 이뤄짐.</li>
+    <li>상장 AI 기업의 수익 압력과 안전 원칙 간 충돌이 산업 최상위 의제로 공식화됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217596" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>미국, 중국 반도체 수출 허가 강화…삼성·TSMC 일부 출하 중단<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>미국 정부가 중국향 반도체 수출 허가 예외 조항을 전면 폐지하며 수출 통제를 재강화함.</li>
+    <li>삼성전자와 TSMC가 일부 중국 고객사에 대한 반도체 출하를 보류하며 AI 공급망 지정학적 리스크가 즉시 가시화됨.</li>
+    <li>AI 반도체 공급망 분절화가 '정책 발표'에서 '실출하 중단'이라는 실질 단계로 이동함.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217595" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>MS, 바이트댄스에 오픈AI 모델 공급 확대 추진…미 의회 설명 요구<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>마이크로소프트가 바이트댄스와 약 5억 달러 규모의 오픈AI 모델 기반 AI 클라우드 추가 공급 계약을 추진하자 미 의회가 공식 경위 설명을 요구함.</li>
+    <li>'미국 프런티어 AI를 중국 플랫폼에 공급해도 되는가'라는 정책 경계가 재점검되는 상황이 전개됨.</li>
+    <li>클라우드 제공자의 중국향 AI 모델 공급이 상업적 결정에서 안보·정치 쟁점으로 격상됨이 확인됨.</li>
+  </ul>
+  <p class="source">출처: AI타임스 · <a href="https://www.aitimes.com/news/articleView.html?idxno=217557" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+<!-- High가 있을 때만 아래 섹션을 생성 -->
+<h2 class="cat-title">빅테크 리서치 블로그</h2>
+<div class="topics"><span class="topic">Gemini 4 Hydrogen</span>
+  <span class="topic">Gemini 4 Neon</span>
+  <span class="topic">Genie 4 가상세계</span></div>
+<div class="item">
+  <h3>Introducing Gemini 4 Hydrogen<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 효율성과 속도에 최적화된 차세대 모델 Gemini 4 Hydrogen을 공개함.</li>
+    <li>저지연·고효율 구간을 겨냥한 플래시급 차세대 세대 교체 포인트가 확인됨.</li>
+    <li>Gemini 4 라인업이 '효율 모델(Hydrogen) → 고성능 모델(Neon)' 이원 구조로 공식화됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>Introducing Gemini 4 Neon<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 차세대 고성능 AI 모델 Gemini 4 Neon을 공개함.</li>
+    <li>프런티어 성능 구간에서 Claude·GPT 라인업과 정면 비교되는 포지션으로 투입됨.</li>
+    <li>구글의 모델 전략이 '단일 Gemini'에서 'Gemini 4 가문(Hydrogen·Neon·Argon 계열)'으로 분기 확정됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/introducing-gemini-4-neon" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+<div class="item">
+  <h3>Genie 4 is now available<span class="badge stars s3">중요도 ★★★</span></h3>
+  <ul class="highlights">
+    <li>구글 딥마인드가 상호작용 가능한 가상 세계를 실시간 생성하는 Genie 4를 공식 출시함.</li>
+    <li>텍스트·이미지 프롬프트로 조작 가능한 3D 환경을 실시간 생성해 로봇 학습·시뮬레이션·게임 분야 공통 기반 레이어로 확장됨.</li>
+    <li>'월드모델' 영역이 연구 데모 단계에서 공개 사용 단계로 전환되는 분기점이 마련됨.</li>
+  </ul>
+  <p class="source">출처: Google DeepMind Blog · <a href="https://deepmind.google/blog/genie-4-is-now-available" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+</div>
+
+
+
+<h2 class="cat-title">국내 연구기관·정책</h2>
+<div class="topics"></div>
+
+<p class="category-note">이번 주 발행 대상 '신규' 항목 중 국내 연구기관·정책 카테고리 High 등급 신규 기사는 수집되지 않아 생략함.</p>
+
+<section class="feedback" aria-label="피드백">
+  <p>좋은 점, 보완하고 싶은 점이 있다면 피드백 부탁드립니다.</p>
+  <a class="feedback-btn" href="https://forms.gle/t3Kuu4XhtvB8qqhc7" target="_blank" rel="noopener noreferrer">피드백 남기기</a>
+</section>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="맨 위로 이동">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  function toggle() {
+    btn.classList.toggle('is-visible', window.scrollY > 280);
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+<script src="../assets/analytics-config.js"></script>
+<script src="../assets/click-tracker.js"></script>
+
+</body>
+</html>
+
